@@ -4,31 +4,47 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2015-10-22</lastmod>
+     <lastmod>2016-07-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
+        
     <url>
      <loc>None/publications/</loc>
-     <lastmod>2015-10-22</lastmod>
+     <lastmod>2016-07-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>None/code/</loc>
+     <lastmod>2016-07-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
+        
     <url>
-     <loc>None/code/</loc>
-     <lastmod>2015-10-22</lastmod>
+     <loc>None/teaching/adv_topics_ml_16/</loc>
+     <lastmod>2016-07-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>None/teaching/</loc>
+     <lastmod>2016-07-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
     <url>
      <loc>None/CV/</loc>
-     <lastmod>2015-10-22</lastmod>
+     <lastmod>2016-07-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
