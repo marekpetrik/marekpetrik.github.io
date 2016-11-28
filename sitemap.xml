@@ -3,8 +3,8 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <loc>/</loc>
+     <lastmod>2016-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,45 +12,45 @@
     
         
     <url>
-     <loc>None/publications/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <loc>/publications/</loc>
+     <lastmod>2016-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/code/</loc>
-     <lastmod>2016-11-16</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>None/teaching/adv_topics_ml_16/</loc>
-     <lastmod>2016-11-16</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/teaching/intro_ml_17/</loc>
-     <lastmod>2016-11-16</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>None/teaching/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <loc>/code/</loc>
+     <lastmod>2016-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     
 
     
+        
     <url>
-     <loc>None/CV/</loc>
-     <lastmod>2016-11-16</lastmod>
+     <loc>/teaching/adv_topics_ml_16/</loc>
+     <lastmod>2016-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/teaching/intro_ml_17/</loc>
+     <lastmod>2016-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/teaching/</loc>
+     <lastmod>2016-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>/CV/</loc>
+     <lastmod>2016-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
