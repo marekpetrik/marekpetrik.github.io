@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Risk - Marek Petrik</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">Marek Petrik</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../publications/">Publications</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../code/">Code</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../teaching/adv_topics_ml_16/">2016: Advanced ML</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../teaching/intro_ml_17/">2017: Intro to ML</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../teaching/">List All</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../CV/">CV</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li class="active">
+                            <a href="./">Risk</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+            <div class="col-md-9" role="main">
+
+<h1 id="aaai-2017-tutorial-on-risk-averse-decision-making-and-control">AAAI-2017: Tutorial on Risk-averse Decision Making and Control</h1>
+<p><strong>Presenters</strong>:</p>
+<ul>
+<li>Marek Petrik, University of New Hampshire</li>
+<li>Mohammad Ghavamzadeh, Adobe Research</li>
+</ul>
+<p><strong>Location</strong>: Continental 1-3, Ballroom Level</p>
+<h2 id="schedule">Schedule</h2>
+<ul>
+<li><strong>9:00AM - 9:20AM</strong>: Introduction to risk-averse modeling</li>
+<li><strong>9:20AM - 9:40AM</strong>: Value at Risk and Conditional Value at Risk</li>
+<li><strong>9:40AM - 9:50AM</strong>: <em>Break</em></li>
+<li><strong>9:50AM - 10:30AM</strong>: Coherent Measures of Risk: Properties and methods</li>
+<li><strong>10:30AM - 11:00AM</strong>: <em>Coffee break</em></li>
+<li><strong>11:00AM - 12:00PM</strong>: Risk-averse reinforcement learning</li>
+<li><strong>12:00PM - 12:15PM</strong>: <em>Break</em></li>
+<li><strong>12:15PM - 12:45PM</strong>: Time consistent measures of risk</li>
+</ul>
+<h2 id="slides">Slides</h2>
+<p>Coming soon ...</p>
+<h2 id="detailed-description">Detailed Description</h2>
+<p>Traditional decision methods in artificial intelligence focus on maximizing the expected return (or minimizing the expected cost). This is appropriate when the decision-makers are risk-neutral. Yet, many decision-makers are <em>risk-sensitive</em> and are willing to give up some of the expected reward in order to protect against large losses. The desire to avoid risk when making decision was recognized early on, but developing appropriate models to capture risk has been challenging. Useful models of risk-aversion must be easy to understand and interpret for decision-makers; but they also must be general, flexible, and more importantly, they must produce tractable optimization problems.</p>
+<p>The classical approach to modeling risk aversion is to use expected utilities, but they are difficult to specify and significantly complicate optimization methods. This tutorial focuses on the new approach to risk-aversion which is based convex measures of risk. Convex measures of risk replace the expectation operator by a more general operator which puts more weight on negative outcomes. Perhaps the most well-known risk measure is CVaR, which at level alpha computes the expectation of the lowest alpha-quantile of returns. </p>
+<p>There has been tremendous progress in developing the theory and practice of risk measures since their introduction in the late 1990s. Researchers and practitioners have proposed and used many other risk measures besides CVaR and many stochastic optimization methods now work with convex risk measures. Due to the ease of modeling and optimization with them, convex risk measures have become the standard method for capturing risk sensitivity in operations research. Robust optimization, a related concept for modeling risk-aversion and avoidance, has flourished similarly. </p>
+<p>In recent years, there has been growing interest in developing risk averse decision-making methods in artificial intelligence and machine learning. Risk-aversion is required to make machine learning relevant in many practical settings since solutions from risk neutral methods are often too risky in mission-critical problems. Convex risk measures and robust optimization are now being used in methods that range from classification, through multi-armed bandits, to reinforcement learning. While the general concept of risk measures is relatively simple, their true power can only be realized through deeper understanding. For example, integrating risk aversion with sequential decision-making requires overcoming a full set of challenges concerning time consistency. Our tutorial will shed light on these issues and provide numerous pointers for further research. </p>
+<h2 id="goals-and-target-audience">Goals and Target Audience</h2>
+<p>This tutorial will introduce the tools and methodology of convex risk measures and robust optimization, developed in operations research and stochastic finance, to the machine learning community. The goal is to make these often complex results accessible and provide a starting point for people interested in exploring this research direction in greater detail. We will introduce basic concepts of risk measures and robust optimization, describe connections and advantages w.r.t. the existing methods, and describe how risk aversion can be used in sequential decision problems. </p>
+<p>This tutorial should be of interest to researchers in any area that involves decision-making or control. This in particular includes the reinforcement learning and online learning communities, in which the application of risk aversion presents the most pitfalls. Risk aversion can also be important in classification and regression problems as several recent publications attest to. We plan to introduce the general risk-modeling framework and assume just knowledge of measure theoretical concepts, linear algebra, and basic optimization. </p>
+<h2 id="references">References</h2>
+<h3 id="coherent-risk-measures">Coherent risk measures</h3>
+<ul>
+<li>Philippe Artzner, Freddy Delbaen, Jean-marc Eber, and David Heath. Coherent Measures of Risk. Mathematical Finance, 9(June 1996):203–228, 1999</li>
+<li>R. Tyrrell Rockafellar and S. Uryasev. Optimization of conditional value-at-risk. Journal of Risk, 2:21–41, 2000</li>
+<li>R. Tyrrell Rockafellar and Stanislav Uryasev. Conditional Value-At-Risk for General Loss Distributions. Journal of Banking and Finance, 26(7):1443–1471, </li>
+<li>Alexander Schied. Risk measures and robust optimization problems. In Symposium on Probability and Stochastic Processes, 2004</li>
+<li>Aharon Ben-Tal and Marc Teboulle. An Old-New Concept of Convex Risk Measures: The Optimized Certainty Equivalent. Mathematical Finance, 17:449–476, 2007</li>
+<li>Alexander Shapiro, Darinka Dentcheva, and Andrzej Ruszczynski. Lectures on Stochastic Programming. SIAM, 2009</li>
+<li>Aharon Ben-Tal, Laurent El Ghaoui, and Arkadi Nemirovski. Robust Optimization. Princeton University Press, 2009</li>
+<li>Hans Follmer and Alexander Schied. Stochastic Finance: An Introduction in Discrete Time. Walter de Gruyter, 3rd edition, 2011</li>
+<li>A. Shapiro, W. Tekaya, J. P. da Costa, and M. P. Soares. Risk-neutral and risk-averse stochastic dual dynamic programming method. European Journal of Operational Research, 224(2):375–391, 2013</li>
+</ul>
+<h3 id="sequential-decision-making">Sequential decision making</h3>
+<ul>
+<li>V. Borkar. A sensitivity formula for the risk-sensitive cost and the actor-critic algorithm. Systems &amp; Control Letters, 44:339–346, 2001</li>
+<li>V. Borkar. Q-learning for risk-sensitive control. Mathematics of Operations Research, 27:294–311, 2002</li>
+<li>Peter Geibel and Fritz Wysotzki. Risk-sensitive reinforcement learning applied to control under constraints. Journal of Artificial Intelligence Research, 24:81–108, 2005</li>
+<li>E. Delage and S. Mannor. Percentile Optimization for Markov Decision Processes with Parameter Uncertainty. Operations Research, 58(1):203–213, aug 2009</li>
+<li>Andrzej Ruszczynski. Risk-averse dynamic programming for Markov decision processes. Mathematical Programming B, 125(2):235–261, jul 2010</li>
+<li>Janusz Marecki and Pradeep Varakantham. Risk-Sensitive Planning in Partially Observable Environments. In Conference on Autonomous Agents and Multiagent Systems, 2010</li>
+<li>Alexander Shapiro. Analysis of Stochastic Dual Dynamic Programming Method. European Journal of Operational Research, 209(1):63–72, 2011</li>
+<li>Marek Petrik and Dharmashankar Subramanian. An approximate solution method for large risk-averse Markov decision processes. In Uncertainty in Artificial Intelligence(UAI), 2012</li>
+<li>Wolfram Wiesemann, Daniel Kuhn, and Berc Rustem. Robust Markov decision processes. Mathematics of Operations Research, 38(1):153–183, apr 2013</li>
+<li>A. Shapiro, W. Tekaya, J. P. da Costa, and M. P. Soares. Risk-neutral and risk-averse stochastic dual dynamic programming method. European Journal of Operational Research, 224(2):375–391, 2013</li>
+<li>Vincent Guigues. SDDP for some interstage dependent risk-averse problems and application to hydro-thermal planning. Computational Optimization and Applications, pages 1–26, jul 2013</li>
+<li>Aviv Tamar, Dotan Di Castro, and Shie Mannor. Temporal Difference Methods for the Variance of the Reward To Go. Proceedings of the 30th International Conference on Machine Learning, 28:495–503, 2013</li>
+<li>L.A. Prashanth and Mohammad Ghavamzadeh. Actor-critic algorithms for risk-sensitive MDPs. In Advances in Neural Information Processing Systems, pages 252–260, 2013</li>
+<li>Yinlam Chow and Mohammad Ghavamzadeh. Algorithms for CVaR Optimization in MDPs. In Neural Information Processing Systems (NIPS), pages 3509–3517, 2014</li>
+<li>Dan A Iancu, Marek Petrik, and Dharmashankar Subramanian. Tight approximations of dynamic risk measures. Mathematics of Operations Research, 2015</li>
+<li>Javier Garc and Fernando Fern. A Comprehensive Survey on Safe Reinforcement Learning. Journal of Machine Learning Research, 16(1):1437–1480, 2015</li>
+<li>Aviv Tamar, Yonatan Glassner, and Shie Mannor. Optimizing the CVaR via Sampling. In AAAI Conference on Artificial Intelligence, pages 2993–2999, 2015</li>
+<li>Aviv Tamar, Yinlam Chow, Mohammad Ghavamzadeh, and Shie Mannor. Policy Gradient for Coherent Risk Measures. In Neural Information Processing Systems (NIPS), pages 1468–1476, 2015</li>
+<li>Yinlam Chow, Aviv Tamar, Shie Mannor, and Marco Pavone. Risk-Sensitive and Robust Decision-Making : a CVaR Optimization Approach. In Neural Information Processing Systems (NIPS), 2015</li>
+<li>Aviv Tamar and Dotan Di Castro. Learning the Variance of the Reward-To-Go. Journal of Machine Learning Research, 17:1–36, 2016</li>
+<li>L.A. Prashanth and Mohammad Ghavamzadeh. Variance-constrained Actor-Critic Algorithms for Discounted and Average Reward MDPs. Machine Learning Journal, 2016</li>
+<li>Y. Chow, M. Ghavamzadeh, L. Janson, and M. Pavone. Risk-constrained reinforcement learning with percentile risk criteria. Journal of Machine Learning Research, to appear, 2016</li>
+</ul>
+<h3 id="other-machine-learning">Other machine learning</h3>
+<ul>
+<li>Stefano Ermon, Jon Conrad, Carla Gomes, and Bart Selman. Risk-Sensitive Policies for Sustainable Renewable Resource Allocation. Twenty-Second International Joint Conference on Artificial Intelligence, pages 1942–1948, 2011</li>
+<li>A. Sani, A. Lazaric, and R. Munos. Risk-Aversion in Multi-armed Bandits. In Proceedings of the 26th Annual Conference on Neural Information Processing Systems, pages 3284–3292, 2012</li>
+<li>Nicolas Galichet, M Sebag, and Olivier Teytaud. Exploration vs Exploitation vs Safety: Risk-averse Multi-Armed Bandits. In ACML, 2013</li>
+<li>Gartheeban Ganeshapillai, John Guttag, and Andrew W. Lo. Learning connections in financial time series. In Proceedings of the 30th International Conference on Machine Learning, volume 28, pages 109–117, 2013</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script src="../../js/base.js"></script>
+    </body>
+</html>

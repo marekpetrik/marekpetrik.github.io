@@ -1,0 +1,92 @@
+---
+title: 'Introduction to Linear Regression: R Notebook'
+output:
+  html_document: default
+  html_notebook: default
+  pdf_document: default
+---
+
+This notebook demonstrates how to plot data and fit a linear regression.
+
+# Linear Regression
+
+**Step 1**: Download data for the "Introduction to Statistical Learning" (*you may need to do this manually on non-linux operating systems*)
+```{bash}
+cd /tmp
+wget http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv
+```
+
+**Step 2**: Load the dataset from the CSV
+```{r}
+ads <- read.csv("/tmp/Advertising.csv")
+```
+
+
+**Step 3**: Fit a linear regression model
+```{r}
+lm.fit = lm(Sales ~ TV, data=ads)
+summary(lm.fit)
+```
+
+
+**Step 4**: Plot the fit
+```{r}
+#pdf("/tmp/sales_tv_reg.pdf",7,5)
+plot(ads$TV, ads$Sales,col='red',pch=20,xlab = "TV", ylab = "Sales")
+abline(lm.fit)
+#dev.off()
+```
+
+**Step 5:** Plot advanced properties of the fit:
+```{r}
+plot(lm.fit)
+```
+
+# Residuals for Advertising Sales
+
+Now lets look at the regression of the sales as a function of the TV, Radio, and Newspaper advertising.
+
+## TV
+
+```{r}
+#pdf("/tmp/sales_tv.pdf", 7,5)
+plot(ads$TV, ads$Sales,col='red',pch=20,xlab = "TV", ylab = "Sales")
+lm.fit <- lm(Sales ~ TV, data=ads)
+abline(lm.fit)
+#dev.off()
+```
+
+```{r}
+sprintf('R-squared: %f', summary(lm.fit)$r.squared)
+sprintf('Correlation^2: %f', cor(ads$Sales,ads$TV)^2)
+```
+
+## Radio
+
+```{r}
+#pdf("/tmp/sales_radio.pdf", 7,5)
+plot(ads$Radio, ads$Sales,col='red',pch=20,xlab = "Radio", ylab = "Sales")
+lm.fit <- lm(Sales ~ Radio, data=ads)
+abline(lm.fit)
+#dev.off()
+```
+
+```{r}
+sprintf('R-squared: %f', summary(lm.fit)$r.squared)
+sprintf('Correlation^2: %f', cor(ads$Sales,ads$Radio)^2)
+```
+
+## Newspaper
+
+```{r}
+#pdf("/tmp/sales_newspaper.pdf", 7,5)
+plot(ads$Newspaper, ads$Sales,col='red',pch=20,xlab = "Newspaper", ylab = "Sales")
+lm.fit <- lm(Sales ~ Newspaper, data=ads)
+abline(lm.fit)
+#dev.off()
+```
+
+```{r}
+sprintf('R-squared: %f', summary(lm.fit)$r.squared)
+sprintf('Correlation^2: %f', cor(ads$Sales,ads$Newspaper)^2)
+```

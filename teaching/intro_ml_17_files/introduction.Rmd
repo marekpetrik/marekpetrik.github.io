@@ -1,0 +1,58 @@
+---
+title: "Introduction to R Notebook"
+output:
+  html_document: default
+  html_notebook: default
+  pdf_document: default
+---
+
+This notebook demonstrates how to plot data.
+
+# R Markdown
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing code chunks below by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*.
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+LaTeX math notation also works: $Y \approx \beta_0 + \beta_1 \times X$. Or if you want to have an equation on a line all by itself:
+\[ Y \approx \beta_0 + \beta_1 \times X \]
+
+# Plotting
+
+**Step 1**: Download data for the "Introduction to Statistical Learning" (*you may need to do this manually on non-linux operating systems*)
+```{bash}
+cd /tmp
+wget http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv
+```
+
+**Step 2**: Load the dataset from the CSV
+```{r}
+ads <- read.csv("/tmp/Advertising.csv")
+```
+
+**Step 3**: Summarize the data
+```{r}
+summary(ads)
+```
+
+**Step 5**: Plot the dataset
+```{r}
+#pdf("/tmp/sales_tv.pdf",7,5)
+plot(ads$TV, ads$Sales,col='red',pch=20,xlab = "TV", ylab = "Sales")
+#dev.off()
+```
+
+**Step 6**: Or prettier plots can be generated with `ggplot2`
+```{r}
+if("ggplot2" %in% rownames(installed.packages()) == FALSE) {install.packages("ggplot2")}
+```
+
+```{r}
+library(ggplot2)
+ggplot2::qplot(TV, Sales,data=ads,xlab="TV",ylab="Sales")
+```
+
