@@ -1,0 +1,113 @@
+---
+title: "K Means"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+# What is K Means Clustering?
+
+K Means Clustering is an unsupervised learning algorithm that tries to cluster data based on their similarity. Unsupervised learning means that there is no outcome to be predicted, and the algorithm just tries to find patterns in the data. In k means clustering, we have the specify the number of clusters we want the data to be grouped into. The algorithm randomly assigns each observation to a cluster, and finds the centroid of each cluster. Then, the algorithm iterates through two steps:
+
+- Reassign data points to the cluster whose centroid is closest.
+- Calculate new centroid of each cluster.
+
+These two steps are repeated till the within cluster variation cannot be reduced any further. The within cluster variation is calculated as the sum of the euclidean distance between the data points and their respective cluster centroids. 
+
+# Exploring the data
+
+The iris dataset contains data about sepal length, sepal width, petal length, and petal width of flowers of different species. Let us see what it looks like:
+```{r}
+library(datasets)
+head(iris)
+```
+
+After a little bit of exploration, I found that Petal.Length and Petal.Width were similar among the same species but varied considerably between different species, as demonstrated below:
+
+```{r}
+library(ggplot2) #install.packages("ggplot2")  
+ggplot(iris, aes(Petal.Length, Petal.Width, color = Species)) + geom_point()
+```
+
+## Linear Discriminant Analysis
+Lets try to fit LDA (linear discriminant analysis) to this data.
+
+```{r}
+library(MASS)
+lda.iris <- lda(Species~Petal.Length+Petal.Width, data=iris)
+lda.iris
+```
+```{r}
+synthetic.iris <- expand.grid(Petal.Length=seq(0,7,length.out=50), Petal.Width=seq(0,2.5,length.out=50))
+synthetic.iris$Species <- predict(lda.iris, synthetic.iris)[[1]]
+ggplot(synthetic.iris, aes(Petal.Length, Petal.Width, color = Species)) + geom_point()
+```
+
+## Quadratic Discriminant Analysis
+
+```{r}
+library(MASS)
+qda.iris <- qda(Species~Petal.Length+Petal.Width, data=iris)
+qda.iris
+```
+
+```{r}
+synthetic.iris <- expand.grid(Petal.Length=seq(0,7,length.out=50), Petal.Width=seq(0,2.5,length.out=50))
+synthetic.iris$Species <- predict(qda.iris, synthetic.iris)[[1]]
+ggplot(synthetic.iris, aes(Petal.Length, Petal.Width, color = Species)) + geom_point()
+```
+
+# K-Means Clustering
+
+Okay, now that we have seen the data, let us try to cluster it. The data is now assumed to have no labels. We have collected species data, but there are no specific species labels.
+```{r}
+ggplot(iris, aes(Petal.Length, Petal.Width)) + geom_point()
+```
+
+
+
+Since the initial cluster assignments are random, let us set the seed to ensure reproducibility.
+
+```{r}
+set.seed(20)
+irisCluster <- kmeans(iris[, 3:4], 3, nstart = 20)
+irisCluster
+```
+
+Since we know that there are 3 species involved, we ask the algorithm to group the data into 3 clusters, and since the starting assignments are random, we specify nstart = 20. This means that R will try 20 different random starting assignments and then select the one with the lowest within cluster variation.
+We can see the cluster centroids, the clusters that each data point was assigned to, and the within cluster variation.
+
+Let us compare the clusters with the species.
+```{r}
+table(irisCluster$cluster, iris$Species)
+```
+
+As we can see, the data belonging to the setosa species got grouped into cluster 3, versicolor into cluster 2, and virginica into cluster 1. The algorithm wrongly classified two data points belonging to versicolor and six data points belonging to virginica.
+
+We can also plot the data to see the clusters:
+
+```{r}
+irisCluster$cluster <- as.factor(irisCluster$cluster)
+ggplot(iris, aes(Petal.Length, Petal.Width, color = irisCluster$cluster)) + geom_point()
+```
+
+# Gaussian Mixture
+
+Lets use a Gaussian mixture model to analyze the time between erruptions of the Old Faithful geyser. 
+
+```{r}
+library(mixtools) #install.packages("mixtools")
+data("faithful")
+qplot(faithful$waiting, main="Time between Old Faithful eruptions", xlab="Minutes",  ylab="", binwidth=3);
+```
+
+```{r}
+wait1 <- normalmixEM(faithful$waiting, lambda = .5, mu = c(55, 80), sigma = 5)
+```
+
+
+```{r}
+plot(wait1,loglik=FALSE,density=TRUE, cex.axis=1.4, cex.lab=1.4, cex.main=1.8,main2="Time between Old Faithful eruptions", xlab2="Minutes")
+```
+
+
