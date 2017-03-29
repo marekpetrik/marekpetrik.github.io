@@ -1,0 +1,346 @@
+---
+title: "Matrix algebra and linear projections"
+output:
+  html_document: default
+  html_notebook: default
+  pdf_document: default
+---
+
+# Linear Regression
+
+In the first part, we look at how multiple linear regression can be performed directly using linear algebra using a *single* line of code. 
+
+Lets start with something very simple: linear regression with one feature. Recall that the goal of linear regression is to find a function:
+$$ f(x) = \beta_0 + \beta_1 \cdot x_1 $$
+The notation can be simplified if we pretend that the intercept is simply a parameter for a feature $x_0$ which is always equal to $1$.
+$$ f(x) = \beta_0 \cdot 1 + \beta_1 \cdot x_1 = \beta_0 \cdot x_0 + \beta_1 \cdot x_1 $$
+
+Linear regression at its simplest is when there is one feature and with two data points: $x_1, x_2$ with targets $y_1,y_2$. Finding the line that goes through these two values simply reduces to solving a system of linear equations:
+$$ 
+\begin{aligned}
+y_1 &= f(x_1) = \beta_0 \cdot x_{1,0} + \beta_1 \cdot x_{1,1} \\
+y_2 &= f(x_2) = \beta_0 \cdot x_{2,0} + \beta_1 \cdot x_{2,1}
+\end{aligned}
+$$
+We also can write this system of linear equations as matrix multiplication:
+$$ 
+\underbrace{\begin{bmatrix} y_1 \\ y_2 \end{bmatrix}}_y  = \underbrace{\begin{bmatrix}  x_{1,0} &  x_{1,1} \\ x_{2,0} &  x_{2,1} \end{bmatrix}}_X
+  \underbrace{\begin{bmatrix} \beta_0 \\ \beta_1 \end{bmatrix}}_\beta
+$$
+The matrix $X$ here is called the *design matrix* and the general linear system is: 
+$$ y = X \beta $$
+If there are $K$ features and $N$ data points then the dimensions of $X$ are $N \times (K+1)$. 
+
+Computing the solution to our linear system with two data points is as easy as computing the inverse matrix $X^{-1}$ to $X$ and multiplying both sides by this inverse matrix:
+$$ X^{-1} y = X^{-1} X \beta = \beta $$
+
+Consider now a concrete example with two data points. The value of the feature is: $x_{1,1} = 2$ and $x_{2,1} = 5$. The target is $y_1 = 7$ and $y_2 = 3$. The design matrix $X$  is then (don't forget the intercept feature):
+```{r}
+X <- rbind(c(1,2),
+          c(1,5))
+print(X)
+```
+The target vector $y$ is:
+```{r}
+y <- c(7,3)
+print(y)
+```
+The two data points plotted look as follows:
+```{r}
+plot(X[,2],y); grid()
+```
+
+We can now invert the matrix and get our solution to the linear regression problem! 
+```{r}
+Xinv <- solve(X)
+print(Xinv)
+```
+Lets double check that this is indeed a proper matrix inverse.
+```{r}
+Xinv %*% X
+```
+```{r}
+X %*% Xinv
+```
+Yes the inverse works!
+
+Computing the coefficients is now super easy:
+```{r}
+beta <- Xinv %*% y
+print(beta)
+```
+Lets make sure that this line is in fact correct and goes through both of our data points.
+```{r}
+plot(X[,2],y); grid()
+abline(beta[1], beta[2])
+```
+
+Does the built-in linear regression give us the same result?
+```{r}
+lm(y ~ X[,2])$coeff
+c(beta)
+```
+Yes! The results are the same.
+
+**Questions**: 
+
+  1. How can we compute the the parameters $\beta$ when there is only a single data point? 
+  2. How about when there are more data points than features?
+
+OK, lets try 4 data points.
+```{r}
+X <- rbind(c(1,2),
+           c(1,5),
+           c(1,3),
+           c(1,2))
+y <- c(7,3,5,6)
+plot(X[,2],y); grid()
+```  
+
+It does not look like one can find a line through these points. The system of linear equations will not have a solution. The error will happen when we try to invert the new design matrix.
+```{r}
+# > solve(X)
+# Fails with: Error in solve.default(X) : 'a' (4 x 2) must be square 
+```
+
+The answer is to find the line that will minimize the RSS. 
+
+## Minimizing RSS
+
+Recall that RSS is the residual sum of squares:
+$$ \operatorname{RSS} = \sum_{i=1}^n (y_i - f(x_i))^2$$
+It would be nice to be able to write it in a form of linear algebra. There is actually a tool for this called the $L_2$-norm or the *Euclidean distance*:
+$$ \| z \|_2^2 = \sum_{i=1}^n z_i^2 = z^T z$$
+Using linear algebra, the RSS can be written much more compactly. 
+$$ \operatorname{RSS} = \| y - X \beta \|_2^2 = (y-X\beta)^T (y - X \beta) = y^T y - 2 y^T X \beta + \beta^T X^T X \beta$$
+Linear regression chooses $\beta$ to minimize the RSS and thus we have to solve the following optimization problem.
+$$ \min_\beta \| y - X \beta \|_2^2 $$
+Luckily, this is a convex minimization problem. All we have to do is to look for a value of $\beta$ in which the gradient is zero.
+$$ 
+\begin{aligned}
+\nabla_\beta \;\| y - X \beta \|_2^2 &= 0 \\
+\nabla_\beta \; \Bigl( y^T y - 2 y^T X \beta + \beta^T X^T X \beta \Bigr) &= 0 \\
+\nabla_\beta \; \Bigl( - 2 y^T X \beta + \beta^T X^T X \beta \Bigr) &= 0 \\
+ - 2 X^T y + 2  X^T X \beta&= 0 \\
+ X^T X \beta&= X^T y \\
+ \beta &= (X^T X)^{-1} X^T y
+\end{aligned}
+$$
+
+So what if $X$ is not square? It is not a problem. If the dimensions of $X$ are $N \times (K+1)$ then the dimensions of $X$ are $(K+1)\times(K+1)$ which is always a square.
+
+**Question**: Can any square matrix be inverted?
+
+The implementation of linear regression is now really just a *single line*!
+```{r}
+beta <- solve(t(X) %*% X) %*% t(X) %*% y
+print(beta)
+```
+To make sure that everything is OK, we should compare our implementation with the built-in linear regression.
+```{r}
+beta_in <- lm(y ~ X[,2])$coeff
+print(beta_in)
+```
+And finally, the plot.
+```{r}
+plot(X[,2],y); grid()
+abline(beta[1], beta[2])
+```
+
+## Computational Issues 
+
+The first rule of numerical linear algebra is: **never compute a matrix inverse**. Computing a matrix inverse is:
+
+  1. *Slow*: There are faster ways of solving systems of linear equations
+  2. *Unstable*: Linear algebra implementation if finite precision can lead to disastrously large errors for ill-conditioned matrices
+
+Luckily, there are many other ways of computing 
+$$ \beta = (X^T X)^{-1} X^T y $$
+```{r}
+solve(t(X) %*% X) %*% t(X) %*% y
+```
+
+The most common alternatives are:
+
+**1. Gaussian elimination**: Directly solve the system of linear equation. This is related to how a matrix inverse is often computed, but is faster by about a factor of $K$ and much more numerically stable.
+```{r}
+solve(t(X) %*% X, t(X) %*% y)
+```
+
+**2. Cholesky decomposition (LDL)**: The idea is that for any *positive-definite* symmetric matrix $A = U^T U$ where $U$ is an upper triangular matrix. Triangular matrices are very easy to invert and the procedure is computationally stable. Matrix $X^T X$ is symmetric and positive definite. Compute the Cholesky decomposition of $X^T X$.
+
+The symmetric matrix is:
+```{r}
+t(X) %*% X
+```
+The Cholesky decomposition is:
+```{r}
+U <- chol(t(X) %*% X)
+U
+```
+
+
+```{r}
+t(U) %*% U
+```
+The linear regression can now be expressed as:
+```{r}
+chol2inv(U) %*% t(X) %*% y
+```
+
+**3. QR decomposition**: Any matrix can be decomposed to $A = Q R$ where $Q$ is an *orthogonal matrix* and $R$ is upper triangular. Orthogonal matrix satisfies $Q^ Q = I$. The transpose of $Q$ is also its inverse. QR is also stable and fast. We do not need to even compute $X^T X$ but instead compute the QR decomposition of $X$.
+
+When $X = QR$ then
+$$ X^T X = R^T Q^T Q R = R^T R$$
+
+```{r}
+qr.R(qr(X))
+```
+Notice that $R$ is the same as $U$ from the Cholesky decomposition and is easier to compute.
+```{r}
+R <- qr.R(qr(X)) 
+chol2inv(R) %*% t(X) %*% y
+```
+
+## Column view of linear regression
+
+Another way to view linear regression is a computing linear combination of the columns. Let $X_i$ be the vector that represent the feature $i$ for all samples. Then we are looking for a function that minimizes RSS for a linear combination of the feature vectors and the target.
+
+$$ \min_\beta \| y - X_1 \beta_1 - \ldots - X_K \beta_K \|_2^2$$
+
+Before discussing some benefits, lets visualize the simple example from before. 
+```{r}
+Xs <- rbind(c(1,2),
+            c(1,5))
+ys <- c(7,3)
+```
+The standard row view looks at each row as a data point. This is the plot (ignoring the intercept feature). The goal is again to connect the two points using a line.
+```{r}
+plot(Xs[,2],ys); grid()
+```
+The column view looks at each feature as a *vector*. Now, we include the intercept feature and get three vectors, including $y$. The goal is to linearly combine the dashed vectors to get the solid one.
+```{r}
+plot(NULL, xlab="", ylab="", xlim=c(0,9), ylim=c(0,9)); grid();
+arrows(0,0,Xs[1,1], Xs[2,1],lty=2)
+arrows(0,0,Xs[1,2], Xs[2,2],lty=2)
+arrows(0,0,ys[1],ys[2])
+```
+
+
+
+This view can help to see, for example, that adding a feature that is linearly dependent will not reduce the RSS. As an example, consider our previous design matrix $X$ and add another feature. 
+```{r}
+Y <- cbind(X, c(3,6,5,8))
+Y
+```
+Compute the coefficients of linear regression (make sure to remove the intercept):
+```{r}
+beta <- lm(y ~ Y - 1)$coeff
+beta
+```
+Lets verify that the numbers really do add up. First the matrix of the values is:
+```{r}
+sapply(1:3, function(i) {beta[i] * Y[,i]})
+```
+
+```{r}
+rowSums(sapply(1:3, function(i) {beta[i] * Y[,i]}))
+y
+```
+
+Does RSS decrease when we add a feature that is a linear combination of the others?
+```{r}
+Z <- cbind(Y, Y[,2] + Y[,3])
+Z
+```
+Nope, it does not decrease the error at all.
+```{r}
+summary(lm(y ~ Z - 1))$r.squared
+summary(lm(y ~ Y - 1))$r.squared
+```
+
+
+# PCA
+
+PCA is all about Normal distributions and *covariance matrices*. First, lets look at some examples of points generated from a normal distribution with different covariance matrices in 2 dimensions. That means that there are two features. To keep things simple, we will just assume that the mean is 0.
+```{r}
+mu <- c(0,0)
+```
+The simplest covariance matrix is just an identity matrix
+```{r}
+Sigma <- rbind(c(1,0),
+               c(0,1))
+```
+
+Lets sample from this distribution. The result will look very much like the design matrix with rows corresponding to data points and columns corresponding to features.
+```{r}
+library(MASS)
+samp <- mvrnorm(10, mu = mu, Sigma = Sigma)
+samp
+```
+
+```{r}
+samp <- mvrnorm(3000, mu = mu, Sigma = Sigma)
+plot(samp, type="p", asp=1); grid()
+```
+
+What happens when we choose a different matrix?
+```{r}
+Sigma <- rbind(c(10,0),
+               c(0,1))
+samp <- mvrnorm(3000, mu = mu, Sigma = Sigma)
+plot(samp, type="p", asp=1); grid()
+```
+
+```{r}
+Sigma <- rbind(c(1,0),
+               c(0,10))
+samp <- mvrnorm(3000, mu = mu, Sigma = Sigma)
+plot(samp, type="p", asp=1); grid()
+```
+
+Computing PCA on this data is very simple -- it is the axis with the highest variance and there are only to choose from. 
+```{r}
+prcomp(samp)
+```
+
+But what if the data is rotated?
+```{r}
+Sigma <- rbind(c(3,2),
+               c(2,10))
+samp <- mvrnorm(3000, mu = mu, Sigma = Sigma)
+plot(samp, type="p", asp=1); grid()
+```
+PCA can recover this rotation:
+```{r}
+prcomp(samp)
+```
+Lets check this visually:
+```{r}
+prc <- prcomp(samp)
+plot(samp, type="p", asp=1); grid()
+abline(0,prc$rotation[2,1]/prc$rotation[1,1])
+abline(0,prc$rotation[2,2]/prc$rotation[1,2])
+```
+
+
+How is it done? In two easy steps.
+
+  1. Compute the *covariance matrix* from the data
+  2. Compute eigenvectors of the matrix. Looking for a linear transformation of the features that will give us a diagonal matrix.
+
+Lets start with the second step. If we have our covariance matrix, we can compute the eigenvalues and eigen-vectors, which satisfy:
+$$ A x = \lambda x $$
+The eigenvectors can be computed as follows:
+```{r}
+eigen(Sigma)
+```
+This of eigenvectors as dimensions in which the matrix behaves as diagonal. A very nice property of symmetric matrices (such as covariance matrices) is that their eigenvectors are *orthogonal*. So we can invert a matrix just by transposing it. Now we can diagonalize the matrix using the eigenvectors:
+$$ V^{-1} \Sigma V = D$$
+where $D$ is a diagonal matrix of *eigenvalues* and $V$ is the matrix of *eigenvectors*. Lets see:
+```{r}
+E = eigen(Sigma)
+t(E$vectors) %*% Sigma %*% E$vectors
+```
+
+**Question**: How can we compute the covariance matrix from data?
