@@ -1,9 +1,9 @@
 ---
 title: "Matrix algebra and linear projections"
 output:
-  html_document: default
-  html_notebook: default
   pdf_document: default
+  html_notebook: default
+  html_document: default
 ---
 
 # Linear Regression
@@ -270,6 +270,7 @@ The simplest covariance matrix is just an identity matrix
 ```{r}
 Sigma <- rbind(c(1,0),
                c(0,1))
+Sigma
 ```
 
 Lets sample from this distribution. The result will look very much like the design matrix with rows corresponding to data points and columns corresponding to features.
@@ -284,6 +285,13 @@ samp <- mvrnorm(3000, mu = mu, Sigma = Sigma)
 plot(samp, type="p", asp=1); grid()
 ```
 
+```{r}
+Sigma <- rbind(c(10,0),
+               c(0,1))
+Sigma
+```
+
+
 What happens when we choose a different matrix?
 ```{r}
 Sigma <- rbind(c(10,0),
@@ -295,6 +303,11 @@ plot(samp, type="p", asp=1); grid()
 ```{r}
 Sigma <- rbind(c(1,0),
                c(0,10))
+Sigma
+```
+
+
+```{r}
 samp <- mvrnorm(3000, mu = mu, Sigma = Sigma)
 plot(samp, type="p", asp=1); grid()
 ```
@@ -308,6 +321,10 @@ But what if the data is rotated?
 ```{r}
 Sigma <- rbind(c(3,2),
                c(2,10))
+Sigma
+```
+
+```{r}
 samp <- mvrnorm(3000, mu = mu, Sigma = Sigma)
 plot(samp, type="p", asp=1); grid()
 ```
@@ -323,8 +340,59 @@ abline(0,prc$rotation[2,1]/prc$rotation[1,1])
 abline(0,prc$rotation[2,2]/prc$rotation[1,2])
 ```
 
+How would we construct such a rotated covariance matrix? Lets say we want it to be with an angle of 45 degrees. Lets make the first principal component be: 
+$$ v_1 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}  $$
+**Question**: What is the second principal component then?
 
-How is it done? In two easy steps.
+Lets put them in a single matrix:
+$$ V = \frac{1}{\sqrt{2}} \begin{bmatrix} | & | \\ v_1 & v_2 \\  | & | \end{bmatrix} $$
+```{r}
+v1 = sqrt(1/2) * c(1,1)
+v2 = sqrt(1/2) * c(1,-1)
+V = cbind(v1,v2)
+V
+```
+
+So, we would like the vector $v_1$ behave really like the first unit vector $[1, 0]$. This is what the matrix inverse is for:
+$$ \begin{bmatrix} 1 \\0 \end{bmatrix} = V^{-1} v_1$$
+```{r}
+t(V) %*% v1
+t(V) %*% v2
+```
+
+Assume the unrotated covariance matrix:
+```{r}
+Sigma <- rbind(c(10,0),
+               c(0,1))
+Sigma
+```
+The plot looks like this:
+```{r}
+samp <- mvrnorm(3000, mu = mu, Sigma = Sigma)
+prc <- prcomp(samp)
+plot(samp, type="p", asp=1); grid()
+abline(0,prc$rotation[2,1]/prc$rotation[1,1])
+abline(0,prc$rotation[2,2]/prc$rotation[1,2])
+```
+
+We are now ready to construct the covariance matrix:
+```{r}
+newSigma <- V %*% Sigma %*% t(V)
+newSigma
+```
+Lets plot it:
+```{r}
+samp <- mvrnorm(3000, mu = mu, Sigma = newSigma)
+Sigma = V %*% t(V) 
+prc <- prcomp(samp)
+plot(samp, type="p", asp=1); grid()
+abline(0,prc$rotation[2,1]/prc$rotation[1,1])
+abline(0,prc$rotation[2,2]/prc$rotation[1,2])
+```
+
+How can we recover the rotation?
+
+How does PCA recover the rotation? In two easy steps.
 
   1. Compute the *covariance matrix* from the data
   2. Compute eigenvectors of the matrix. Looking for a linear transformation of the features that will give us a diagonal matrix.
@@ -337,10 +405,73 @@ eigen(Sigma)
 ```
 This of eigenvectors as dimensions in which the matrix behaves as diagonal. A very nice property of symmetric matrices (such as covariance matrices) is that their eigenvectors are *orthogonal*. So we can invert a matrix just by transposing it. Now we can diagonalize the matrix using the eigenvectors:
 $$ V^{-1} \Sigma V = D$$
-where $D$ is a diagonal matrix of *eigenvalues* and $V$ is the matrix of *eigenvectors*. Lets see:
+where $D$ is a diagonal matrix of *eigenvalues* and $V$ is the matrix of *eigenvectors*. Because the eigenvectors of a symmetric matrix are *orthogonal*, we get:
+$$ V^T \Sigma V = D$$
+
+**Question**: Show how this is the same thing as when we constructed the covariance matrix before.
+
+```{r}
+Sigma
+```
+
+
+Lets see:
 ```{r}
 E = eigen(Sigma)
 t(E$vectors) %*% Sigma %*% E$vectors
 ```
 
+```{r}
+newSigma
+```
+
+```{r}
+E = eigen(newSigma)
+E$vectors
+```
+
+
+What about our rotated newSigma?
+```{r}
+t(E$vectors) %*% newSigma %*% E$vectors
+```
+Nice, we were able to recover the rotation.
+
 **Question**: How can we compute the covariance matrix from data?
+
+What about? Homework: Show that this is true.
+$$ \Sigma = \frac{1}{n} X^T X $$
+Lets check numerically that it works.
+```{r}
+(t(samp) %*% samp) / nrow(samp)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
