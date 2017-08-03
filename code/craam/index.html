@@ -28,9 +28,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CRAAM
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">2.0.0</span>
    </div>
-   <div id="projectbrief">RobustandApproximateMarkovDecisionProcesses</div>
+   <div id="projectbrief">Robust and Approximate Markov Decision Processes</div>
   </td>
  </tr>
  </tbody>
@@ -71,42 +71,46 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2>Introduction </h2>
-<p>Craam is a C++ library for solving <em>plain</em>, <em>robust</em>, or <em>optimistic</em> Markov decision processes. The library also provides basic tools that enable simulation and construction of MDPs from samples. There is also support for state aggregation and abstraction solution methods.</p>
-<p>The library supports standard finite or infinite horizon discounted MDPs [Puterman2005]. Some basic stochazstic shortest path methods are also supported. The library assumes <em>maximization</em> over actions. The states and actions must be finite.</p>
-<p>The robust model extends the regular MDPs [Iyengar2005]. The library allows to model uncertainty in <em>both</em> the transitions and rewards, unlike some published papers on this topic. This is modeled by adding an outcome to each action. The outcome is assumed to be minimized by nature, similar to [Filar1997].</p>
-<p>In summary, the MDP problem being solved is:</p>
-<p class="formulaDsp">
-\[v(s) = \max_{a \in \mathcal{A}} \min_{o \in \mathcal{O}} \sum_{s\in\mathcal{S}} ( r(s,a,o,s&#39;) + \gamma P(s,a,o,s&#39;) v(s&#39;) ) ~.\]
+<p>Craam is a <b>header-only</b> C++ library for solving Markov decision processes with <em>regular</em>, <em>robust</em>, or <em>optimistic</em> objectives. The optimistic objective is the opposite of robust, in which nature chooses the best possible realization of the uncertain values. The library also provides tools for <em>basic simulation</em>, for constructing MDPs from <em>sample*s, and *value function approximation</em>. Objective functions supported are infinite horizon discounted MDPs, finite horizon MDPs, and stochastic shortest path [Puterman2005]. Some basic stochastic shortest path methods are also supported. The library assumes <em>maximization</em> over actions. The number of states and actions must be finite.</p>
+<p>The library is build around two main data structures: MDP and RMDP. <b>MDP</b> is the standard model that consists of states ${S}$ and actions ${A}$. The robust solution for an MDP would satisfy, for example, the following Bellman optimality equation: </p><p class="formulaDsp">
+\[ v(s) = \max_{a \in \mathcal{A}} \min_{p \in \Delta} \left\{ \sum_{s&#39;\in\mathcal{S}} p(s&#39;) ( r(s,a,s&#39;) + \gamma \, \, v(s&#39;) ) ~:~ \|p - P(s,a,\cdot) \| \le \psi, \; p \ll P(s,a,\cdot) \right\}~. \]
 </p>
-<p>Here, \(\mathcal{S}\) are the states, \(\mathcal{A}\) are the actions, \(\mathcal{O}\) are the outcomes.</p>
-<p>Available algorithms are <em>value iteration</em> and <em>modified policy iteration</em>. The library support both the plain worst-case outcome method and a worst case with respect to a base distribution.</p>
+<p> Note that $p$ is constrained to be <b>absolutely continuous</b> with respect to $P(s,a,)$. This is a hard requirement for all choices of ambiguity (or uncertainty).</p>
+<p>The <b>RMPD</b> model adds a set of <em>outcomes</em> that model possible actions that can be taken by nature. In that case, the robust solution may for example satisfy the following Bellman optimality equation: </p><p class="formulaDsp">
+\[ v(s) = \max_{a \in \mathcal{A}} \min_{o \in \mathcal{O}} \sum_{s&#39;\in\mathcal{S}} P(s,a,o,s&#39;) ( r(s,a,o,s&#39;) + \gamma \, v(s&#39;) ) ~. \]
+</p>
+<p> Using outcomes makes it more convenient to capture correlations between the ambiguity in rewards and the uncertainty in transition probabilities. It also make it much easier to represent uncertainties that lie in small-dimensional vector spaces. The equation above uses the worst outcome, but in general distributions over outcomes are supported.</p>
+<p>The available algorithms are <em>value iteration</em> and <em>modified policy iteration</em>. The library support both the plain worst-case outcome method and a worst case with respect to a base distribution.</p>
 <h2>Installation and Build Instruction </h2>
 <p>See the README.rst</p>
 <h2>Getting Started </h2>
-<p>The main interface to the library is through the templated class <a class="el" href="classcraam_1_1GRMDP.html" title="A general robust Markov decision process. ">GRMDP</a>. The templated version of this class enable different definitions of the uncertainty set. The avialable specializations are:</p>
+<p>See the <a href="http://cs.unh.edu/~mpetrik/code/craam">online documentation</a> or generate it locally as described above.</p>
+<p>Unit tests provide some examples of how to use the library. For simple end-to-end examples, see <code>tests/benchmark.cpp</code> and <code>test/dev.cpp</code>. Targets <code>BENCH</code> and <code>DEV</code> build them respectively.</p>
+<p>The main models supported are:</p>
 <ul>
-<li><a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f" title="Regular MDP with discrete actions and one outcome per action. ">craam::MDP</a> : plain MDP with no definition of uncertainty</li>
-<li><a class="el" href="namespacecraam.html#a5d936882aaf2071dc0e8b708a4a35bb7" title="An uncertain MDP with discrete robustness. ">craam::RMDP_D</a> : a robust/uncertain with discrete outcomes with the best/worst one chosen</li>
-<li><a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414" title="An uncertain MDP with L1 constrained robustness. ">craam::RMDP_L1</a> : a robust/uncertain with discrete outcomes with L1 constraints on the uncertainty</li>
+<li><code><a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f" title="Regular MDP with discrete actions and one outcome per action. ">craam::MDP</a></code> : plain MDP with no specific definition of ambiguity (can be used to compute robust solutions anyway)</li>
+<li><code><a class="el" href="namespacecraam.html#a05b3d45d32289671966e6ad1057c8a67" title="An uncertain MDP with outcomes and weights. ">craam::RMDP</a></code> : an augmented model that adds nature's actions (so-called outcomes) to the model for convenience</li>
+<li><code>craam::impl::MDPIR</code> : an MDP with implementability constraints. See [Petrik2016].</li>
 </ul>
-<p>States, actions, and outcomes are identified using 0-based contiguous indexes. The actions are indexed independently for each states and the outcomes are indexed independently for each state and action pair.</p>
-<p>Transitions are added through function add_transition. New states, actions, or outcomes are automatically added based on the new transition. The actual algorithms are solved using:</p>
+<p>The regular value-function based methods are in the header <code><a class="el" href="values_8hpp_source.html">algorithms/values.hpp</a></code> and the robust versions are in in the header <code><a class="el" href="robust__values_8hpp_source.html">algorithms/robust_values.hpp</a></code>. There are 4 main value-function based methods:</p>
 <table class="doxtable">
 <tr>
 <th>Method </th><th>Algorithm  </th></tr>
 <tr>
-<td><a class="el" href="classcraam_1_1GRMDP.html#a2b035a1f7059ce15e89cb6c2e526ef31" title="Gauss-Seidel varaint of value iteration (not parallelized). ">GRMDP::vi_gs</a> </td><td>Gauss-Seidel value iteration; runs in a single thread. Computes the worst-case outcome for each action. </td></tr>
+<td><code>solve_vi</code> </td><td>Gauss-Seidel value iteration; runs in a single thread. </td></tr>
 <tr>
-<td><a class="el" href="classcraam_1_1GRMDP.html#a1e16e565fa02d5bec19b96962aef4447" title="Jacobi variant of value iteration. ">GRMDP::vi_jac</a> </td><td>Jacobi value iteration; parallelized with OpenMP. Computes the worst-case outcome for each action. </td></tr>
+<td><code>solve_mpi</code> </td><td>Jacobi modified policy iteration; parallelized with OpenMP. Generally, modified policy iteration is vastly more efficient than value iteration. </td></tr>
 <tr>
-<td><a class="el" href="classcraam_1_1GRMDP.html#a4f15849a48bd6c928224e9b7aa156727" title="Modified policy iteration using Jacobi value iteration in the inner loop. ">GRMDP::mpi_jac</a> </td><td>Jacobi modified policy iteration; parallelized with OpenMP. Computes the worst-case outcome for each action. Generally, modified policy iteration is vastly more efficient than value iteration. </td></tr>
+<td><code>rsolve_vi</code> </td><td>Like the value iteration above, but also supports robust, risk-averse, or optimistic objectives. </td></tr>
 <tr>
-<td><a class="el" href="classcraam_1_1GRMDP.html#a35823e3e47b52f8684e26ae92361beba" title="Value function evaluation using Jacobi iteration for a fixed policy. ">GRMDP::vi_jac_fix</a> </td><td>Jacobi value iteration for policy evaluation; parallelized with OpenMP. Computes the worst-case outcome for each action. </td></tr>
+<td><code>rsolve_mpi</code> </td><td>Like the modified policy iteration above, but it also supports robust, risk-averse, optimistic objective. </td></tr>
 </table>
-<p>For uncertain MDPs, each method supports average, robust, and optimistic computation modes.</p>
+<p>These methods can be applied to eithen an MDP or an RMDP.</p>
+<p>The header <code><a class="el" href="occupancies_8hpp_source.html">algorithms/occupancies.hpp</a></code> provides tools for converting the MDP to a transition matrix and computing the occupancy frequencies.</p>
+<p>There are tools for building simulators and sampling from simulations in the header <code><a class="el" href="Simulation_8hpp_source.html">Simulation.hpp</a></code> and methods for handling samples in <code><a class="el" href="Samples_8hpp_source.html">Samples.hpp</a></code>.</p>
 <p>The following is a simple example of formulating and solving a small MDP.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;RMDP.hpp&quot;</span></div><div class="line"><span class="preprocessor">#include &quot;modeltools.hpp&quot;</span></div><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacecraam.html">craam</a>;</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(){</div><div class="line">    <a class="code" href="classcraam_1_1GRMDP.html">MDP</a> mdp(3);</div><div class="line"></div><div class="line">    <span class="comment">// transitions for action 0</span></div><div class="line">    <a class="code" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a>(mdp,0,0,0,1,0);</div><div class="line">    <a class="code" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a>(mdp,1,0,0,1,1);</div><div class="line">    <a class="code" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a>(mdp,2,0,1,1,1);</div><div class="line"></div><div class="line">    <span class="comment">// transitions for action 1</span></div><div class="line">    <a class="code" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a>(mdp,0,1,1,1,0);</div><div class="line">    <a class="code" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a>(mdp,1,1,2,1,0);</div><div class="line">    <a class="code" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a>(mdp,2,1,2,1,1.1);</div><div class="line"></div><div class="line">    <span class="comment">// solve using Jacobi value iteration</span></div><div class="line">    <span class="keyword">auto</span>&amp;&amp; re = mdp.mpi_jac(<a class="code" href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970bab1897515d548a960afe49ecf66a29021">Uncertainty::Average</a>,0.9);</div><div class="line"></div><div class="line">    <span class="keywordflow">for</span>(<span class="keyword">auto</span> v : re.valuefunction){</div><div class="line">        cout &lt;&lt; v &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p>To compile the file, run:</p>
-<div class="fragment"><div class="line">$ g++ -std=c++11 -I&lt;path_to_RAAM.h&gt; -L . -lcraam simple.cpp</div></div><!-- fragment --><h2>Common Use Cases </h2>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;craam/RMDP.hpp&quot;</span></div><div class="line"><span class="preprocessor">#include &quot;craam/modeltools.hpp&quot;</span></div><div class="line"><span class="preprocessor">#include &quot;craam/algorithms/values.hpp&quot;</span></div><div class="line"></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacecraam.html">craam</a>;</div><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(){</div><div class="line">    <a class="code" href="classcraam_1_1GRMDP.html">MDP</a> mdp(3);</div><div class="line"></div><div class="line">    <span class="comment">// transitions for action 0</span></div><div class="line">    <a class="code" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a>(mdp,0,0,0,1,0);</div><div class="line">    <a class="code" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a>(mdp,1,0,0,1,1);</div><div class="line">    <a class="code" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a>(mdp,2,0,1,1,1);</div><div class="line"></div><div class="line">    <span class="comment">// transitions for action 1</span></div><div class="line">    <a class="code" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a>(mdp,0,1,1,1,0);</div><div class="line">    <a class="code" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a>(mdp,1,1,2,1,0);</div><div class="line">    <a class="code" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a>(mdp,2,1,2,1,1.1);</div><div class="line"></div><div class="line">    <span class="comment">// solve using Jacobi value iteration</span></div><div class="line">    <span class="keyword">auto</span>&amp;&amp; re = <a class="code" href="namespacecraam_1_1algorithms.html#a86b9cda42b7a67c1ee9e7c64cc2a8599">algorithms::solve_mpi</a>(mdp,0.9);</div><div class="line"></div><div class="line">    <span class="keywordflow">for</span>(<span class="keyword">auto</span> v : re.valuefunction){</div><div class="line">        cout &lt;&lt; v &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p>To compile the file, run:</p>
+<div class="fragment"><div class="line">$ g++ -fopenmp -std=c++14 -I&lt;path_to_top_craam_folder&gt; simple.cpp</div></div><!-- fragment --><h2>Supported Use Cases </h2>
 <ol type="1">
 <li>Formulate an uncertain MDP</li>
 <li>Compute a solution to an uncertain MDP</li>
@@ -118,7 +122,7 @@ $(function() {
 </ol>
 <h2>General Assumptions </h2>
 <ul>
-<li><a class="el" href="classcraam_1_1Transition.html" title="Represents sparse transition probabilities and rewards from a single state. ">Transition</a> probabilities must be non-negative but do not need to add up to one</li>
+<li>Transition probabilities must be non-negative but do not need to add up to one</li>
 <li>Transitions with 0 probabilities may be omitted, except there must be at least one target state in each transition</li>
 <li><b>State with no actions</b>: A terminal state with value 0</li>
 <li><b>Action with no outcomes</b>: Terminates with an error</li>
@@ -133,7 +137,7 @@ $(function() {
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 27 2017 09:21:37 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 20 2017 23:37:18 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

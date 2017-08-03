@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CRAAM: craam::WeightedOutcomeAction&lt; nature &gt; Class Template Reference</title>
+<title>CRAAM: craam::WeightedOutcomeAction Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,9 +28,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CRAAM
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">2.0.0</span>
    </div>
-   <div id="projectbrief">RobustandApproximateMarkovDecisionProcesses</div>
+   <div id="projectbrief">Robust and Approximate Markov Decision Processes</div>
   </td>
  </tr>
  </tbody>
@@ -71,108 +71,81 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classcraam_1_1WeightedOutcomeAction-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">craam::WeightedOutcomeAction&lt; nature &gt; Class Template Reference</div>  </div>
+<div class="title">craam::WeightedOutcomeAction Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An action in a robust MDP in which the outcomes are defined by a weighted function and a threshold.  
+<p>An action in a robust MDP that allows for outcomes chosen by nature.  
  <a href="classcraam_1_1WeightedOutcomeAction.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Action_8hpp_source.html">Action.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for craam::WeightedOutcomeAction&lt; nature &gt;:</div>
+Inheritance diagram for craam::WeightedOutcomeAction:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classcraam_1_1WeightedOutcomeAction.png" usemap="#craam::WeightedOutcomeAction_3C_20nature_20_3E_map" alt=""/>
-  <map id="craam::WeightedOutcomeAction_3C_20nature_20_3E_map" name="craam::WeightedOutcomeAction_3C_20nature_20_3E_map">
-<area href="classcraam_1_1OutcomeManagement.html" title="A class that manages creation and access to outcomes to be used by actions. " alt="craam::OutcomeManagement" shape="rect" coords="0,0,251,24"/>
+  <img src="classcraam_1_1WeightedOutcomeAction.png" usemap="#craam::WeightedOutcomeAction_map" alt=""/>
+  <map id="craam::WeightedOutcomeAction_map" name="craam::WeightedOutcomeAction_map">
+<area href="classcraam_1_1OutcomeManagement.html" title="A class that manages creation and access to outcomes to be used by actions. " alt="craam::OutcomeManagement" shape="rect" coords="0,0,191,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a3bf164fa3ad797d4bc2f2277c7a1435e"><td class="memItemLeft" align="right" valign="top"><a id="a3bf164fa3ad797d4bc2f2277c7a1435e"></a>
-typedef <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a3bf164fa3ad797d4bc2f2277c7a1435e">OutcomeId</a></td></tr>
-<tr class="memdesc:a3bf164fa3ad797d4bc2f2277c7a1435e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the outcome identification. <br /></td></tr>
-<tr class="separator:a3bf164fa3ad797d4bc2f2277c7a1435e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0f0f7011a7284a9605cb3e9c38b6facf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a0f0f7011a7284a9605cb3e9c38b6facf">WeightedOutcomeAction</a> ()</td></tr>
-<tr class="memdesc:a0f0f7011a7284a9605cb3e9c38b6facf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty action.  <a href="#a0f0f7011a7284a9605cb3e9c38b6facf">More...</a><br /></td></tr>
-<tr class="separator:a0f0f7011a7284a9605cb3e9c38b6facf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae88f5506c1d124cac1c84362010846c9"><td class="memItemLeft" align="right" valign="top"><a id="ae88f5506c1d124cac1c84362010846c9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ae88f5506c1d124cac1c84362010846c9">WeightedOutcomeAction</a> (const vector&lt; <a class="el" href="classcraam_1_1Transition.html">Transition</a> &gt; &amp;<a class="el" href="classcraam_1_1OutcomeManagement.html#a6cd9f71ed3f7ecae087b8d6e3b4b8b44">outcomes</a>)</td></tr>
-<tr class="memdesc:ae88f5506c1d124cac1c84362010846c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes outcomes to the provided vector. <br /></td></tr>
-<tr class="separator:ae88f5506c1d124cac1c84362010846c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bed37032e1ca55c9734066c27606b8a"><td class="memItemLeft" align="right" valign="top">pair&lt; <a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a3bf164fa3ad797d4bc2f2277c7a1435e">OutcomeId</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a9bed37032e1ca55c9734066c27606b8a">maximal</a> (<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;valuefunction, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount) const</td></tr>
-<tr class="memdesc:a9bed37032e1ca55c9734066c27606b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the maximal outcome distribution constraints on the nature's distribution.  <a href="#a9bed37032e1ca55c9734066c27606b8a">More...</a><br /></td></tr>
-<tr class="separator:a9bed37032e1ca55c9734066c27606b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2373c85d947c5a1b3f7fff3a1c11d7d6"><td class="memItemLeft" align="right" valign="top">pair&lt; <a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a3bf164fa3ad797d4bc2f2277c7a1435e">OutcomeId</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a2373c85d947c5a1b3f7fff3a1c11d7d6">minimal</a> (<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;valuefunction, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount) const</td></tr>
-<tr class="memdesc:a2373c85d947c5a1b3f7fff3a1c11d7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the minimal outcome distribution constraints on the nature's distribution Template argument nature represents the function used to select the constrained distribution over the outcomes.  <a href="#a2373c85d947c5a1b3f7fff3a1c11d7d6">More...</a><br /></td></tr>
-<tr class="separator:a2373c85d947c5a1b3f7fff3a1c11d7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad087b239ac9ccc3f877ba28badee71ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ad087b239ac9ccc3f877ba28badee71ca">average</a> (<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;valuefunction, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount) const</td></tr>
-<tr class="memdesc:ad087b239ac9ccc3f877ba28badee71ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the average outcome using a uniform distribution.  <a href="#ad087b239ac9ccc3f877ba28badee71ca">More...</a><br /></td></tr>
-<tr class="separator:ad087b239ac9ccc3f877ba28badee71ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e7e55f0bc2c98a343cfd83f8ef9f8de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a1e7e55f0bc2c98a343cfd83f8ef9f8de">fixed</a> (<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;valuefunction, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount, <a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a3bf164fa3ad797d4bc2f2277c7a1435e">OutcomeId</a> dist) const</td></tr>
-<tr class="memdesc:a1e7e55f0bc2c98a343cfd83f8ef9f8de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the action value for a fixed index outcome.  <a href="#a1e7e55f0bc2c98a343cfd83f8ef9f8de">More...</a><br /></td></tr>
-<tr class="separator:a1e7e55f0bc2c98a343cfd83f8ef9f8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad886d2f10fa90a9f10922f88acb77c9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1Transition.html">Transition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ad886d2f10fa90a9f10922f88acb77c9c">create_outcome</a> (long outcomeid) override</td></tr>
-<tr class="memdesc:ad886d2f10fa90a9f10922f88acb77c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a sufficient number (or 0) of empty outcomes/transitions for the provided outcomeid to be a valid identifier.  <a href="#ad886d2f10fa90a9f10922f88acb77c9c">More...</a><br /></td></tr>
-<tr class="separator:ad886d2f10fa90a9f10922f88acb77c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a504663eb65ad46db4cb4aa8b45bcf9ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1Transition.html">Transition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a504663eb65ad46db4cb4aa8b45bcf9ba">create_outcome</a> (long outcomeid, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> weight)</td></tr>
-<tr class="memdesc:a504663eb65ad46db4cb4aa8b45bcf9ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a sufficient number of empty outcomes/transitions for the provided outcomeid to be a valid identifier.  <a href="#a504663eb65ad46db4cb4aa8b45bcf9ba">More...</a><br /></td></tr>
-<tr class="separator:a504663eb65ad46db4cb4aa8b45bcf9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a683325230feb0d3c50558d6c776ed14a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a683325230feb0d3c50558d6c776ed14a">set_distribution</a> (const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;<a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ad16aeec0670d36f173e97ce55e17a5ca">distribution</a>)</td></tr>
-<tr class="memdesc:a683325230feb0d3c50558d6c776ed14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the base distribution over the outcomes.  <a href="#a683325230feb0d3c50558d6c776ed14a">More...</a><br /></td></tr>
-<tr class="separator:a683325230feb0d3c50558d6c776ed14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af734c382f218d8dbeecfdc454ac15fc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#af734c382f218d8dbeecfdc454ac15fc3">set_distribution</a> (long outcomeid, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> weight)</td></tr>
-<tr class="memdesc:af734c382f218d8dbeecfdc454ac15fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets weight for a particular outcome.  <a href="#af734c382f218d8dbeecfdc454ac15fc3">More...</a><br /></td></tr>
-<tr class="separator:af734c382f218d8dbeecfdc454ac15fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5613002e4aaf48bf5f3b52e696b7c1db"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a5613002e4aaf48bf5f3b52e696b7c1db">get_distribution</a> () const</td></tr>
-<tr class="memdesc:a5613002e4aaf48bf5f3b52e696b7c1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the baseline distribution over outcomes.  <a href="#a5613002e4aaf48bf5f3b52e696b7c1db">More...</a><br /></td></tr>
-<tr class="separator:a5613002e4aaf48bf5f3b52e696b7c1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab53e88842c192797ec0f75b16fa969c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#aab53e88842c192797ec0f75b16fa969c">normalize_distribution</a> ()</td></tr>
-<tr class="memdesc:aab53e88842c192797ec0f75b16fa969c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes outcome weights to sum to one.  <a href="#aab53e88842c192797ec0f75b16fa969c">More...</a><br /></td></tr>
-<tr class="separator:aab53e88842c192797ec0f75b16fa969c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0f19c5168ab8e936a388034fff2a791"><td class="memItemLeft" align="right" valign="top"><a id="ac0f19c5168ab8e936a388034fff2a791"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ac0f19c5168ab8e936a388034fff2a791">is_distribution_normalized</a> () const</td></tr>
-<tr class="memdesc:ac0f19c5168ab8e936a388034fff2a791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the outcome distribution is normalized. <br /></td></tr>
-<tr class="separator:ac0f19c5168ab8e936a388034fff2a791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab18d110470a3ed5a1385b7fc3c0c7371"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ab18d110470a3ed5a1385b7fc3c0c7371">uniform_distribution</a> ()</td></tr>
-<tr class="memdesc:ab18d110470a3ed5a1385b7fc3c0c7371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an initial uniform value for the threshold (0) and the distribution.  <a href="#ab18d110470a3ed5a1385b7fc3c0c7371">More...</a><br /></td></tr>
-<tr class="separator:ab18d110470a3ed5a1385b7fc3c0c7371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a809b8cb5531231cc59f78bbf550e5565"><td class="memItemLeft" align="right" valign="top"><a id="a809b8cb5531231cc59f78bbf550e5565"></a>
-<a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a809b8cb5531231cc59f78bbf550e5565">get_threshold</a> () const</td></tr>
-<tr class="memdesc:a809b8cb5531231cc59f78bbf550e5565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns threshold value. <br /></td></tr>
-<tr class="separator:a809b8cb5531231cc59f78bbf550e5565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a850885a29328fea028ea9265f2ca93d7"><td class="memItemLeft" align="right" valign="top"><a id="a850885a29328fea028ea9265f2ca93d7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a850885a29328fea028ea9265f2ca93d7">set_threshold</a> (<a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> <a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a21f4c1e2050b19e13f737fb037d1ed25">threshold</a>)</td></tr>
-<tr class="memdesc:a850885a29328fea028ea9265f2ca93d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets threshold value. <br /></td></tr>
-<tr class="separator:a850885a29328fea028ea9265f2ca93d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b2de61314b9880670d5148aecd630c7"><td class="memItemLeft" align="right" valign="top"><a id="a8b2de61314b9880670d5148aecd630c7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a8b2de61314b9880670d5148aecd630c7">to_string</a> (string &amp;result) const</td></tr>
-<tr class="memdesc:a8b2de61314b9880670d5148aecd630c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a string representation to the argument. <br /></td></tr>
-<tr class="separator:a8b2de61314b9880670d5148aecd630c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3ea069f92a5531c9a6f0f1de8ac7866"><td class="memItemLeft" align="right" valign="top"><a id="ac3ea069f92a5531c9a6f0f1de8ac7866"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ac3ea069f92a5531c9a6f0f1de8ac7866">is_outcome_correct</a> (<a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a3bf164fa3ad797d4bc2f2277c7a1435e">OutcomeId</a> oid) const</td></tr>
-<tr class="memdesc:ac3ea069f92a5531c9a6f0f1de8ac7866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the provided outcome is valid. <br /></td></tr>
-<tr class="separator:ac3ea069f92a5531c9a6f0f1de8ac7866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ae1c794ff409f3dd396cb6b73e488d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a4ae1c794ff409f3dd396cb6b73e488d9">mean_reward</a> (<a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a3bf164fa3ad797d4bc2f2277c7a1435e">OutcomeId</a> outcomedist) const</td></tr>
-<tr class="memdesc:a4ae1c794ff409f3dd396cb6b73e488d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean reward from the transition.  <a href="#a4ae1c794ff409f3dd396cb6b73e488d9">More...</a><br /></td></tr>
-<tr class="separator:a4ae1c794ff409f3dd396cb6b73e488d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5240190ce69107cff1629afea34d9674"><td class="memItemLeft" align="right" valign="top"><a id="a5240190ce69107cff1629afea34d9674"></a>
-<a class="el" href="classcraam_1_1Transition.html">Transition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a5240190ce69107cff1629afea34d9674">mean_transition</a> (<a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a3bf164fa3ad797d4bc2f2277c7a1435e">OutcomeId</a> outcomedist) const</td></tr>
-<tr class="memdesc:a5240190ce69107cff1629afea34d9674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean transition probabilities. <br /></td></tr>
-<tr class="separator:a5240190ce69107cff1629afea34d9674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa82841cdb0610d87f7885cd30c9dd0fd"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#aa82841cdb0610d87f7885cd30c9dd0fd">to_json</a> (long actionid=-1) const</td></tr>
-<tr class="memdesc:aa82841cdb0610d87f7885cd30c9dd0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a json representation of action.  <a href="#aa82841cdb0610d87f7885cd30c9dd0fd">More...</a><br /></td></tr>
-<tr class="separator:aa82841cdb0610d87f7885cd30c9dd0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86af32abe7935fec2c485ca56f9761b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a86af32abe7935fec2c485ca56f9761b3">WeightedOutcomeAction</a> ()</td></tr>
+<tr class="memdesc:a86af32abe7935fec2c485ca56f9761b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty action.  <a href="#a86af32abe7935fec2c485ca56f9761b3">More...</a><br /></td></tr>
+<tr class="separator:a86af32abe7935fec2c485ca56f9761b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb7454d2004ec35eba9219ce831aae3"><td class="memItemLeft" align="right" valign="top"><a id="a6bb7454d2004ec35eba9219ce831aae3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a6bb7454d2004ec35eba9219ce831aae3">WeightedOutcomeAction</a> (const vector&lt; <a class="el" href="classcraam_1_1Transition.html">Transition</a> &gt; &amp;<a class="el" href="classcraam_1_1OutcomeManagement.html#a6cd9f71ed3f7ecae087b8d6e3b4b8b44">outcomes</a>)</td></tr>
+<tr class="memdesc:a6bb7454d2004ec35eba9219ce831aae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes outcomes to the provided vector. <br /></td></tr>
+<tr class="separator:a6bb7454d2004ec35eba9219ce831aae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33df430612cf36e67093b4296cb7a5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1Transition.html">Transition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ac33df430612cf36e67093b4296cb7a5e">create_outcome</a> (long outcomeid) override</td></tr>
+<tr class="memdesc:ac33df430612cf36e67093b4296cb7a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a sufficient number (or 0) of empty outcomes/transitions for the provided outcomeid to be a valid identifier.  <a href="#ac33df430612cf36e67093b4296cb7a5e">More...</a><br /></td></tr>
+<tr class="separator:ac33df430612cf36e67093b4296cb7a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9249581c58c592c00f55d6b839f69d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1Transition.html">Transition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ac9249581c58c592c00f55d6b839f69d5">create_outcome</a> (long outcomeid, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> weight)</td></tr>
+<tr class="memdesc:ac9249581c58c592c00f55d6b839f69d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a sufficient number of empty outcomes/transitions for the provided outcomeid to be a valid identifier.  <a href="#ac9249581c58c592c00f55d6b839f69d5">More...</a><br /></td></tr>
+<tr class="separator:ac9249581c58c592c00f55d6b839f69d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5caa605651c4e2e48e786c0a4ed57386"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a5caa605651c4e2e48e786c0a4ed57386">set_distribution</a> (const <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> &amp;<a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a999c7426c631dfc00bb88a8778f7facc">distribution</a>)</td></tr>
+<tr class="memdesc:a5caa605651c4e2e48e786c0a4ed57386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the base distribution over the outcomes.  <a href="#a5caa605651c4e2e48e786c0a4ed57386">More...</a><br /></td></tr>
+<tr class="separator:a5caa605651c4e2e48e786c0a4ed57386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561e3d47b6322fe0aaa3c81c7b0d7f0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a561e3d47b6322fe0aaa3c81c7b0d7f0b">set_distribution</a> (long outcomeid, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> weight)</td></tr>
+<tr class="memdesc:a561e3d47b6322fe0aaa3c81c7b0d7f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets weight for a particular outcome.  <a href="#a561e3d47b6322fe0aaa3c81c7b0d7f0b">More...</a><br /></td></tr>
+<tr class="separator:a561e3d47b6322fe0aaa3c81c7b0d7f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e081b816720e109c8b89cad3de2e448"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a1e081b816720e109c8b89cad3de2e448">get_distribution</a> () const</td></tr>
+<tr class="memdesc:a1e081b816720e109c8b89cad3de2e448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the baseline distribution over outcomes.  <a href="#a1e081b816720e109c8b89cad3de2e448">More...</a><br /></td></tr>
+<tr class="separator:a1e081b816720e109c8b89cad3de2e448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad40845fc0135182edef67ff7e1d8b5b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ad40845fc0135182edef67ff7e1d8b5b4">normalize_distribution</a> ()</td></tr>
+<tr class="memdesc:ad40845fc0135182edef67ff7e1d8b5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes outcome weights to sum to one.  <a href="#ad40845fc0135182edef67ff7e1d8b5b4">More...</a><br /></td></tr>
+<tr class="separator:ad40845fc0135182edef67ff7e1d8b5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4de31a97f50f61dbbf7f4afc8710e96"><td class="memItemLeft" align="right" valign="top"><a id="ad4de31a97f50f61dbbf7f4afc8710e96"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ad4de31a97f50f61dbbf7f4afc8710e96">is_distribution_normalized</a> () const</td></tr>
+<tr class="memdesc:ad4de31a97f50f61dbbf7f4afc8710e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the outcome distribution is normalized. <br /></td></tr>
+<tr class="separator:ad4de31a97f50f61dbbf7f4afc8710e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078e2a101201bad0fed8d3fc82f6f38f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a078e2a101201bad0fed8d3fc82f6f38f">uniform_distribution</a> ()</td></tr>
+<tr class="memdesc:a078e2a101201bad0fed8d3fc82f6f38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an initial uniform value for the distribution.  <a href="#a078e2a101201bad0fed8d3fc82f6f38f">More...</a><br /></td></tr>
+<tr class="separator:a078e2a101201bad0fed8d3fc82f6f38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e8203517617900da706443d0f14c0f"><td class="memItemLeft" align="right" valign="top"><a id="ae9e8203517617900da706443d0f14c0f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ae9e8203517617900da706443d0f14c0f">to_string</a> (string &amp;result) const</td></tr>
+<tr class="memdesc:ae9e8203517617900da706443d0f14c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a string representation to the argument. <br /></td></tr>
+<tr class="separator:ae9e8203517617900da706443d0f14c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133e5bd85d49dc35a014d1c6b884db3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a133e5bd85d49dc35a014d1c6b884db3a">mean_reward</a> (const <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> &amp;outcomedist) const</td></tr>
+<tr class="memdesc:a133e5bd85d49dc35a014d1c6b884db3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean reward from the transition for the provided nature action.  <a href="#a133e5bd85d49dc35a014d1c6b884db3a">More...</a><br /></td></tr>
+<tr class="separator:a133e5bd85d49dc35a014d1c6b884db3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae67011944db5d64c5780d3a216e1a7f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ae67011944db5d64c5780d3a216e1a7f9">mean_reward</a> () const</td></tr>
+<tr class="memdesc:ae67011944db5d64c5780d3a216e1a7f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean reward from the transition using the nominal distribution on outcomes.  <a href="#ae67011944db5d64c5780d3a216e1a7f9">More...</a><br /></td></tr>
+<tr class="separator:ae67011944db5d64c5780d3a216e1a7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990234ff03751b35e8d6347181b8ad44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1Transition.html">Transition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a990234ff03751b35e8d6347181b8ad44">mean_transition</a> (const <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> &amp;outcomedist) const</td></tr>
+<tr class="memdesc:a990234ff03751b35e8d6347181b8ad44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean transition probabilities for the provided nature action.  <a href="#a990234ff03751b35e8d6347181b8ad44">More...</a><br /></td></tr>
+<tr class="separator:a990234ff03751b35e8d6347181b8ad44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6695c817aeabda2b8bda826515baf888"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1Transition.html">Transition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a6695c817aeabda2b8bda826515baf888">mean_transition</a> () const</td></tr>
+<tr class="memdesc:a6695c817aeabda2b8bda826515baf888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean transition probabilities using the nominal distribution on outcomes.  <a href="#a6695c817aeabda2b8bda826515baf888">More...</a><br /></td></tr>
+<tr class="separator:a6695c817aeabda2b8bda826515baf888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef84872d9b134c575351327a20f665e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a1ef84872d9b134c575351327a20f665e">to_json</a> (long actionid=-1) const</td></tr>
+<tr class="memdesc:a1ef84872d9b134c575351327a20f665e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a json representation of action.  <a href="#a1ef84872d9b134c575351327a20f665e">More...</a><br /></td></tr>
+<tr class="separator:a1ef84872d9b134c575351327a20f665e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcraam_1_1OutcomeManagement"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcraam_1_1OutcomeManagement')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classcraam_1_1OutcomeManagement.html">craam::OutcomeManagement</a></td></tr>
 <tr class="memitem:a3361c5cb55597b6bdf38abe82f55a9d7 inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="memItemLeft" align="right" valign="top"><a id="a3361c5cb55597b6bdf38abe82f55a9d7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1OutcomeManagement.html#a3361c5cb55597b6bdf38abe82f55a9d7">OutcomeManagement</a> ()</td></tr>
@@ -221,65 +194,43 @@ const vector&lt; <a class="el" href="classcraam_1_1Transition.html">Transition</
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1OutcomeManagement.html#a843b0a0c254188532b5d8440c0198fbc">normalize</a> ()</td></tr>
 <tr class="memdesc:a843b0a0c254188532b5d8440c0198fbc inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes transitions for outcomes. <br /></td></tr>
 <tr class="separator:a843b0a0c254188532b5d8440c0198fbc inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3664f8992520dac4482da64777b6aec5 inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="memItemLeft" align="right" valign="top"><a id="a3664f8992520dac4482da64777b6aec5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1OutcomeManagement.html#a3664f8992520dac4482da64777b6aec5">is_nature_correct</a> (<a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> oid) const</td></tr>
+<tr class="memdesc:a3664f8992520dac4482da64777b6aec5 inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the provided outcomeid is correct. <br /></td></tr>
+<tr class="separator:a3664f8992520dac4482da64777b6aec5 inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46c3f861e47ec7e9568ce40e6b837755 inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="memItemLeft" align="right" valign="top"><a id="a46c3f861e47ec7e9568ce40e6b837755"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1OutcomeManagement.html#a46c3f861e47ec7e9568ce40e6b837755">to_string</a> (string &amp;result) const</td></tr>
 <tr class="memdesc:a46c3f861e47ec7e9568ce40e6b837755 inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a string representation to the argument. <br /></td></tr>
 <tr class="separator:a46c3f861e47ec7e9568ce40e6b837755 inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a879723c46e140c9f3466b40b53f0cecb inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1OutcomeManagement.html#a879723c46e140c9f3466b40b53f0cecb">is_valid</a> () const</td></tr>
-<tr class="memdesc:a879723c46e140c9f3466b40b53f0cecb inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this is a valid action (or only a placeholder).  <a href="classcraam_1_1OutcomeManagement.html#a879723c46e140c9f3466b40b53f0cecb">More...</a><br /></td></tr>
-<tr class="separator:a879723c46e140c9f3466b40b53f0cecb inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3aefc6e555d2dc612bbac01f31258dde inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="memItemLeft" align="right" valign="top"><a id="a3aefc6e555d2dc612bbac01f31258dde"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1OutcomeManagement.html#a3aefc6e555d2dc612bbac01f31258dde">set_validity</a> (bool newvalidity)</td></tr>
-<tr class="memdesc:a3aefc6e555d2dc612bbac01f31258dde inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the action is valid (see is_valid) <br /></td></tr>
-<tr class="separator:a3aefc6e555d2dc612bbac01f31258dde inherit pub_methods_classcraam_1_1OutcomeManagement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a21f4c1e2050b19e13f737fb037d1ed25"><td class="memItemLeft" align="right" valign="top"><a id="a21f4c1e2050b19e13f737fb037d1ed25"></a>
-<a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a21f4c1e2050b19e13f737fb037d1ed25">threshold</a></td></tr>
-<tr class="memdesc:a21f4c1e2050b19e13f737fb037d1ed25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threshold. <br /></td></tr>
-<tr class="separator:a21f4c1e2050b19e13f737fb037d1ed25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad16aeec0670d36f173e97ce55e17a5ca"><td class="memItemLeft" align="right" valign="top"><a id="ad16aeec0670d36f173e97ce55e17a5ca"></a>
-<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ad16aeec0670d36f173e97ce55e17a5ca">distribution</a></td></tr>
-<tr class="memdesc:ad16aeec0670d36f173e97ce55e17a5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights used in computing the worst/best case. <br /></td></tr>
-<tr class="separator:ad16aeec0670d36f173e97ce55e17a5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a999c7426c631dfc00bb88a8778f7facc"><td class="memItemLeft" align="right" valign="top"><a id="a999c7426c631dfc00bb88a8778f7facc"></a>
+<a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a999c7426c631dfc00bb88a8778f7facc">distribution</a></td></tr>
+<tr class="memdesc:a999c7426c631dfc00bb88a8778f7facc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights used in computing the worst/best case. <br /></td></tr>
+<tr class="separator:a999c7426c631dfc00bb88a8778f7facc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classcraam_1_1OutcomeManagement"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classcraam_1_1OutcomeManagement')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classcraam_1_1OutcomeManagement.html">craam::OutcomeManagement</a></td></tr>
 <tr class="memitem:a6cd9f71ed3f7ecae087b8d6e3b4b8b44 inherit pro_attribs_classcraam_1_1OutcomeManagement"><td class="memItemLeft" align="right" valign="top"><a id="a6cd9f71ed3f7ecae087b8d6e3b4b8b44"></a>
 vector&lt; <a class="el" href="classcraam_1_1Transition.html">Transition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1OutcomeManagement.html#a6cd9f71ed3f7ecae087b8d6e3b4b8b44">outcomes</a></td></tr>
 <tr class="memdesc:a6cd9f71ed3f7ecae087b8d6e3b4b8b44 inherit pro_attribs_classcraam_1_1OutcomeManagement"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of possible outcomes. <br /></td></tr>
 <tr class="separator:a6cd9f71ed3f7ecae087b8d6e3b4b8b44 inherit pro_attribs_classcraam_1_1OutcomeManagement"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8a77e60f5e9c7a70a6965995e3543f2 inherit pro_attribs_classcraam_1_1OutcomeManagement"><td class="memItemLeft" align="right" valign="top"><a id="ab8a77e60f5e9c7a70a6965995e3543f2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1OutcomeManagement.html#ab8a77e60f5e9c7a70a6965995e3543f2">valid</a> = true</td></tr>
-<tr class="memdesc:ab8a77e60f5e9c7a70a6965995e3543f2 inherit pro_attribs_classcraam_1_1OutcomeManagement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid actions are skipped during computation. <br /></td></tr>
-<tr class="separator:ab8a77e60f5e9c7a70a6965995e3543f2 inherit pro_attribs_classcraam_1_1OutcomeManagement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;NatureConstr nature&gt;<br />
-class craam::WeightedOutcomeAction&lt; nature &gt;</h3>
-
-<p>An action in a robust MDP in which the outcomes are defined by a weighted function and a threshold. </p>
-<p>The uncertain behavior is parametrized by a base distribution and a threshold value. An example may be a worst case computation: </p><p class="formulaDsp">
-\[ \min \{ u^T v ~:~ \| u - d \|_1 \le t\} \]
-</p>
-<p> where \( v \) are the values for individual outcomes, \( d \) is the nominal outcome distribution, and \( t \) is the threshold. See L1Action for an example of an instance of this template class.</p>
-<p>The function that determines the uncertainty set is defined by NatureConstr template parameter.</p>
-<p>The distribution d over outcomes is uniform by default: see <a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ad886d2f10fa90a9f10922f88acb77c9c" title="Adds a sufficient number (or 0) of empty outcomes/transitions for the provided outcomeid to be a vali...">WeightedOutcomeAction::create_outcome</a>.</p>
-<p>An action can be invalid, in which case it is skipped during any computations and cannot be used during a simulation. See is_valid.</p>
-<p>Actions are constructed as valid by default. </p>
+<div class="textblock"><p>An action in a robust MDP that allows for outcomes chosen by nature. </p>
+<p>This type of action represents a zero-sum game with the decision maker choosing an action and nature choosing a distribution over outcomes. This action can be used by both regular and robust MDP algorithms.</p>
+<p>The distribution d over outcomes is uniform by default: see <a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ac33df430612cf36e67093b4296cb7a5e" title="Adds a sufficient number (or 0) of empty outcomes/transitions for the provided outcomeid to be a vali...">WeightedOutcomeAction::create_outcome</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0f0f7011a7284a9605cb3e9c38b6facf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f0f7011a7284a9605cb3e9c38b6facf">&#9670;&nbsp;</a></span>WeightedOutcomeAction()</h2>
+<a id="a86af32abe7935fec2c485ca56f9761b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86af32abe7935fec2c485ca56f9761b3">&#9670;&nbsp;</a></span>WeightedOutcomeAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::<a class="el" href="classcraam_1_1WeightedOutcomeAction.html">WeightedOutcomeAction</a> </td>
+          <td class="memname">craam::WeightedOutcomeAction::WeightedOutcomeAction </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -297,59 +248,17 @@ template&lt;NatureConstr nature&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad087b239ac9ccc3f877ba28badee71ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad087b239ac9ccc3f877ba28badee71ca">&#9670;&nbsp;</a></span>average()</h2>
+<a id="ac33df430612cf36e67093b4296cb7a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac33df430612cf36e67093b4296cb7a5e">&#9670;&nbsp;</a></span>create_outcome() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::average </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;&#160;</td>
-          <td class="paramname"><em>valuefunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Computes the average outcome using a uniform distribution. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">valuefunction</td><td>Updated value function </td></tr>
-    <tr><td class="paramname">discount</td><td>Discount factor </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Mean value of the action </dd></dl>
-
-</div>
-</div>
-<a id="ad886d2f10fa90a9f10922f88acb77c9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad886d2f10fa90a9f10922f88acb77c9c">&#9670;&nbsp;</a></span>create_outcome() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcraam_1_1Transition.html">Transition</a> &amp; <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::create_outcome </td>
+          <td class="memname"><a class="el" href="classcraam_1_1Transition.html">Transition</a>&amp; craam::WeightedOutcomeAction::create_outcome </td>
           <td>(</td>
           <td class="paramtype">long&#160;</td>
           <td class="paramname"><em>outcomeid</em></td><td>)</td>
@@ -358,13 +267,13 @@ template&lt;NatureConstr nature&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Adds a sufficient number (or 0) of empty outcomes/transitions for the provided outcomeid to be a valid identifier. </p>
-<p>This override also properly resizing the nominal outcome distribution and rewighs is accordingly.</p>
+<p>This override also properly resizing the nominal outcome distribution and reweighs is accordingly.</p>
 <p>If the corresponding outcome already exists, then it just returns it.</p>
 <p>The baseline distribution value for the new outcome(s) are set to be: </p><p class="formulaDsp">
 \[ d_n&#39; = \frac{1}{n+1}, \]
@@ -382,20 +291,21 @@ template&lt;NatureConstr nature&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classcraam_1_1Transition.html" title="Represents sparse transition probabilities and rewards from a single state. ">Transition</a> that corresponds to outcomeid </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classcraam_1_1OutcomeManagement.html#aafa6df38e0b483671914032e1f2ee125">craam::OutcomeManagement</a>.</p>
+<p>Reimplemented from <a class="el" href="classcraam_1_1OutcomeManagement.html#ac8ae919021b17f6503f605e77d9d497d">craam::OutcomeManagement</a>.</p>
 
 </div>
 </div>
-<a id="a504663eb65ad46db4cb4aa8b45bcf9ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a504663eb65ad46db4cb4aa8b45bcf9ba">&#9670;&nbsp;</a></span>create_outcome() <span class="overload">[2/2]</span></h2>
+<a id="ac9249581c58c592c00f55d6b839f69d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9249581c58c592c00f55d6b839f69d5">&#9670;&nbsp;</a></span>create_outcome() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcraam_1_1Transition.html">Transition</a> &amp; <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::create_outcome </td>
+          <td class="memname"><a class="el" href="classcraam_1_1Transition.html">Transition</a>&amp; craam::WeightedOutcomeAction::create_outcome </td>
           <td>(</td>
           <td class="paramtype">long&#160;</td>
           <td class="paramname"><em>outcomeid</em>, </td>
@@ -403,7 +313,7 @@ template&lt;NatureConstr nature&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td>
           <td class="paramname"><em>weight</em>&#160;</td>
         </tr>
         <tr>
@@ -412,6 +322,11 @@ template&lt;NatureConstr nature&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds a sufficient number of empty outcomes/transitions for the provided outcomeid to be a valid identifier. </p>
@@ -429,66 +344,17 @@ template&lt;NatureConstr nature&gt; </div>
 
 </div>
 </div>
-<a id="a1e7e55f0bc2c98a343cfd83f8ef9f8de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e7e55f0bc2c98a343cfd83f8ef9f8de">&#9670;&nbsp;</a></span>fixed()</h2>
+<a id="a1e081b816720e109c8b89cad3de2e448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e081b816720e109c8b89cad3de2e448">&#9670;&nbsp;</a></span>get_distribution()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::fixed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;&#160;</td>
-          <td class="paramname"><em>valuefunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a3bf164fa3ad797d4bc2f2277c7a1435e">OutcomeId</a>&#160;</td>
-          <td class="paramname"><em>dist</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Computes the action value for a fixed index outcome. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">valuefunction</td><td>Updated value function </td></tr>
-    <tr><td class="paramname">discount</td><td>Discount factor </td></tr>
-    <tr><td class="paramname">index</td><td>Index of the outcome used </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Value of the action </dd></dl>
-
-</div>
-</div>
-<a id="a5613002e4aaf48bf5f3b52e696b7c1db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5613002e4aaf48bf5f3b52e696b7c1db">&#9670;&nbsp;</a></span>get_distribution()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>&amp; <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::get_distribution </td>
+          <td class="memname">const <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a>&amp; craam::WeightedOutcomeAction::get_distribution </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -505,123 +371,137 @@ template&lt;NatureConstr nature&gt; </div>
 
 </div>
 </div>
-<a id="a9bed37032e1ca55c9734066c27606b8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bed37032e1ca55c9734066c27606b8a">&#9670;&nbsp;</a></span>maximal()</h2>
+<a id="a133e5bd85d49dc35a014d1c6b884db3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a133e5bd85d49dc35a014d1c6b884db3a">&#9670;&nbsp;</a></span>mean_reward() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::maximal </td>
+          <td class="memname"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> craam::WeightedOutcomeAction::mean_reward </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;&#160;</td>
-          <td class="paramname"><em>valuefunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Computes the maximal outcome distribution constraints on the nature's distribution. </p>
-<p>Template argument nature represents the function used to select the constrained distribution over the outcomes. Does not work when the number of outcomes is zero. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">valuefunction</td><td>Value function reference </td></tr>
-    <tr><td class="paramname">discount</td><td>Discount factor </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Outcome distribution and the mean value for the maximal bounded solution </dd></dl>
-
-</div>
-</div>
-<a id="a4ae1c794ff409f3dd396cb6b73e488d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ae1c794ff409f3dd396cb6b73e488d9">&#9670;&nbsp;</a></span>mean_reward()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::mean_reward </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a3bf164fa3ad797d4bc2f2277c7a1435e">OutcomeId</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> &amp;&#160;</td>
           <td class="paramname"><em>outcomedist</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Returns the mean reward from the transition. </p>
+<p>Returns the mean reward from the transition for the provided nature action. </p>
 
 </div>
 </div>
-<a id="a2373c85d947c5a1b3f7fff3a1c11d7d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2373c85d947c5a1b3f7fff3a1c11d7d6">&#9670;&nbsp;</a></span>minimal()</h2>
+<a id="ae67011944db5d64c5780d3a216e1a7f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae67011944db5d64c5780d3a216e1a7f9">&#9670;&nbsp;</a></span>mean_reward() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::minimal </td>
+          <td class="memname"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> craam::WeightedOutcomeAction::mean_reward </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;&#160;</td>
-          <td class="paramname"><em>valuefunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Computes the minimal outcome distribution constraints on the nature's distribution Template argument nature represents the function used to select the constrained distribution over the outcomes. </p>
-<p>Does not work when the number of outcomes is zero. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">valuefunction</td><td>Value function reference </td></tr>
-    <tr><td class="paramname">discount</td><td>Discount factor </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Outcome distribution and the mean value for the minimal bounded solution </dd></dl>
+<p>Returns the mean reward from the transition using the nominal distribution on outcomes. </p>
 
 </div>
 </div>
-<a id="aab53e88842c192797ec0f75b16fa969c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab53e88842c192797ec0f75b16fa969c">&#9670;&nbsp;</a></span>normalize_distribution()</h2>
+<a id="a990234ff03751b35e8d6347181b8ad44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a990234ff03751b35e8d6347181b8ad44">&#9670;&nbsp;</a></span>mean_transition() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::normalize_distribution </td>
+          <td class="memname"><a class="el" href="classcraam_1_1Transition.html">Transition</a> craam::WeightedOutcomeAction::mean_transition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> &amp;&#160;</td>
+          <td class="paramname"><em>outcomedist</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the mean transition probabilities for the provided nature action. </p>
+
+</div>
+</div>
+<a id="a6695c817aeabda2b8bda826515baf888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6695c817aeabda2b8bda826515baf888">&#9670;&nbsp;</a></span>mean_transition() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcraam_1_1Transition.html">Transition</a> craam::WeightedOutcomeAction::mean_transition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the mean transition probabilities using the nominal distribution on outcomes. </p>
+
+</div>
+</div>
+<a id="ad40845fc0135182edef67ff7e1d8b5b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad40845fc0135182edef67ff7e1d8b5b4">&#9670;&nbsp;</a></span>normalize_distribution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void craam::WeightedOutcomeAction::normalize_distribution </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Normalizes outcome weights to sum to one. </p>
@@ -629,22 +509,28 @@ template&lt;NatureConstr nature&gt; </div>
 
 </div>
 </div>
-<a id="a683325230feb0d3c50558d6c776ed14a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a683325230feb0d3c50558d6c776ed14a">&#9670;&nbsp;</a></span>set_distribution() <span class="overload">[1/2]</span></h2>
+<a id="a5caa605651c4e2e48e786c0a4ed57386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5caa605651c4e2e48e786c0a4ed57386">&#9670;&nbsp;</a></span>set_distribution() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::set_distribution </td>
+          <td class="memname">void craam::WeightedOutcomeAction::set_distribution </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> &amp;&#160;</td>
           <td class="paramname"><em>distribution</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Sets the base distribution over the outcomes. </p>
@@ -658,16 +544,17 @@ template&lt;NatureConstr nature&gt; </div>
 
 </div>
 </div>
-<a id="af734c382f218d8dbeecfdc454ac15fc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af734c382f218d8dbeecfdc454ac15fc3">&#9670;&nbsp;</a></span>set_distribution() <span class="overload">[2/2]</span></h2>
+<a id="a561e3d47b6322fe0aaa3c81c7b0d7f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a561e3d47b6322fe0aaa3c81c7b0d7f0b">&#9670;&nbsp;</a></span>set_distribution() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::set_distribution </td>
+          <td class="memname">void craam::WeightedOutcomeAction::set_distribution </td>
           <td>(</td>
           <td class="paramtype">long&#160;</td>
           <td class="paramname"><em>outcomeid</em>, </td>
@@ -675,7 +562,7 @@ template&lt;NatureConstr nature&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td>
           <td class="paramname"><em>weight</em>&#160;</td>
         </tr>
         <tr>
@@ -684,6 +571,11 @@ template&lt;NatureConstr nature&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Sets weight for a particular outcome. </p>
@@ -698,22 +590,28 @@ template&lt;NatureConstr nature&gt; </div>
 
 </div>
 </div>
-<a id="aa82841cdb0610d87f7885cd30c9dd0fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa82841cdb0610d87f7885cd30c9dd0fd">&#9670;&nbsp;</a></span>to_json()</h2>
+<a id="a1ef84872d9b134c575351327a20f665e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ef84872d9b134c575351327a20f665e">&#9670;&nbsp;</a></span>to_json()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::to_json </td>
+          <td class="memname">string craam::WeightedOutcomeAction::to_json </td>
           <td>(</td>
           <td class="paramtype">long&#160;</td>
           <td class="paramname"><em>actionid</em> = <code>-1</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns a json representation of action. </p>
@@ -726,36 +624,41 @@ template&lt;NatureConstr nature&gt; </div>
 
 </div>
 </div>
-<a id="ab18d110470a3ed5a1385b7fc3c0c7371"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab18d110470a3ed5a1385b7fc3c0c7371">&#9670;&nbsp;</a></span>uniform_distribution()</h2>
+<a id="a078e2a101201bad0fed8d3fc82f6f38f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078e2a101201bad0fed8d3fc82f6f38f">&#9670;&nbsp;</a></span>uniform_distribution()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;NatureConstr nature&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">craam::WeightedOutcomeAction</a>&lt; nature &gt;::uniform_distribution </td>
+          <td class="memname">void craam::WeightedOutcomeAction::uniform_distribution </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Sets an initial uniform value for the threshold (0) and the distribution. </p>
+<p>Sets an initial uniform value for the distribution. </p>
 <p>If the distribution already exists, then it is overwritten. </p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/<a class="el" href="Action_8hpp_source.html">Action.hpp</a></li>
-<li>src/Action.cpp</li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>craam/<a class="el" href="Action_8hpp_source.html">Action.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 27 2017 09:21:37 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 20 2017 23:37:17 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

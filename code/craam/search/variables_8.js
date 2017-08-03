@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['rewards',['rewards',['../classcraam_1_1Transition.html#ad3098818ff4c3ffeb81babbf598b977e',1,'craam::Transition']]],
-  ['robust_5fmdp',['robust_mdp',['../classcraam_1_1impl_1_1MDPI__R.html#aa75f78f882d09b57ee563cdaf1930423',1,'craam::impl::MDPI_R']]]
+  ['policy',['policy',['../structcraam_1_1algorithms_1_1Solution.html#acb0723ebca63b03c65464e841e8724b2',1,'craam::algorithms::Solution::policy()'],['../classcraam_1_1algorithms_1_1PolicyDeterministic.html#a024e7b0e2409819b828c5f2cd2ae577d',1,'craam::algorithms::PolicyDeterministic::policy()']]],
+  ['probabilities',['probabilities',['../classcraam_1_1Transition.html#abbb7450fadc46ca2bf49acdb3605aec5',1,'craam::Transition']]]
 ];

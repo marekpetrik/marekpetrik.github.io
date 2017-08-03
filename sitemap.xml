@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>/publications/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/code/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -28,20 +28,26 @@
     
         
     <url>
-     <loc>/teaching/adv_topics_ml_16/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <loc>/teaching/adv_topics_ml_17/</loc>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/teaching/intro_ml_17/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/teaching/adv_topics_ml_16/</loc>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/teaching/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -50,7 +56,7 @@
     
     <url>
      <loc>/CV/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -59,7 +65,7 @@
         
     <url>
      <loc>/tutorials/risk/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

@@ -28,9 +28,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CRAAM
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">2.0.0</span>
    </div>
-   <div id="projectbrief">RobustandApproximateMarkovDecisionProcesses</div>
+   <div id="projectbrief">Robust and Approximate Markov Decision Processes</div>
   </td>
  </tr>
  </tbody>
@@ -102,13 +102,14 @@ $(function() {
 </li>
 <li>actions
 : <a class="el" href="classcraam_1_1msen_1_1DeterministicPolicy.html#a98d5e5b77af36542ad0f0862b05b9b8f">craam::msen::DeterministicPolicy&lt; Sim &gt;</a>
+, <a class="el" href="classcraam_1_1SAState.html#af959127f74ef41a6361290f0a6193e21">craam::SAState&lt; AType &gt;</a>
 </li>
 </ul>
 
 
 <h3><a id="index_d"></a>- d -</h3><ul>
 <li>distribution
-: <a class="el" href="classcraam_1_1WeightedOutcomeAction.html#ad16aeec0670d36f173e97ce55e17a5ca">craam::WeightedOutcomeAction&lt; nature &gt;</a>
+: <a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a999c7426c631dfc00bb88a8778f7facc">craam::WeightedOutcomeAction</a>
 </li>
 <li>distributions
 : <a class="el" href="classcraam_1_1msen_1_1RandomizedPolicy.html#aa0efcd853f1c77c382f7fff47f38530f">craam::msen::RandomizedPolicy&lt; Sim &gt;</a>
@@ -133,6 +134,9 @@ $(function() {
 , <a class="el" href="classcraam_1_1msen_1_1ModelSimulator.html#a99be1d27a3dc463e808d277a48cf5c50">craam::msen::ModelSimulator</a>
 , <a class="el" href="classcraam_1_1msen_1_1SampledMDP.html#ab0637e46b3d142227251936ed502813b">craam::msen::SampledMDP</a>
 </li>
+<li>iterations
+: <a class="el" href="structcraam_1_1algorithms_1_1Solution.html#a501ab668afd62b87e91207b3f66bc07c">craam::algorithms::Solution</a>
+</li>
 </ul>
 
 
@@ -141,6 +145,16 @@ $(function() {
 : <a class="el" href="classcraam_1_1impl_1_1MDPI.html#ae0c5b3762b2a8ee695a224b0bc6e2773">craam::impl::MDPI</a>
 , <a class="el" href="classcraam_1_1msen_1_1ModelSimulator.html#a99b4326a86cf468e7bb18ba5a8f53a18">craam::msen::ModelSimulator</a>
 , <a class="el" href="classcraam_1_1msen_1_1SampledMDP.html#ae3c8e7300f7817fdbc3e59fc7fdb5129">craam::msen::SampledMDP</a>
+</li>
+</ul>
+
+
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>natpolicy
+: <a class="el" href="structcraam_1_1algorithms_1_1SolutionRobust.html#a3a550ca9f9b45f3ba5a4d567635b53e5">craam::algorithms::SolutionRobust</a>
+</li>
+<li>natspec
+: <a class="el" href="classcraam_1_1algorithms_1_1PolicyNature.html#af26a6b0e33951b161ac1011eaa2bac42">craam::algorithms::PolicyNature&lt; T &gt;</a>
 </li>
 </ul>
 
@@ -159,6 +173,10 @@ $(function() {
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
+<li>policy
+: <a class="el" href="classcraam_1_1algorithms_1_1PolicyDeterministic.html#a024e7b0e2409819b828c5f2cd2ae577d">craam::algorithms::PolicyDeterministic</a>
+, <a class="el" href="structcraam_1_1algorithms_1_1Solution.html#acb0723ebca63b03c65464e841e8724b2">craam::algorithms::Solution</a>
+</li>
 <li>probabilities
 : <a class="el" href="classcraam_1_1Transition.html#abbb7450fadc46ca2bf49acdb3605aec5">craam::Transition</a>
 </li>
@@ -166,11 +184,14 @@ $(function() {
 
 
 <h3><a id="index_r"></a>- r -</h3><ul>
+<li>residual
+: <a class="el" href="structcraam_1_1algorithms_1_1Solution.html#ad4e4242d18cc90097ad6c08619c6bdc8">craam::algorithms::Solution</a>
+</li>
 <li>rewards
 : <a class="el" href="classcraam_1_1Transition.html#ad3098818ff4c3ffeb81babbf598b977e">craam::Transition</a>
 </li>
 <li>robust_mdp
-: <a class="el" href="classcraam_1_1impl_1_1MDPI__R.html#aa75f78f882d09b57ee563cdaf1930423">craam::impl::MDPI_R</a>
+: <a class="el" href="classcraam_1_1impl_1_1MDPI__R.html#a3771577c62d70082774645ca24729631">craam::impl::MDPI_R</a>
 </li>
 </ul>
 
@@ -195,23 +216,18 @@ $(function() {
 </ul>
 
 
-<h3><a id="index_t"></a>- t -</h3><ul>
-<li>threshold
-: <a class="el" href="classcraam_1_1WeightedOutcomeAction.html#a21f4c1e2050b19e13f737fb037d1ed25">craam::WeightedOutcomeAction&lt; nature &gt;</a>
-</li>
-</ul>
-
-
 <h3><a id="index_v"></a>- v -</h3><ul>
 <li>valid
-: <a class="el" href="classcraam_1_1OutcomeManagement.html#ab8a77e60f5e9c7a70a6965995e3543f2">craam::OutcomeManagement</a>
-, <a class="el" href="classcraam_1_1RegularAction.html#ac427ca35f1b3f511fbd95763ac3c589e">craam::RegularAction</a>
+: <a class="el" href="classcraam_1_1SAState.html#a9dc3dbc03c261693ea04dd6ab21113a2">craam::SAState&lt; AType &gt;</a>
+</li>
+<li>valuefunction
+: <a class="el" href="structcraam_1_1algorithms_1_1Solution.html#af96092ac67e9fd85ec38483a7d0a8990">craam::algorithms::Solution</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 27 2017 09:21:37 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 20 2017 23:37:18 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

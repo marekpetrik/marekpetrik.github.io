@@ -28,9 +28,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CRAAM
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">2.0.0</span>
    </div>
-   <div id="projectbrief">RobustandApproximateMarkovDecisionProcesses</div>
+   <div id="projectbrief">Robust and Approximate Markov Decision Processes</div>
   </td>
  </tr>
  </tbody>
@@ -71,7 +71,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classcraam_1_1RegularAction-members.html">List of all members</a>  </div>
@@ -85,12 +84,6 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="Action_8hpp_source.html">Action.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:abfba04629125b5e19f80d899b5cc5b5c"><td class="memItemLeft" align="right" valign="top">typedef long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">OutcomeId</a></td></tr>
-<tr class="memdesc:abfba04629125b5e19f80d899b5cc5b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of an identifier for an outcome.  <a href="#abfba04629125b5e19f80d899b5cc5b5c">More...</a><br /></td></tr>
-<tr class="separator:abfba04629125b5e19f80d899b5cc5b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a600e60ce5d2e7952c93e5b532c58555d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#a600e60ce5d2e7952c93e5b532c58555d">RegularAction</a> ()</td></tr>
@@ -100,21 +93,6 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#a4cd7676810321dec7bb54fced1e6f30c">RegularAction</a> (const <a class="el" href="classcraam_1_1Transition.html">Transition</a> &amp;<a class="el" href="classcraam_1_1RegularAction.html#a0f1f01a72f3fc1669157affd2e825811">outcome</a>)</td></tr>
 <tr class="memdesc:a4cd7676810321dec7bb54fced1e6f30c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes outcomes to the provided transition vector. <br /></td></tr>
 <tr class="separator:a4cd7676810321dec7bb54fced1e6f30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae130b75e0e81ec990ebcc57682dc4471"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#ae130b75e0e81ec990ebcc57682dc4471">value</a> (const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;valuefunction, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount) const</td></tr>
-<tr class="memdesc:ae130b75e0e81ec990ebcc57682dc4471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the value of the action.  <a href="#ae130b75e0e81ec990ebcc57682dc4471">More...</a><br /></td></tr>
-<tr class="separator:ae130b75e0e81ec990ebcc57682dc4471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad41567477ba5e3a53ecb21073856f724"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#ad41567477ba5e3a53ecb21073856f724">average</a> (const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;valuefunction, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount) const</td></tr>
-<tr class="memdesc:ad41567477ba5e3a53ecb21073856f724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a value of the action: see <a class="el" href="classcraam_1_1RegularAction.html#ae130b75e0e81ec990ebcc57682dc4471" title="Computes the value of the action. ">RegularAction::value</a>.  <a href="#ad41567477ba5e3a53ecb21073856f724">More...</a><br /></td></tr>
-<tr class="separator:ad41567477ba5e3a53ecb21073856f724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad65e33e28a5eb0917dc900bdd2b9dcc"><td class="memItemLeft" align="right" valign="top">pair&lt; <a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">OutcomeId</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#aad65e33e28a5eb0917dc900bdd2b9dcc">maximal</a> (const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;valuefunction, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount) const</td></tr>
-<tr class="memdesc:aad65e33e28a5eb0917dc900bdd2b9dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a value of the action: see <a class="el" href="classcraam_1_1RegularAction.html#ae130b75e0e81ec990ebcc57682dc4471" title="Computes the value of the action. ">RegularAction::value</a>.  <a href="#aad65e33e28a5eb0917dc900bdd2b9dcc">More...</a><br /></td></tr>
-<tr class="separator:aad65e33e28a5eb0917dc900bdd2b9dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae506aab32979edec892ed19eafdcad56"><td class="memItemLeft" align="right" valign="top">pair&lt; <a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">OutcomeId</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#ae506aab32979edec892ed19eafdcad56">minimal</a> (const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;valuefunction, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount) const</td></tr>
-<tr class="memdesc:ae506aab32979edec892ed19eafdcad56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a value of the action: see <a class="el" href="classcraam_1_1RegularAction.html#ae130b75e0e81ec990ebcc57682dc4471" title="Computes the value of the action. ">RegularAction::value</a>.  <a href="#ae506aab32979edec892ed19eafdcad56">More...</a><br /></td></tr>
-<tr class="separator:ae506aab32979edec892ed19eafdcad56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5288909018421f963d23689f467f1da2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#a5288909018421f963d23689f467f1da2">fixed</a> (const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;valuefunction, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount, <a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">OutcomeId</a> index) const</td></tr>
-<tr class="memdesc:a5288909018421f963d23689f467f1da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a value of the action: see <a class="el" href="classcraam_1_1RegularAction.html#ae130b75e0e81ec990ebcc57682dc4471" title="Computes the value of the action. ">RegularAction::value</a>.  <a href="#a5288909018421f963d23689f467f1da2">More...</a><br /></td></tr>
-<tr class="separator:a5288909018421f963d23689f467f1da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae04278f9d83b5b5e580f2f33746c73b6"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classcraam_1_1Transition.html">Transition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#ae04278f9d83b5b5e580f2f33746c73b6">get_outcomes</a> () const</td></tr>
 <tr class="memdesc:ae04278f9d83b5b5e580f2f33746c73b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the outcomes.  <a href="#ae04278f9d83b5b5e580f2f33746c73b6">More...</a><br /></td></tr>
 <tr class="separator:ae04278f9d83b5b5e580f2f33746c73b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +117,7 @@ const <a class="el" href="classcraam_1_1Transition.html">Transition</a> &amp;&#1
 <tr class="memdesc:a0359dc0247da4470612c7c80b02619aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the single outcome.  <a href="#a0359dc0247da4470612c7c80b02619aa">More...</a><br /></td></tr>
 <tr class="separator:a0359dc0247da4470612c7c80b02619aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6ecbdc72cc4ed0293a9477d47b5b8ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1Transition.html">Transition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#ab6ecbdc72cc4ed0293a9477d47b5b8ca">create_outcome</a> (long outcomeid)</td></tr>
-<tr class="memdesc:ab6ecbdc72cc4ed0293a9477d47b5b8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a sufficient number of empty outcomes for the outcomeid to be a valid identifier.  <a href="#ab6ecbdc72cc4ed0293a9477d47b5b8ca">More...</a><br /></td></tr>
+<tr class="memdesc:ab6ecbdc72cc4ed0293a9477d47b5b8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a sufficient number of empty outcomes for the outcomeid to be a correct identifier.  <a href="#ab6ecbdc72cc4ed0293a9477d47b5b8ca">More...</a><br /></td></tr>
 <tr class="separator:ab6ecbdc72cc4ed0293a9477d47b5b8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dfd380c28518912067b85a3833622a7"><td class="memItemLeft" align="right" valign="top"><a id="a3dfd380c28518912067b85a3833622a7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#a3dfd380c28518912067b85a3833622a7">normalize</a> ()</td></tr>
@@ -148,27 +126,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ac6e23a5b2d826958c59fdffd1d243609"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#ac6e23a5b2d826958c59fdffd1d243609">outcome_count</a> () const</td></tr>
 <tr class="memdesc:ac6e23a5b2d826958c59fdffd1d243609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of outcomes (1).  <a href="#ac6e23a5b2d826958c59fdffd1d243609">More...</a><br /></td></tr>
 <tr class="separator:ac6e23a5b2d826958c59fdffd1d243609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a401abf73a65cb3694c3dcdac1d754864"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#a401abf73a65cb3694c3dcdac1d754864">is_valid</a> () const</td></tr>
-<tr class="memdesc:a401abf73a65cb3694c3dcdac1d754864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this is a valid action (or only a placeholder).  <a href="#a401abf73a65cb3694c3dcdac1d754864">More...</a><br /></td></tr>
-<tr class="separator:a401abf73a65cb3694c3dcdac1d754864"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0451561ea80186f79e3f197da97cbfc"><td class="memItemLeft" align="right" valign="top"><a id="aa0451561ea80186f79e3f197da97cbfc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#aa0451561ea80186f79e3f197da97cbfc">set_validity</a> (bool newvalidity)</td></tr>
-<tr class="memdesc:aa0451561ea80186f79e3f197da97cbfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the action is valid (see is_valid) <br /></td></tr>
-<tr class="separator:aa0451561ea80186f79e3f197da97cbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae23f4ad57ab1315ff5b57a722ca82922"><td class="memItemLeft" align="right" valign="top"><a id="ae23f4ad57ab1315ff5b57a722ca82922"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#ae23f4ad57ab1315ff5b57a722ca82922">to_string</a> (string &amp;result) const</td></tr>
 <tr class="memdesc:ae23f4ad57ab1315ff5b57a722ca82922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a string representation to the argument. <br /></td></tr>
 <tr class="separator:ae23f4ad57ab1315ff5b57a722ca82922"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14970289b1300a6552751507db366136"><td class="memItemLeft" align="right" valign="top"><a id="a14970289b1300a6552751507db366136"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#a14970289b1300a6552751507db366136">is_outcome_correct</a> (<a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">OutcomeId</a> oid) const</td></tr>
-<tr class="memdesc:a14970289b1300a6552751507db366136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the provided outcome is valid. <br /></td></tr>
-<tr class="separator:a14970289b1300a6552751507db366136"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf96d95bbd806cdc6fad4abbdd6d4eee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#abf96d95bbd806cdc6fad4abbdd6d4eee">mean_reward</a> (<a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">OutcomeId</a>) const</td></tr>
-<tr class="memdesc:abf96d95bbd806cdc6fad4abbdd6d4eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean reward from the transition.  <a href="#abf96d95bbd806cdc6fad4abbdd6d4eee">More...</a><br /></td></tr>
-<tr class="separator:abf96d95bbd806cdc6fad4abbdd6d4eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee437ecb8c1be58aa44c887b87e245b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1Transition.html">Transition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#aee437ecb8c1be58aa44c887b87e245b2">mean_transition</a> (<a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">OutcomeId</a>) const</td></tr>
-<tr class="memdesc:aee437ecb8c1be58aa44c887b87e245b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean transition probabilities.  <a href="#aee437ecb8c1be58aa44c887b87e245b2">More...</a><br /></td></tr>
-<tr class="separator:aee437ecb8c1be58aa44c887b87e245b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d976e8b32c0c30ac2b8475d25780435"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#a0d976e8b32c0c30ac2b8475d25780435">is_nature_correct</a> (<a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> oid) const</td></tr>
+<tr class="memdesc:a0d976e8b32c0c30ac2b8475d25780435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the provided outcome is valid.  <a href="#a0d976e8b32c0c30ac2b8475d25780435">More...</a><br /></td></tr>
+<tr class="separator:a0d976e8b32c0c30ac2b8475d25780435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162566c7b9d5c27e1b3cd9c88b7790f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#a162566c7b9d5c27e1b3cd9c88b7790f0">mean_reward</a> () const</td></tr>
+<tr class="memdesc:a162566c7b9d5c27e1b3cd9c88b7790f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean reward from the transition.  <a href="#a162566c7b9d5c27e1b3cd9c88b7790f0">More...</a><br /></td></tr>
+<tr class="separator:a162566c7b9d5c27e1b3cd9c88b7790f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9049c3e556447ee4d70d9e5480923ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#ae9049c3e556447ee4d70d9e5480923ce">mean_reward</a> (<a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> natpolicy) const</td></tr>
+<tr class="memdesc:ae9049c3e556447ee4d70d9e5480923ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean reward from the transition.  <a href="#ae9049c3e556447ee4d70d9e5480923ce">More...</a><br /></td></tr>
+<tr class="separator:ae9049c3e556447ee4d70d9e5480923ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee9fb982b0e4787932377beef590fef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1Transition.html">Transition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#aaee9fb982b0e4787932377beef590fef">mean_transition</a> () const</td></tr>
+<tr class="memdesc:aaee9fb982b0e4787932377beef590fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean transition probabilities.  <a href="#aaee9fb982b0e4787932377beef590fef">More...</a><br /></td></tr>
+<tr class="separator:aaee9fb982b0e4787932377beef590fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17cde6a520848ea1ed682afa7c5cf42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1Transition.html">Transition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#aa17cde6a520848ea1ed682afa7c5cf42">mean_transition</a> (<a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> natpolicy) const</td></tr>
+<tr class="memdesc:aa17cde6a520848ea1ed682afa7c5cf42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mean transition probabilities.  <a href="#aa17cde6a520848ea1ed682afa7c5cf42">More...</a><br /></td></tr>
+<tr class="separator:aa17cde6a520848ea1ed682afa7c5cf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51b1eadbf3b8f1ff4932b2d0e03f89aa"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#a51b1eadbf3b8f1ff4932b2d0e03f89aa">to_json</a> (long actionid=-1) const</td></tr>
 <tr class="memdesc:a51b1eadbf3b8f1ff4932b2d0e03f89aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a json representation of the action.  <a href="#a51b1eadbf3b8f1ff4932b2d0e03f89aa">More...</a><br /></td></tr>
 <tr class="separator:a51b1eadbf3b8f1ff4932b2d0e03f89aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,34 +155,11 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="classcraam_1_1Transition.html">Transition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#a0f1f01a72f3fc1669157affd2e825811">outcome</a></td></tr>
 <tr class="memdesc:a0f1f01a72f3fc1669157affd2e825811"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classcraam_1_1Transition.html" title="Represents sparse transition probabilities and rewards from a single state. ">Transition</a> probabilities. <br /></td></tr>
 <tr class="separator:a0f1f01a72f3fc1669157affd2e825811"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac427ca35f1b3f511fbd95763ac3c589e"><td class="memItemLeft" align="right" valign="top"><a id="ac427ca35f1b3f511fbd95763ac3c589e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1RegularAction.html#ac427ca35f1b3f511fbd95763ac3c589e">valid</a> = true</td></tr>
-<tr class="memdesc:ac427ca35f1b3f511fbd95763ac3c589e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid actions are skipped during computation. <br /></td></tr>
-<tr class="separator:ac427ca35f1b3f511fbd95763ac3c589e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Action in a regular MDP. </p>
-<p>There is no uncertainty and the action contains only a single outcome.</p>
-<p>An action can be invalid, in which case it is skipped during any computations and cannot be used during a simulation. See is_valid. Actions are constructed as valid by default. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="abfba04629125b5e19f80d899b5cc5b5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfba04629125b5e19f80d899b5cc5b5c">&#9670;&nbsp;</a></span>OutcomeId</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef long <a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">craam::RegularAction::OutcomeId</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Type of an identifier for an outcome. </p>
-<p>It is ignored for the simple action. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>There is no uncertainty and the action contains only a single outcome. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a600e60ce5d2e7952c93e5b532c58555d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a600e60ce5d2e7952c93e5b532c58555d">&#9670;&nbsp;</a></span>RegularAction()</h2>
 
@@ -235,45 +188,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad41567477ba5e3a53ecb21073856f724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad41567477ba5e3a53ecb21073856f724">&#9670;&nbsp;</a></span>average()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> craam::RegularAction::average </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;&#160;</td>
-          <td class="paramname"><em>valuefunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes a value of the action: see <a class="el" href="classcraam_1_1RegularAction.html#ae130b75e0e81ec990ebcc57682dc4471" title="Computes the value of the action. ">RegularAction::value</a>. </p>
-<p>The purpose of this method is for the general robust MDP setting. </p>
-
-</div>
-</div>
 <a id="ab6ecbdc72cc4ed0293a9477d47b5b8ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6ecbdc72cc4ed0293a9477d47b5b8ca">&#9670;&nbsp;</a></span>create_outcome()</h2>
 
@@ -298,53 +212,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 </div><div class="memdoc">
 
-<p>Adds a sufficient number of empty outcomes for the outcomeid to be a valid identifier. </p>
+<p>Adds a sufficient number of empty outcomes for the outcomeid to be a correct identifier. </p>
 <p>This method does nothing in this action. </p>
-
-</div>
-</div>
-<a id="a5288909018421f963d23689f467f1da2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5288909018421f963d23689f467f1da2">&#9670;&nbsp;</a></span>fixed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> craam::RegularAction::fixed </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;&#160;</td>
-          <td class="paramname"><em>valuefunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">OutcomeId</a>&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes a value of the action: see <a class="el" href="classcraam_1_1RegularAction.html#ae130b75e0e81ec990ebcc57682dc4471" title="Computes the value of the action. ">RegularAction::value</a>. </p>
-<p>The purpose of this method is for the general robust MDP setting. </p>
 
 </div>
 </div>
@@ -485,8 +354,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a401abf73a65cb3694c3dcdac1d754864"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a401abf73a65cb3694c3dcdac1d754864">&#9670;&nbsp;</a></span>is_valid()</h2>
+<a id="a0d976e8b32c0c30ac2b8475d25780435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d976e8b32c0c30ac2b8475d25780435">&#9670;&nbsp;</a></span>is_nature_correct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -495,9 +364,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool craam::RegularAction::is_valid </td>
+          <td class="memname">bool craam::RegularAction::is_nature_correct </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a>&#160;</td>
+          <td class="paramname"><em>oid</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -508,14 +378,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 </div><div class="memdoc">
 
-<p>Returns whether this is a valid action (or only a placeholder). </p>
-<p>Invalid actions cannot be taken and may result from incomplete sampling of a domain. They are skipped in the computation of value function.</p>
-<p>The action is considered valid when there are some transitions </p>
+<p>Whether the provided outcome is valid. </p>
+<p>Check only size, not that the distribution sums to any particular number. </p>
 
 </div>
 </div>
-<a id="aad65e33e28a5eb0917dc900bdd2b9dcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad65e33e28a5eb0917dc900bdd2b9dcc">&#9670;&nbsp;</a></span>maximal()</h2>
+<a id="a162566c7b9d5c27e1b3cd9c88b7790f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a162566c7b9d5c27e1b3cd9c88b7790f0">&#9670;&nbsp;</a></span>mean_reward() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -524,48 +393,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pair&lt;<a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">OutcomeId</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&gt; craam::RegularAction::maximal </td>
+          <td class="memname"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> craam::RegularAction::mean_reward </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;&#160;</td>
-          <td class="paramname"><em>valuefunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Computes a value of the action: see <a class="el" href="classcraam_1_1RegularAction.html#ae130b75e0e81ec990ebcc57682dc4471" title="Computes the value of the action. ">RegularAction::value</a>. </p>
-<p>The purpose of this method is for the general robust MDP setting. </p>
-
-</div>
-</div>
-<a id="abf96d95bbd806cdc6fad4abbdd6d4eee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf96d95bbd806cdc6fad4abbdd6d4eee">&#9670;&nbsp;</a></span>mean_reward()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> craam::RegularAction::mean_reward </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">OutcomeId</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -581,8 +410,42 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="aee437ecb8c1be58aa44c887b87e245b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee437ecb8c1be58aa44c887b87e245b2">&#9670;&nbsp;</a></span>mean_transition()</h2>
+<a id="ae9049c3e556447ee4d70d9e5480923ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9049c3e556447ee4d70d9e5480923ce">&#9670;&nbsp;</a></span>mean_reward() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> craam::RegularAction::mean_reward </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a>&#160;</td>
+          <td class="paramname"><em>natpolicy</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the mean reward from the transition. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">natpolicy</td><td>Nature can choose the probability distribution </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaee9fb982b0e4787932377beef590fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee9fb982b0e4787932377beef590fef">&#9670;&nbsp;</a></span>mean_transition() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -593,7 +456,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname"><a class="el" href="classcraam_1_1Transition.html">Transition</a> craam::RegularAction::mean_transition </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">OutcomeId</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -610,8 +472,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="ae506aab32979edec892ed19eafdcad56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae506aab32979edec892ed19eafdcad56">&#9670;&nbsp;</a></span>minimal()</h2>
+<a id="aa17cde6a520848ea1ed682afa7c5cf42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa17cde6a520848ea1ed682afa7c5cf42">&#9670;&nbsp;</a></span>mean_transition() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -620,21 +482,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pair&lt;<a class="el" href="classcraam_1_1RegularAction.html#abfba04629125b5e19f80d899b5cc5b5c">OutcomeId</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&gt; craam::RegularAction::minimal </td>
+          <td class="memname"><a class="el" href="classcraam_1_1Transition.html">Transition</a> craam::RegularAction::mean_transition </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;&#160;</td>
-          <td class="paramname"><em>valuefunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a>&#160;</td>
+          <td class="paramname"><em>natpolicy</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -644,8 +496,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 </div><div class="memdoc">
 
-<p>Computes a value of the action: see <a class="el" href="classcraam_1_1RegularAction.html#ae130b75e0e81ec990ebcc57682dc4471" title="Computes the value of the action. ">RegularAction::value</a>. </p>
-<p>The purpose of this method is for the general robust MDP setting. </p>
+<p>Returns the mean transition probabilities. </p>
+<p>Ignore rewards. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">natpolicy</td><td>Nature can choose a non-zero state to go to </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -681,6 +538,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">string craam::RegularAction::to_json </td>
@@ -690,45 +550,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td> const</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-<p>Returns a json representation of the action. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">actionid</td><td>Includes also action id </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae130b75e0e81ec990ebcc57682dc4471"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae130b75e0e81ec990ebcc57682dc4471">&#9670;&nbsp;</a></span>value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> craam::RegularAction::value </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;&#160;</td>
-          <td class="paramname"><em>valuefunction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
@@ -736,26 +557,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 </div><div class="memdoc">
 
-<p>Computes the value of the action. </p>
+<p>Returns a json representation of the action. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">valuefunction</td><td>State value function to use </td></tr>
-    <tr><td class="paramname">discount</td><td>Discount factor </td></tr>
+    <tr><td class="paramname">actionid</td><td>Whether to include action id </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Action value </dd></dl>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/<a class="el" href="Action_8hpp_source.html">Action.hpp</a></li>
-<li>src/Action.cpp</li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>craam/<a class="el" href="Action_8hpp_source.html">Action.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 27 2017 09:21:37 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 20 2017 23:37:17 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

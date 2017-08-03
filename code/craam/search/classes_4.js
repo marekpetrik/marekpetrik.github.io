@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['randomizedpolicy',['RandomizedPolicy',['../classcraam_1_1msen_1_1RandomizedPolicy.html',1,'craam::msen']]],
-  ['randompolicy',['RandomPolicy',['../classcraam_1_1msen_1_1RandomPolicy.html',1,'craam::msen']]],
-  ['regularaction',['RegularAction',['../classcraam_1_1RegularAction.html',1,'craam']]]
+  ['policydeterministic',['PolicyDeterministic',['../classcraam_1_1algorithms_1_1PolicyDeterministic.html',1,'craam::algorithms']]],
+  ['policynature',['PolicyNature',['../classcraam_1_1algorithms_1_1PolicyNature.html',1,'craam::algorithms']]]
 ];

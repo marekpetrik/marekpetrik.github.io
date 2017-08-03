@@ -28,9 +28,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CRAAM
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">2.0.0</span>
    </div>
-   <div id="projectbrief">RobustandApproximateMarkovDecisionProcesses</div>
+   <div id="projectbrief">Robust and Approximate Markov Decision Processes</div>
   </td>
  </tr>
  </tbody>
@@ -87,22 +87,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1adf68ad334b9991e737954dac81c49f"><td class="memItemLeft" align="right" valign="top">typedef SType::ActionId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a1adf68ad334b9991e737954dac81c49f">ActionId</a></td></tr>
-<tr class="memdesc:a1adf68ad334b9991e737954dac81c49f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action identifier in a policy.  <a href="#a1adf68ad334b9991e737954dac81c49f">More...</a><br /></td></tr>
-<tr class="separator:a1adf68ad334b9991e737954dac81c49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc806b901ec00d2890a3dd9e21e2898"><td class="memItemLeft" align="right" valign="top">typedef SType::OutcomeId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#accc806b901ec00d2890a3dd9e21e2898">OutcomeId</a></td></tr>
-<tr class="memdesc:accc806b901ec00d2890a3dd9e21e2898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action identifier in a policy.  <a href="#accc806b901ec00d2890a3dd9e21e2898">More...</a><br /></td></tr>
-<tr class="separator:accc806b901ec00d2890a3dd9e21e2898"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71724a04869ad754577135858e4e0535"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="classcraam_1_1GRMDP.html#a1adf68ad334b9991e737954dac81c49f">ActionId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a></td></tr>
-<tr class="memdesc:a71724a04869ad754577135858e4e0535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decision-maker's policy: Which action to take in which state.  <a href="#a71724a04869ad754577135858e4e0535">More...</a><br /></td></tr>
-<tr class="separator:a71724a04869ad754577135858e4e0535"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a9b5c9cc0a266a1b04275e1d1a7aa90"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="classcraam_1_1GRMDP.html#accc806b901ec00d2890a3dd9e21e2898">OutcomeId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a></td></tr>
-<tr class="memdesc:a4a9b5c9cc0a266a1b04275e1d1a7aa90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nature's policy: Which outcome to take in which state.  <a href="#a4a9b5c9cc0a266a1b04275e1d1a7aa90">More...</a><br /></td></tr>
-<tr class="separator:a4a9b5c9cc0a266a1b04275e1d1a7aa90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58e9145ebf2ef12407c90881515f18dd"><td class="memItemLeft" align="right" valign="top"><a id="a58e9145ebf2ef12407c90881515f18dd"></a>
-typedef <a class="el" href="classcraam_1_1GSolution.html">GSolution</a>&lt; typename SType::ActionId, typename SType::OutcomeId &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a58e9145ebf2ef12407c90881515f18dd">SolType</a></td></tr>
-<tr class="memdesc:a58e9145ebf2ef12407c90881515f18dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solution type. <br /></td></tr>
-<tr class="separator:a58e9145ebf2ef12407c90881515f18dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a94414df11506463b3579b5b72ee9fc"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespacecraam.html#a0ca27053b22486ddfd832df213e958f5">indvec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a5a94414df11506463b3579b5b72ee9fc">policy_det</a></td></tr>
+<tr class="memdesc:a5a94414df11506463b3579b5b72ee9fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decision-maker's policy: Which action to take in which state.  <a href="#a5a94414df11506463b3579b5b72ee9fc">More...</a><br /></td></tr>
+<tr class="separator:a5a94414df11506463b3579b5b72ee9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4a920bc9ac8dcad5a3b137ab24c005"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#adf4a920bc9ac8dcad5a3b137ab24c005">policy_rand</a></td></tr>
+<tr class="memdesc:adf4a920bc9ac8dcad5a3b137ab24c005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nature's policy: Which outcome to take in which state.  <a href="#adf4a920bc9ac8dcad5a3b137ab24c005">More...</a><br /></td></tr>
+<tr class="separator:adf4a920bc9ac8dcad5a3b137ab24c005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -112,9 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a05f0ad74e371e7bce5a6f3a81705cab2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a05f0ad74e371e7bce5a6f3a81705cab2">GRMDP</a> ()</td></tr>
 <tr class="memdesc:a05f0ad74e371e7bce5a6f3a81705cab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty RMDP.  <a href="#a05f0ad74e371e7bce5a6f3a81705cab2">More...</a><br /></td></tr>
 <tr class="separator:a05f0ad74e371e7bce5a6f3a81705cab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6af5fefe962707219fefb94b12a1bd43"><td class="memItemLeft" align="right" valign="top">SType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a6af5fefe962707219fefb94b12a1bd43">create_state</a> (long stateid)</td></tr>
-<tr class="memdesc:a6af5fefe962707219fefb94b12a1bd43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assures that the MDP state exists and if it does not, then it is created.  <a href="#a6af5fefe962707219fefb94b12a1bd43">More...</a><br /></td></tr>
-<tr class="separator:a6af5fefe962707219fefb94b12a1bd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a911c9227e689a2e6920687059040fe1d"><td class="memItemLeft" align="right" valign="top">SType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a911c9227e689a2e6920687059040fe1d">create_state</a> (long stateid)</td></tr>
+<tr class="memdesc:a911c9227e689a2e6920687059040fe1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assures that the MDP state exists and if it does not, then it is created.  <a href="#a911c9227e689a2e6920687059040fe1d">More...</a><br /></td></tr>
+<tr class="separator:a911c9227e689a2e6920687059040fe1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacc04b6884f487a28ee037b285219ed0"><td class="memItemLeft" align="right" valign="top">SType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#aacc04b6884f487a28ee037b285219ed0">create_state</a> ()</td></tr>
 <tr class="memdesc:aacc04b6884f487a28ee037b285219ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new state at the end of the states.  <a href="#aacc04b6884f487a28ee037b285219ed0">More...</a><br /></td></tr>
 <tr class="separator:aacc04b6884f487a28ee037b285219ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,33 +140,10 @@ SType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:a890cb1ee9e0750c4f288339a36b4dd07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a890cb1ee9e0750c4f288339a36b4dd07">normalize</a> ()</td></tr>
 <tr class="memdesc:a890cb1ee9e0750c4f288339a36b4dd07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize all transitions to sum to one for all states, actions, outcomes.  <a href="#a890cb1ee9e0750c4f288339a36b4dd07">More...</a><br /></td></tr>
 <tr class="separator:a890cb1ee9e0750c4f288339a36b4dd07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accd1d71aa42b4e652372365c101f45c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#accd1d71aa42b4e652372365c101f45c1">ofreq_mat</a> (const <a class="el" href="classcraam_1_1Transition.html">Transition</a> &amp;init, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount, const <a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a> &amp;policy, const <a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a> &amp;nature) const</td></tr>
-<tr class="memdesc:accd1d71aa42b4e652372365c101f45c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes occupancy frequencies using matrix representation of transition probabilities.  <a href="#accd1d71aa42b4e652372365c101f45c1">More...</a><br /></td></tr>
-<tr class="separator:accd1d71aa42b4e652372365c101f45c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cbe6d4a297981389d5bc82de18e137c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a2cbe6d4a297981389d5bc82de18e137c">rewards_state</a> (const <a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a> &amp;policy, const <a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a> &amp;nature) const</td></tr>
-<tr class="memdesc:a2cbe6d4a297981389d5bc82de18e137c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the rewards vector for each state for the RMDP.  <a href="#a2cbe6d4a297981389d5bc82de18e137c">More...</a><br /></td></tr>
-<tr class="separator:a2cbe6d4a297981389d5bc82de18e137c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1996321c469a5b25a62098a3e0a74db"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#ac1996321c469a5b25a62098a3e0a74db">is_policy_correct</a> (const <a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a> &amp;policy, const <a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a> &amp;natpolicy) const</td></tr>
-<tr class="memdesc:ac1996321c469a5b25a62098a3e0a74db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the policy and nature's policy are both correct.  <a href="#ac1996321c469a5b25a62098a3e0a74db">More...</a><br /></td></tr>
-<tr class="separator:ac1996321c469a5b25a62098a3e0a74db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b035a1f7059ce15e89cb6c2e526ef31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1GRMDP.html#a58e9145ebf2ef12407c90881515f18dd">SolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a2b035a1f7059ce15e89cb6c2e526ef31">vi_gs</a> (<a class="el" href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970b">Uncertainty</a> uncert, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount, <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> valuefunction=<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>(0), unsigned long iterations=<a class="el" href="namespacecraam.html#add2f4b94e6d33c32f1755954fcd63f1e">MAXITER</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> maxresidual=<a class="el" href="namespacecraam.html#ae8c311f057fe3d1199ea2d825870df8d">SOLPREC</a>) const</td></tr>
-<tr class="memdesc:a2b035a1f7059ce15e89cb6c2e526ef31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gauss-Seidel varaint of value iteration (not parallelized).  <a href="#a2b035a1f7059ce15e89cb6c2e526ef31">More...</a><br /></td></tr>
-<tr class="separator:a2b035a1f7059ce15e89cb6c2e526ef31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e16e565fa02d5bec19b96962aef4447"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1GRMDP.html#a58e9145ebf2ef12407c90881515f18dd">SolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a1e16e565fa02d5bec19b96962aef4447">vi_jac</a> (<a class="el" href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970b">Uncertainty</a> uncert, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount, const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;valuefunction=<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>(0), unsigned long iterations=<a class="el" href="namespacecraam.html#add2f4b94e6d33c32f1755954fcd63f1e">MAXITER</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> maxresidual=<a class="el" href="namespacecraam.html#ae8c311f057fe3d1199ea2d825870df8d">SOLPREC</a>) const</td></tr>
-<tr class="memdesc:a1e16e565fa02d5bec19b96962aef4447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobi variant of value iteration.  <a href="#a1e16e565fa02d5bec19b96962aef4447">More...</a><br /></td></tr>
-<tr class="separator:a1e16e565fa02d5bec19b96962aef4447"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f15849a48bd6c928224e9b7aa156727"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1GRMDP.html#a58e9145ebf2ef12407c90881515f18dd">SolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a4f15849a48bd6c928224e9b7aa156727">mpi_jac</a> (<a class="el" href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970b">Uncertainty</a> uncert, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount, const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;valuefunction=<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>(0), unsigned long iterations_pi=<a class="el" href="namespacecraam.html#add2f4b94e6d33c32f1755954fcd63f1e">MAXITER</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> maxresidual_pi=<a class="el" href="namespacecraam.html#ae8c311f057fe3d1199ea2d825870df8d">SOLPREC</a>, unsigned long iterations_vi=<a class="el" href="namespacecraam.html#add2f4b94e6d33c32f1755954fcd63f1e">MAXITER</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> maxresidual_vi=<a class="el" href="namespacecraam.html#ae8c311f057fe3d1199ea2d825870df8d">SOLPREC</a>/2, bool show_progress=false) const</td></tr>
-<tr class="memdesc:a4f15849a48bd6c928224e9b7aa156727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modified policy iteration using Jacobi value iteration in the inner loop.  <a href="#a4f15849a48bd6c928224e9b7aa156727">More...</a><br /></td></tr>
-<tr class="separator:a4f15849a48bd6c928224e9b7aa156727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35823e3e47b52f8684e26ae92361beba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1GRMDP.html#a58e9145ebf2ef12407c90881515f18dd">SolType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a35823e3e47b52f8684e26ae92361beba">vi_jac_fix</a> (<a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount, const <a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a> &amp;policy, const <a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a> &amp;natpolicy, const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;valuefunction=<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>(0), unsigned long iterations=<a class="el" href="namespacecraam.html#add2f4b94e6d33c32f1755954fcd63f1e">MAXITER</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> maxresidual=<a class="el" href="namespacecraam.html#ae8c311f057fe3d1199ea2d825870df8d">SOLPREC</a>) const</td></tr>
-<tr class="memdesc:a35823e3e47b52f8684e26ae92361beba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Value function evaluation using Jacobi iteration for a fixed policy.  <a href="#a35823e3e47b52f8684e26ae92361beba">More...</a><br /></td></tr>
-<tr class="separator:a35823e3e47b52f8684e26ae92361beba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa518aea157932dcfa1421a73497cf50f"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; ublas::matrix&lt; <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#aa518aea157932dcfa1421a73497cf50f">transition_mat</a> (const <a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a> &amp;policy, const <a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a> &amp;nature) const</td></tr>
-<tr class="memdesc:aa518aea157932dcfa1421a73497cf50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the transition matrix for the policy.  <a href="#aa518aea157932dcfa1421a73497cf50f">More...</a><br /></td></tr>
-<tr class="separator:aa518aea157932dcfa1421a73497cf50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a978c75f1a29abaa786eddd6bc9797824"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; ublas::matrix&lt; <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a978c75f1a29abaa786eddd6bc9797824">transition_mat_t</a> (const <a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a> &amp;policy, const <a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a> &amp;nature) const</td></tr>
-<tr class="memdesc:a978c75f1a29abaa786eddd6bc9797824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a transpose of the transition matrix for the policy.  <a href="#a978c75f1a29abaa786eddd6bc9797824">More...</a><br /></td></tr>
-<tr class="separator:a978c75f1a29abaa786eddd6bc9797824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185d66e3564ae5e51f61edc67b47d20d"><td class="memTemplParams" colspan="2">template&lt;typename Policy &gt; </td></tr>
+<tr class="memitem:a185d66e3564ae5e51f61edc67b47d20d"><td class="memTemplItemLeft" align="right" valign="top">long&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#a185d66e3564ae5e51f61edc67b47d20d">is_policy_correct</a> (const Policy &amp;policies) const</td></tr>
+<tr class="memdesc:a185d66e3564ae5e51f61edc67b47d20d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the policy and nature's policy are both correct.  <a href="#a185d66e3564ae5e51f61edc67b47d20d">More...</a><br /></td></tr>
+<tr class="separator:a185d66e3564ae5e51f61edc67b47d20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb4c202377e162da434780224322c67c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html#acb4c202377e162da434780224322c67c">to_csv</a> (ostream &amp;output, bool header=true) const</td></tr>
 <tr class="memdesc:acb4c202377e162da434780224322c67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the model to a stream as a simple csv file.  <a href="#acb4c202377e162da434780224322c67c">More...</a><br /></td></tr>
 <tr class="separator:acb4c202377e162da434780224322c67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,8 +186,8 @@ class craam::GRMDP&lt; SType &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a1adf68ad334b9991e737954dac81c49f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1adf68ad334b9991e737954dac81c49f">&#9670;&nbsp;</a></span>ActionId</h2>
+<a id="a5a94414df11506463b3579b5b72ee9fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a94414df11506463b3579b5b72ee9fc">&#9670;&nbsp;</a></span>policy_det</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,26 +195,7 @@ class craam::GRMDP&lt; SType &gt;</h3>
 template&lt;class SType&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef SType::ActionId <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::<a class="el" href="classcraam_1_1GRMDP.html#a1adf68ad334b9991e737954dac81c49f">ActionId</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Action identifier in a policy. </p>
-<p>Copies type from state type. </p>
-
-</div>
-</div>
-<a id="a71724a04869ad754577135858e4e0535"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71724a04869ad754577135858e4e0535">&#9670;&nbsp;</a></span>ActionPolicy</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class SType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef vector&lt;<a class="el" href="classcraam_1_1GRMDP.html#a1adf68ad334b9991e737954dac81c49f">ActionId</a>&gt; <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::<a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a></td>
+          <td class="memname">typedef <a class="el" href="namespacecraam.html#a0ca27053b22486ddfd832df213e958f5">indvec</a> <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::<a class="el" href="classcraam_1_1GRMDP.html#a5a94414df11506463b3579b5b72ee9fc">policy_det</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -256,8 +204,8 @@ template&lt;class SType&gt; </div>
 
 </div>
 </div>
-<a id="accc806b901ec00d2890a3dd9e21e2898"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accc806b901ec00d2890a3dd9e21e2898">&#9670;&nbsp;</a></span>OutcomeId</h2>
+<a id="adf4a920bc9ac8dcad5a3b137ab24c005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf4a920bc9ac8dcad5a3b137ab24c005">&#9670;&nbsp;</a></span>policy_rand</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,26 +213,7 @@ template&lt;class SType&gt; </div>
 template&lt;class SType&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef SType::OutcomeId <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::<a class="el" href="classcraam_1_1GRMDP.html#accc806b901ec00d2890a3dd9e21e2898">OutcomeId</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Action identifier in a policy. </p>
-<p>Copies type from state type. </p>
-
-</div>
-</div>
-<a id="a4a9b5c9cc0a266a1b04275e1d1a7aa90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a9b5c9cc0a266a1b04275e1d1a7aa90">&#9670;&nbsp;</a></span>OutcomePolicy</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class SType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef vector&lt;<a class="el" href="classcraam_1_1GRMDP.html#accc806b901ec00d2890a3dd9e21e2898">OutcomeId</a>&gt; <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::<a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a></td>
+          <td class="memname">typedef vector&lt;<a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a>&gt; <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::<a class="el" href="classcraam_1_1GRMDP.html#adf4a920bc9ac8dcad5a3b137ab24c005">policy_rand</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -360,22 +289,30 @@ template&lt;class SType&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6af5fefe962707219fefb94b12a1bd43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6af5fefe962707219fefb94b12a1bd43">&#9670;&nbsp;</a></span>create_state() <span class="overload">[1/2]</span></h2>
+<a id="a911c9227e689a2e6920687059040fe1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a911c9227e689a2e6920687059040fe1d">&#9670;&nbsp;</a></span>create_state() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class SType &gt; </div>
+template&lt;class SType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SType &amp; <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::create_state </td>
+          <td class="memname">SType&amp; <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::create_state </td>
           <td>(</td>
           <td class="paramtype">long&#160;</td>
           <td class="paramname"><em>stateid</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Assures that the MDP state exists and if it does not, then it is created. </p>
@@ -447,7 +384,10 @@ template&lt;class SType&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class SType &gt; </div>
+template&lt;class SType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::is_normalized </td>
@@ -456,6 +396,11 @@ template&lt;class SType &gt; </div>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Check if all transitions in the process sum to one. </p>
@@ -463,119 +408,49 @@ template&lt;class SType &gt; </div>
 
 </div>
 </div>
-<a id="ac1996321c469a5b25a62098a3e0a74db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1996321c469a5b25a62098a3e0a74db">&#9670;&nbsp;</a></span>is_policy_correct()</h2>
+<a id="a185d66e3564ae5e51f61edc67b47d20d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a185d66e3564ae5e51f61edc67b47d20d">&#9670;&nbsp;</a></span>is_policy_correct()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class SType &gt; </div>
+template&lt;class SType&gt; </div>
+<div class="memtemplate">
+template&lt;typename Policy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">long <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::is_policy_correct </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a> &amp;&#160;</td>
-          <td class="paramname"><em>policy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a> &amp;&#160;</td>
-          <td class="paramname"><em>natpolicy</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramtype">const Policy &amp;&#160;</td>
+          <td class="paramname"><em>policies</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Checks if the policy and nature's policy are both correct. </p>
-<p>Action and outcome can be arbitrary for terminal states. </p><dl class="section return"><dt>Returns</dt><dd>If incorrect, the function returns the first state with an incorrect action and outcome. Otherwise the function return -1. </dd></dl>
-
-</div>
-</div>
-<a id="a4f15849a48bd6c928224e9b7aa156727"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f15849a48bd6c928224e9b7aa156727">&#9670;&nbsp;</a></span>mpi_jac()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class SType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::mpi_jac </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970b">Uncertainty</a>&#160;</td>
-          <td class="paramname"><em>uncert</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;&#160;</td>
-          <td class="paramname"><em>valuefunction</em> = <code><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>(0)</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned long&#160;</td>
-          <td class="paramname"><em>iterations_pi</em> = <code><a class="el" href="namespacecraam.html#add2f4b94e6d33c32f1755954fcd63f1e">MAXITER</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>maxresidual_pi</em> = <code><a class="el" href="namespacecraam.html#ae8c311f057fe3d1199ea2d825870df8d">SOLPREC</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned long&#160;</td>
-          <td class="paramname"><em>iterations_vi</em> = <code><a class="el" href="namespacecraam.html#add2f4b94e6d33c32f1755954fcd63f1e">MAXITER</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>maxresidual_vi</em> = <code><a class="el" href="namespacecraam.html#ae8c311f057fe3d1199ea2d825870df8d">SOLPREC</a>/2</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>show_progress</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Modified policy iteration using Jacobi value iteration in the inner loop. </p>
-<p>This method generalizes modified policy iteration to robust MDPs. In the value iteration step, both the action <em>and</em> the outcome are fixed.</p>
-<p>Note that the total number of iterations will be bounded by iterations_pi * iterations_vi </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">uncert</td><td>Type of realization of the uncertainty </td></tr>
-    <tr><td class="paramname">discount</td><td>Discount factor </td></tr>
-    <tr><td class="paramname">valuefunction</td><td>Initial value function </td></tr>
-    <tr><td class="paramname">iterations_pi</td><td>Maximal number of policy iteration steps </td></tr>
-    <tr><td class="paramname">maxresidual_pi</td><td>Stop the outer policy iteration when the residual drops below this threshold. </td></tr>
-    <tr><td class="paramname">iterations_vi</td><td>Maximal number of inner loop value iterations </td></tr>
-    <tr><td class="paramname">maxresidual_vi</td><td>Stop the inner policy iteration when the residual drops below this threshold. This value should be smaller than maxresidual_pi </td></tr>
-    <tr><td class="paramname">show_progress</td><td>Whether to report on progress during the computation </td></tr>
+<p>Action and outcome can be arbitrary for terminal states.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Policy</td><td>Type of the policy. Either a single policy for the standard MDP evaluation, or a pair of a deterministic policy and a randomized policy of the nature </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Computed (approximate) solution </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">policies</td><td>The policy (indvec) or the pair of the policy and the policy of nature (pair&lt;indvec,vector&lt;numvec&gt; &gt;). The nature is typically a randomized policy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If incorrect, the function returns the first state with an incorrect action and outcome. Otherwise the function return -1. </dd></dl>
 
 </div>
 </div>
@@ -585,7 +460,10 @@ template&lt;class SType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class SType &gt; </div>
+template&lt;class SType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::normalize </td>
@@ -594,101 +472,14 @@ template&lt;class SType &gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Normalize all transitions to sum to one for all states, actions, outcomes. </p>
-
-</div>
-</div>
-<a id="accd1d71aa42b4e652372365c101f45c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accd1d71aa42b4e652372365c101f45c1">&#9670;&nbsp;</a></span>ofreq_mat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class SType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::ofreq_mat </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1Transition.html">Transition</a> &amp;&#160;</td>
-          <td class="paramname"><em>init</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a> &amp;&#160;</td>
-          <td class="paramname"><em>policy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a> &amp;&#160;</td>
-          <td class="paramname"><em>nature</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Computes occupancy frequencies using matrix representation of transition probabilities. </p>
-<p>This method does not scale to larger state spaces </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">init</td><td>Initial distribution (alpha) </td></tr>
-    <tr><td class="paramname">discount</td><td>Discount factor (gamma) </td></tr>
-    <tr><td class="paramname">policy</td><td>Policy of the decision maker </td></tr>
-    <tr><td class="paramname">nature</td><td>Policy of nature </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2cbe6d4a297981389d5bc82de18e137c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cbe6d4a297981389d5bc82de18e137c">&#9670;&nbsp;</a></span>rewards_state()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class SType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::rewards_state </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a> &amp;&#160;</td>
-          <td class="paramname"><em>policy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a> &amp;&#160;</td>
-          <td class="paramname"><em>nature</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructs the rewards vector for each state for the RMDP. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">policy</td><td>Policy of the decision maker </td></tr>
-    <tr><td class="paramname">nature</td><td>Policy of nature </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -698,7 +489,10 @@ template&lt;class SType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class SType &gt; </div>
+template&lt;class SType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::to_csv </td>
@@ -718,6 +512,11 @@ template&lt;class SType &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Saves the model to a stream as a simple csv file. </p>
@@ -741,7 +540,10 @@ template&lt;class SType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class SType &gt; </div>
+template&lt;class SType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::to_csv_file </td>
@@ -761,6 +563,11 @@ template&lt;class SType &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Saves the transition probabilities and rewards to a CSV file. </p>
@@ -780,7 +587,10 @@ template&lt;class SType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class SType &gt; </div>
+template&lt;class SType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">string <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::to_json </td>
@@ -789,6 +599,11 @@ template&lt;class SType &gt; </div>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns a json representation of the RMDP. </p>
@@ -802,7 +617,10 @@ template&lt;class SType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class SType &gt; </div>
+template&lt;class SType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">string <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::to_string </td>
@@ -811,6 +629,11 @@ template&lt;class SType &gt; </div>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns a brief string representation of the RMDP. </p>
@@ -818,281 +641,13 @@ template&lt;class SType &gt; </div>
 
 </div>
 </div>
-<a id="aa518aea157932dcfa1421a73497cf50f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa518aea157932dcfa1421a73497cf50f">&#9670;&nbsp;</a></span>transition_mat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class SType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">unique_ptr&lt; ublas::matrix&lt; <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> &gt; &gt; <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::transition_mat </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a> &amp;&#160;</td>
-          <td class="paramname"><em>policy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a> &amp;&#160;</td>
-          <td class="paramname"><em>nature</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructs the transition matrix for the policy. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">policy</td><td>Policy of the decision maker </td></tr>
-    <tr><td class="paramname">nature</td><td>Policy of the nature </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a978c75f1a29abaa786eddd6bc9797824"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a978c75f1a29abaa786eddd6bc9797824">&#9670;&nbsp;</a></span>transition_mat_t()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class SType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">unique_ptr&lt; ublas::matrix&lt; <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> &gt; &gt; <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::transition_mat_t </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a> &amp;&#160;</td>
-          <td class="paramname"><em>policy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a> &amp;&#160;</td>
-          <td class="paramname"><em>nature</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructs a transpose of the transition matrix for the policy. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">policy</td><td>Policy of the decision maker </td></tr>
-    <tr><td class="paramname">nature</td><td>Policy of the nature </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2b035a1f7059ce15e89cb6c2e526ef31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b035a1f7059ce15e89cb6c2e526ef31">&#9670;&nbsp;</a></span>vi_gs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class SType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::vi_gs </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970b">Uncertainty</a>&#160;</td>
-          <td class="paramname"><em>uncert</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>&#160;</td>
-          <td class="paramname"><em>valuefunction</em> = <code><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>(0)</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned long&#160;</td>
-          <td class="paramname"><em>iterations</em> = <code><a class="el" href="namespacecraam.html#add2f4b94e6d33c32f1755954fcd63f1e">MAXITER</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>maxresidual</em> = <code><a class="el" href="namespacecraam.html#ae8c311f057fe3d1199ea2d825870df8d">SOLPREC</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gauss-Seidel varaint of value iteration (not parallelized). </p>
-<p>This function is suitable for computing the value function of a finite state MDP. If the states are ordered correctly, one iteration is enough to compute the optimal value function. Since the value function is updated from the first state to the last, the states should be ordered in reverse temporal order.</p>
-<p>Because this function updates the array value during the iteration, it may be difficult to paralelize easily. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">uncert</td><td>Type of realization of the uncertainty </td></tr>
-    <tr><td class="paramname">discount</td><td>Discount factor. </td></tr>
-    <tr><td class="paramname">valuefunction</td><td>Initial value function. Passed by value, because it is modified. </td></tr>
-    <tr><td class="paramname">iterations</td><td>Maximal number of iterations to run </td></tr>
-    <tr><td class="paramname">maxresidual</td><td>Stop when the maximal residual falls below this value. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a1e16e565fa02d5bec19b96962aef4447"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e16e565fa02d5bec19b96962aef4447">&#9670;&nbsp;</a></span>vi_jac()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class SType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::vi_jac </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970b">Uncertainty</a>&#160;</td>
-          <td class="paramname"><em>uncert</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;&#160;</td>
-          <td class="paramname"><em>valuefunction</em> = <code><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>(0)</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned long&#160;</td>
-          <td class="paramname"><em>iterations</em> = <code><a class="el" href="namespacecraam.html#add2f4b94e6d33c32f1755954fcd63f1e">MAXITER</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>maxresidual</em> = <code><a class="el" href="namespacecraam.html#ae8c311f057fe3d1199ea2d825870df8d">SOLPREC</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Jacobi variant of value iteration. </p>
-<p>This method uses OpenMP to parallelize the computation. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">uncert</td><td>Type of realization of the uncertainty </td></tr>
-    <tr><td class="paramname">valuefunction</td><td>Initial value function. </td></tr>
-    <tr><td class="paramname">discount</td><td>Discount factor. </td></tr>
-    <tr><td class="paramname">iterations</td><td>Maximal number of iterations to run </td></tr>
-    <tr><td class="paramname">maxresidual</td><td>Stop when the maximal residual falls below this value. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a35823e3e47b52f8684e26ae92361beba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35823e3e47b52f8684e26ae92361beba">&#9670;&nbsp;</a></span>vi_jac_fix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class SType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="classcraam_1_1GRMDP.html">craam::GRMDP</a>&lt; SType &gt;::vi_jac_fix </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>discount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1GRMDP.html#a71724a04869ad754577135858e4e0535">ActionPolicy</a> &amp;&#160;</td>
-          <td class="paramname"><em>policy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classcraam_1_1GRMDP.html#a4a9b5c9cc0a266a1b04275e1d1a7aa90">OutcomePolicy</a> &amp;&#160;</td>
-          <td class="paramname"><em>natpolicy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;&#160;</td>
-          <td class="paramname"><em>valuefunction</em> = <code><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>(0)</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned long&#160;</td>
-          <td class="paramname"><em>iterations</em> = <code><a class="el" href="namespacecraam.html#add2f4b94e6d33c32f1755954fcd63f1e">MAXITER</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>maxresidual</em> = <code><a class="el" href="namespacecraam.html#ae8c311f057fe3d1199ea2d825870df8d">SOLPREC</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Value function evaluation using Jacobi iteration for a fixed policy. </p>
-<p>and nature. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">valuefunction</td><td>Initial value function </td></tr>
-    <tr><td class="paramname">discount</td><td>Discount factor </td></tr>
-    <tr><td class="paramname">policy</td><td>Decision-maker's policy </td></tr>
-    <tr><td class="paramname">natpolicy</td><td>Nature's policy </td></tr>
-    <tr><td class="paramname">iterations</td><td>Maximal number of inner loop value iterations </td></tr>
-    <tr><td class="paramname">maxresidual</td><td>Stop the inner policy iteration when the residual drops below this threshold. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Computed (approximate) solution (value function) </dd></dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/<a class="el" href="RMDP_8hpp_source.html">RMDP.hpp</a></li>
-<li>src/RMDP.cpp</li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>craam/<a class="el" href="RMDP_8hpp_source.html">RMDP.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 27 2017 09:21:37 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 20 2017 23:37:17 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

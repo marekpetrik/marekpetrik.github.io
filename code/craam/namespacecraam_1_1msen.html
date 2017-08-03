@@ -28,9 +28,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CRAAM
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">2.0.0</span>
    </div>
-   <div id="projectbrief">RobustandApproximateMarkovDecisionProcesses</div>
+   <div id="projectbrief">Robust and Approximate Markov Decision Processes</div>
   </td>
  </tr>
  </tbody>
@@ -147,16 +147,16 @@ template&lt;class Sim , class... U&gt; </td></tr>
 <tr class="memdesc:a166a895b707b88f86f4b9e52bac9c856"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper function that constructs a samples object based on the simulator that is provided to it. <br /></td></tr>
 <tr class="separator:a166a895b707b88f86f4b9e52bac9c856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fe01a82d2b936bd5a2e5db688548d87"><td class="memTemplParams" colspan="2">template&lt;class Sim , class SampleType  = Samples&lt;typename Sim::State, typename Sim::Action&gt;&gt; </td></tr>
-<tr class="memitem:a1fe01a82d2b936bd5a2e5db688548d87"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam_1_1msen.html#a1fe01a82d2b936bd5a2e5db688548d87">simulate</a> (Sim &amp;sim, SampleType &amp;samples, const function&lt; typename Sim::Action(typename Sim::State &amp;)&gt; &amp;policy, long horizon, long runs, long tran_limit=-1, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> prob_term=0.0, random_device::result_type seed=random_device{}())</td></tr>
+<tr class="memitem:a1fe01a82d2b936bd5a2e5db688548d87"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam_1_1msen.html#a1fe01a82d2b936bd5a2e5db688548d87">simulate</a> (Sim &amp;sim, SampleType &amp;samples, const function&lt; typename Sim::Action(typename Sim::State &amp;)&gt; &amp;policy, long horizon, long runs, long tran_limit=-1, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> prob_term=0.0, random_device::result_type seed=random_device{}())</td></tr>
 <tr class="memdesc:a1fe01a82d2b936bd5a2e5db688548d87"><td class="mdescLeft">&#160;</td><td class="mdescRight"><hr/>
   <a href="#a1fe01a82d2b936bd5a2e5db688548d87">More...</a><br /></td></tr>
 <tr class="separator:a1fe01a82d2b936bd5a2e5db688548d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60390ac1c7e604c490b35b91eebb56fb"><td class="memTemplParams" colspan="2">template&lt;class Sim , class SampleType  = Samples&lt;typename Sim::State, typename Sim::Action&gt;&gt; </td></tr>
-<tr class="memitem:a60390ac1c7e604c490b35b91eebb56fb"><td class="memTemplItemLeft" align="right" valign="top">SampleType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam_1_1msen.html#a60390ac1c7e604c490b35b91eebb56fb">simulate</a> (Sim &amp;sim, const function&lt; typename Sim::Action(typename Sim::State &amp;)&gt; &amp;policy, long horizon, long runs, long tran_limit=-1, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> prob_term=0.0, random_device::result_type seed=random_device{}())</td></tr>
+<tr class="memitem:a60390ac1c7e604c490b35b91eebb56fb"><td class="memTemplItemLeft" align="right" valign="top">SampleType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam_1_1msen.html#a60390ac1c7e604c490b35b91eebb56fb">simulate</a> (Sim &amp;sim, const function&lt; typename Sim::Action(typename Sim::State &amp;)&gt; &amp;policy, long horizon, long runs, long tran_limit=-1, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> prob_term=0.0, random_device::result_type seed=random_device{}())</td></tr>
 <tr class="memdesc:a60390ac1c7e604c490b35b91eebb56fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the simulator and generates samples.  <a href="#a60390ac1c7e604c490b35b91eebb56fb">More...</a><br /></td></tr>
 <tr class="separator:a60390ac1c7e604c490b35b91eebb56fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0de3dc7bc254f76aed1d75d90906cde"><td class="memTemplParams" colspan="2">template&lt;class Sim &gt; </td></tr>
-<tr class="memitem:ae0de3dc7bc254f76aed1d75d90906cde"><td class="memTemplItemLeft" align="right" valign="top">pair&lt; vector&lt; typename Sim::State &gt;, <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam_1_1msen.html#ae0de3dc7bc254f76aed1d75d90906cde">simulate_return</a> (Sim &amp;sim, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> discount, const function&lt; typename Sim::Action(typename Sim::State &amp;)&gt; &amp;policy, long horizon, long runs, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> prob_term=0.0, random_device::result_type seed=random_device{}())</td></tr>
+<tr class="memitem:ae0de3dc7bc254f76aed1d75d90906cde"><td class="memTemplItemLeft" align="right" valign="top">pair&lt; vector&lt; typename Sim::State &gt;, <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam_1_1msen.html#ae0de3dc7bc254f76aed1d75d90906cde">simulate_return</a> (Sim &amp;sim, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> discount, const function&lt; typename Sim::Action(typename Sim::State &amp;)&gt; &amp;policy, long horizon, long runs, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> prob_term=0.0, random_device::result_type seed=random_device{}())</td></tr>
 <tr class="memdesc:ae0de3dc7bc254f76aed1d75d90906cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the simulator and computer the returns from the simulation.  <a href="#ae0de3dc7bc254f76aed1d75d90906cde">More...</a><br /></td></tr>
 <tr class="separator:ae0de3dc7bc254f76aed1d75d90906cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -244,7 +244,7 @@ template&lt;class Sim , class SampleType  = Samples&lt;typename Sim::State, type
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td>
           <td class="paramname"><em>prob_term</em> = <code>0.0</code>, </td>
         </tr>
         <tr>
@@ -327,7 +327,7 @@ template&lt;class Sim , class SampleType  = Samples&lt;typename Sim::State, type
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td>
           <td class="paramname"><em>prob_term</em> = <code>0.0</code>, </td>
         </tr>
         <tr>
@@ -359,7 +359,7 @@ template&lt;class Sim , class SampleType  = Samples&lt;typename Sim::State, type
 template&lt;class Sim &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">pair&lt;vector&lt;typename Sim::State&gt;, <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>&gt; craam::msen::simulate_return </td>
+          <td class="memname">pair&lt;vector&lt;typename Sim::State&gt;, <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a>&gt; craam::msen::simulate_return </td>
           <td>(</td>
           <td class="paramtype">Sim &amp;&#160;</td>
           <td class="paramname"><em>sim</em>, </td>
@@ -367,7 +367,7 @@ template&lt;class Sim &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td>
           <td class="paramname"><em>discount</em>, </td>
         </tr>
         <tr>
@@ -391,7 +391,7 @@ template&lt;class Sim &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td>
           <td class="paramname"><em>prob_term</em> = <code>0.0</code>, </td>
         </tr>
         <tr>
@@ -434,7 +434,7 @@ template&lt;class Sim &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 27 2017 09:21:37 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 20 2017 23:37:18 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

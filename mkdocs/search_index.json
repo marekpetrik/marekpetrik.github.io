@@ -116,38 +116,43 @@
             "title": "Robust Aggregation for MDPs"
         },
         {
-            "location": "/teaching/adv_topics_ml_16/",
-            "text": "CS980: Advanced Machine Learning\n\n\nWhere\n\n\nKingsbury N233\n\n\nWhen\n\n\nMW  3:40pm - 5:00pm\n\n\nWhat\n\n\nIn this seminar, we will cover how to make good decisions using machine learning. \nReinforcement learning\n and \nmulti-armed bandits\n are just some of the methods that combine decision making with machine learning. These methods play a crucial role in countless real problems such as when personalizing websites, navigating robots, managing supply chains and revenue, and even when playing Go! \n\n\nWe will cover how to trade off \nexploitation\n and \nexploration\n; that is when to act with the current data versus acquiring additional data to make a better decision later. The exploration/exploitation tradeoff is a key challenge in reinforcement learning. We will also cover the related issues of \nreliability\n and \nrobustness\n in machine learning.\n\n\nSome of the specific topics we will cover are:\n\n\n\n\nA/B testing and randomized experiments\n\n\nOptimizer's curse\n\n\nThompson sampling, UCB, EXP3\n\n\n(Robust) Markov decision processes\n\n\nGittins and Whittle indices\n\n\nTree and policy search\n\n\nCovariate shift\n\n\n\n\nThe class will start with an overview of fundamental problems, methods, and techniques and will continue with student presentations and a research project.\n\n\nPre-requisites\n\n\nStatistics and some linear algebra. Machine learning is not a pre-requisite. We will cover topics that are closely related to ML but do not depend on it.\n\n\nMore details\n\n\nPlease see the class website: \nhttps://bitbucket.org/2016advml/class/wiki",
-            "title": "2016: Advanced ML"
+            "location": "/teaching/adv_topics_ml_17/",
+            "text": "CS980: Advanced ML: Reinforcement Learning\n\n\nWhere\n\n\nKingsbury N233\n\n\nWhen\n\n\nMW  3:40pm - 5:00pm\n\n\nWhat\n\n\nIn this seminar, we will cover \nreinforcement learning\n, or how to make good decisions driven by data. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Reinforcement learning methods can be applied in various domains, such as when managing ecosystems, optimizing website, to robotics, and healthcare.\n\n\nOur focus will be on reinforcement learning that can learn from batch data sets without interacting with the environment. The algorithms have to learn how to interact with the environment based on a historical data. These batch methods are important when the cost of failure is high, such as in healthcare of agriculture, when using trial and error is impractical.\n\n\nSome of the topics that we will cover are:\n\n\n\n\nMarkov decision processes: Policy iteration, Value iteration, Linear programming\n\n\nPolicy evaluation (online and offline): TD, LSTD\n\n\nBatch policy improvement: Q-learning, LSPI\n\n\nConvex optimization: Linear programming\n\n\n\n\nThe focus of the class will be on depth rather than breadth. The main goal of the class is delivering an interesting reinforcement learning group project. As much as possible we will work on the same code-base using a subset of C++, Python, and R. The class will require independent study of reading materials and in-class group problem solving and paper discussions.\n\n\nTextbooks\n\n\nFollow the links for free online versions.\n\n\nOur main textbook will be:\n\n\n\n\nSzepesv\u00e1ri, C. (2010). \nAlgorithms for Reinforcement Learning\n. Synthesis Lectures on Artificial Intelligence and Machine Learning, 4(1), 1\u2013103.\n\n\n\n\nAdditional material can be found in:\n\n\n\n\nPuterman, M. L. (2005). Markov decision processes: Discrete stochastic dynamic programming. John Wiley & Sons, Inc.\n\n\nSutton, R. S., & Barto, A. (1998). \nReinforcement learning\n. MIT Press.\n\n\n\n\nPre-requisites\n\n\nStatistics, some linear algebra and ideally familiarity with machine learning. \n\n\nMore details",
+            "title": "2017: Advanced ML"
         },
         {
-            "location": "/teaching/adv_topics_ml_16/#cs980-advanced-machine-learning",
+            "location": "/teaching/adv_topics_ml_17/#cs980-advanced-ml-reinforcement-learning",
             "text": "",
-            "title": "CS980: Advanced Machine Learning"
+            "title": "CS980: Advanced ML: Reinforcement Learning"
         },
         {
-            "location": "/teaching/adv_topics_ml_16/#where",
+            "location": "/teaching/adv_topics_ml_17/#where",
             "text": "Kingsbury N233",
             "title": "Where"
         },
         {
-            "location": "/teaching/adv_topics_ml_16/#when",
+            "location": "/teaching/adv_topics_ml_17/#when",
             "text": "MW  3:40pm - 5:00pm",
             "title": "When"
         },
         {
-            "location": "/teaching/adv_topics_ml_16/#what",
-            "text": "In this seminar, we will cover how to make good decisions using machine learning.  Reinforcement learning  and  multi-armed bandits  are just some of the methods that combine decision making with machine learning. These methods play a crucial role in countless real problems such as when personalizing websites, navigating robots, managing supply chains and revenue, and even when playing Go!   We will cover how to trade off  exploitation  and  exploration ; that is when to act with the current data versus acquiring additional data to make a better decision later. The exploration/exploitation tradeoff is a key challenge in reinforcement learning. We will also cover the related issues of  reliability  and  robustness  in machine learning.  Some of the specific topics we will cover are:   A/B testing and randomized experiments  Optimizer's curse  Thompson sampling, UCB, EXP3  (Robust) Markov decision processes  Gittins and Whittle indices  Tree and policy search  Covariate shift   The class will start with an overview of fundamental problems, methods, and techniques and will continue with student presentations and a research project.",
+            "location": "/teaching/adv_topics_ml_17/#what",
+            "text": "In this seminar, we will cover  reinforcement learning , or how to make good decisions driven by data. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Reinforcement learning methods can be applied in various domains, such as when managing ecosystems, optimizing website, to robotics, and healthcare.  Our focus will be on reinforcement learning that can learn from batch data sets without interacting with the environment. The algorithms have to learn how to interact with the environment based on a historical data. These batch methods are important when the cost of failure is high, such as in healthcare of agriculture, when using trial and error is impractical.  Some of the topics that we will cover are:   Markov decision processes: Policy iteration, Value iteration, Linear programming  Policy evaluation (online and offline): TD, LSTD  Batch policy improvement: Q-learning, LSPI  Convex optimization: Linear programming   The focus of the class will be on depth rather than breadth. The main goal of the class is delivering an interesting reinforcement learning group project. As much as possible we will work on the same code-base using a subset of C++, Python, and R. The class will require independent study of reading materials and in-class group problem solving and paper discussions.",
             "title": "What"
         },
         {
-            "location": "/teaching/adv_topics_ml_16/#pre-requisites",
-            "text": "Statistics and some linear algebra. Machine learning is not a pre-requisite. We will cover topics that are closely related to ML but do not depend on it.",
+            "location": "/teaching/adv_topics_ml_17/#textbooks",
+            "text": "Follow the links for free online versions.  Our main textbook will be:   Szepesv\u00e1ri, C. (2010).  Algorithms for Reinforcement Learning . Synthesis Lectures on Artificial Intelligence and Machine Learning, 4(1), 1\u2013103.   Additional material can be found in:   Puterman, M. L. (2005). Markov decision processes: Discrete stochastic dynamic programming. John Wiley & Sons, Inc.  Sutton, R. S., & Barto, A. (1998).  Reinforcement learning . MIT Press.",
+            "title": "Textbooks"
+        },
+        {
+            "location": "/teaching/adv_topics_ml_17/#pre-requisites",
+            "text": "Statistics, some linear algebra and ideally familiarity with machine learning.",
             "title": "Pre-requisites"
         },
         {
-            "location": "/teaching/adv_topics_ml_16/#more-details",
-            "text": "Please see the class website:  https://bitbucket.org/2016advml/class/wiki",
+            "location": "/teaching/adv_topics_ml_17/#more-details",
+            "text": "",
             "title": "More details"
         },
         {
@@ -221,14 +226,54 @@
             "title": "Pre-requisites"
         },
         {
+            "location": "/teaching/adv_topics_ml_16/",
+            "text": "CS980: Advanced Machine Learning\n\n\nWhere\n\n\nKingsbury N233\n\n\nWhen\n\n\nMW  3:40pm - 5:00pm\n\n\nWhat\n\n\nIn this seminar, we will cover how to make good decisions using machine learning. \nReinforcement learning\n and \nmulti-armed bandits\n are just some of the methods that combine decision making with machine learning. These methods play a crucial role in countless real problems such as when personalizing websites, navigating robots, managing supply chains and revenue, and even when playing Go! \n\n\nWe will cover how to trade off \nexploitation\n and \nexploration\n; that is when to act with the current data versus acquiring additional data to make a better decision later. The exploration/exploitation tradeoff is a key challenge in reinforcement learning. We will also cover the related issues of \nreliability\n and \nrobustness\n in machine learning.\n\n\nSome of the specific topics we will cover are:\n\n\n\n\nA/B testing and randomized experiments\n\n\nOptimizer's curse\n\n\nThompson sampling, UCB, EXP3\n\n\n(Robust) Markov decision processes\n\n\nGittins and Whittle indices\n\n\nTree and policy search\n\n\nCovariate shift\n\n\n\n\nThe class will start with an overview of fundamental problems, methods, and techniques and will continue with student presentations and a research project.\n\n\nPre-requisites\n\n\nStatistics and some linear algebra. Machine learning is not a pre-requisite. We will cover topics that are closely related to ML but do not depend on it.\n\n\nMore details\n\n\nPlease see the class website: \nhttps://bitbucket.org/2016advml/class/wiki",
+            "title": "2016: Advanced ML"
+        },
+        {
+            "location": "/teaching/adv_topics_ml_16/#cs980-advanced-machine-learning",
+            "text": "",
+            "title": "CS980: Advanced Machine Learning"
+        },
+        {
+            "location": "/teaching/adv_topics_ml_16/#where",
+            "text": "Kingsbury N233",
+            "title": "Where"
+        },
+        {
+            "location": "/teaching/adv_topics_ml_16/#when",
+            "text": "MW  3:40pm - 5:00pm",
+            "title": "When"
+        },
+        {
+            "location": "/teaching/adv_topics_ml_16/#what",
+            "text": "In this seminar, we will cover how to make good decisions using machine learning.  Reinforcement learning  and  multi-armed bandits  are just some of the methods that combine decision making with machine learning. These methods play a crucial role in countless real problems such as when personalizing websites, navigating robots, managing supply chains and revenue, and even when playing Go!   We will cover how to trade off  exploitation  and  exploration ; that is when to act with the current data versus acquiring additional data to make a better decision later. The exploration/exploitation tradeoff is a key challenge in reinforcement learning. We will also cover the related issues of  reliability  and  robustness  in machine learning.  Some of the specific topics we will cover are:   A/B testing and randomized experiments  Optimizer's curse  Thompson sampling, UCB, EXP3  (Robust) Markov decision processes  Gittins and Whittle indices  Tree and policy search  Covariate shift   The class will start with an overview of fundamental problems, methods, and techniques and will continue with student presentations and a research project.",
+            "title": "What"
+        },
+        {
+            "location": "/teaching/adv_topics_ml_16/#pre-requisites",
+            "text": "Statistics and some linear algebra. Machine learning is not a pre-requisite. We will cover topics that are closely related to ML but do not depend on it.",
+            "title": "Pre-requisites"
+        },
+        {
+            "location": "/teaching/adv_topics_ml_16/#more-details",
+            "text": "Please see the class website:  https://bitbucket.org/2016advml/class/wiki",
+            "title": "More details"
+        },
+        {
             "location": "/teaching/",
-            "text": "Teaching\n\n\nSpring 2017\n\n\nIntroduction to Machine Learning\n\n\nFall 2016\n\n\nAdvanced Topics in Machine Learning",
+            "text": "Teaching\n\n\nFall 2017\n\n\nReinforcement Learning\n\n\nSpring 2017\n\n\nIntroduction to Machine Learning\n\n\nFall 2016\n\n\nAdvanced Topics in Machine Learning",
             "title": "List All"
         },
         {
             "location": "/teaching/#teaching",
             "text": "",
             "title": "Teaching"
+        },
+        {
+            "location": "/teaching/#fall-2017",
+            "text": "Reinforcement Learning",
+            "title": "Fall 2017"
         },
         {
             "location": "/teaching/#spring-2017",

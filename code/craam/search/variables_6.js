@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['obscount',['obscount',['../classcraam_1_1impl_1_1MDPI.html#ab5d8a65f76ca583576d2f085b89a5b28',1,'craam::impl::MDPI']]],
-  ['outcome',['outcome',['../classcraam_1_1RegularAction.html#a0f1f01a72f3fc1669157affd2e825811',1,'craam::RegularAction']]],
-  ['outcomes',['outcomes',['../classcraam_1_1OutcomeManagement.html#a6cd9f71ed3f7ecae087b8d6e3b4b8b44',1,'craam::OutcomeManagement']]]
+  ['natpolicy',['natpolicy',['../structcraam_1_1algorithms_1_1SolutionRobust.html#a3a550ca9f9b45f3ba5a4d567635b53e5',1,'craam::algorithms::SolutionRobust']]],
+  ['natspec',['natspec',['../classcraam_1_1algorithms_1_1PolicyNature.html#af26a6b0e33951b161ac1011eaa2bac42',1,'craam::algorithms::PolicyNature']]]
 ];

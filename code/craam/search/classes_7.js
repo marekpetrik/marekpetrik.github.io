@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weightedoutcomeaction',['WeightedOutcomeAction',['../classcraam_1_1WeightedOutcomeAction.html',1,'craam']]]
+  ['transition',['Transition',['../classcraam_1_1Transition.html',1,'craam']]]
 ];

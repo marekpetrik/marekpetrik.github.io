@@ -28,9 +28,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CRAAM
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">2.0.0</span>
    </div>
-   <div id="projectbrief">RobustandApproximateMarkovDecisionProcesses</div>
+   <div id="projectbrief">Robust and Approximate Markov Decision Processes</div>
   </td>
  </tr>
  </tbody>
@@ -70,7 +70,6 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -83,6 +82,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespacecraam_1_1algorithms"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam_1_1algorithms.html">algorithms</a></td></tr>
+<tr class="memdesc:namespacecraam_1_1algorithms"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main namespace for algorithms that operate on MDPs and RMDPs. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacecraam_1_1impl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam_1_1impl.html">impl</a></td></tr>
 <tr class="memdesc:namespacecraam_1_1impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace with tools for implementable, interpretable, and aggregated MDPs. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,14 +94,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1DiscreteOutcomeAction.html">DiscreteOutcomeAction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An action in the robust MDP with discrete outcomes.  <a href="classcraam_1_1DiscreteOutcomeAction.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GRMDP.html">GRMDP</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A general robust Markov decision process.  <a href="classcraam_1_1GRMDP.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1GSolution.html">GSolution</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A solution to a robust MDP.  <a href="classcraam_1_1GSolution.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1OutcomeManagement.html">OutcomeManagement</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that manages creation and access to outcomes to be used by actions.  <a href="classcraam_1_1OutcomeManagement.html#details">More...</a><br /></td></tr>
@@ -114,225 +110,134 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents sparse transition probabilities and rewards from a single state.  <a href="classcraam_1_1Transition.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcraam_1_1WeightedOutcomeAction.html">WeightedOutcomeAction</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An action in a robust MDP in which the outcomes are defined by a weighted function and a threshold.  <a href="classcraam_1_1WeightedOutcomeAction.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An action in a robust MDP that allows for outcomes chosen by nature.  <a href="classcraam_1_1WeightedOutcomeAction.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a83cacdfa40e4f7202af6f4b7aeccf1f9"><td class="memItemLeft" align="right" valign="top"><a id="a83cacdfa40e4f7202af6f4b7aeccf1f9"></a>
-typedef <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">WeightedOutcomeAction</a>&lt; <a class="el" href="namespacecraam.html#a090c9dc018a1ba74711238268f8213dc">worstcase_l1</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a83cacdfa40e4f7202af6f4b7aeccf1f9">L1OutcomeAction</a></td></tr>
-<tr class="memdesc:a83cacdfa40e4f7202af6f4b7aeccf1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action with robust outcomes with L1 constraints on the distribution. <br /></td></tr>
-<tr class="separator:a83cacdfa40e4f7202af6f4b7aeccf1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad526e720f0cb0df1020efaab65669d47"><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a></td></tr>
-<tr class="memdesc:ad526e720f0cb0df1020efaab65669d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default precision used throughout the code.  <a href="#ad526e720f0cb0df1020efaab65669d47">More...</a><br /></td></tr>
-<tr class="separator:ad526e720f0cb0df1020efaab65669d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a321eec4e65c9fe25bacb34106d1eb491"><td class="memItemLeft" align="right" valign="top"><a id="a321eec4e65c9fe25bacb34106d1eb491"></a>
-typedef vector&lt; <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a></td></tr>
-<tr class="memdesc:a321eec4e65c9fe25bacb34106d1eb491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default numericalk vector. <br /></td></tr>
-<tr class="separator:a321eec4e65c9fe25bacb34106d1eb491"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a363386b29e10c20e7f1dec321a78c197"><td class="memItemLeft" align="right" valign="top"><a id="a363386b29e10c20e7f1dec321a78c197"></a>
-typedef vector&lt; long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a363386b29e10c20e7f1dec321a78c197">indvec</a></td></tr>
-<tr class="memdesc:a363386b29e10c20e7f1dec321a78c197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default index vector. <br /></td></tr>
-<tr class="separator:a363386b29e10c20e7f1dec321a78c197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33aa416100a4210ec107161332deaaf8"><td class="memItemLeft" align="right" valign="top">typedef pair&lt; <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> &gt;(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a33aa416100a4210ec107161332deaaf8">NatureConstr</a>) (<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;z, <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;q, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> t)</td></tr>
-<tr class="memdesc:a33aa416100a4210ec107161332deaaf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function representing the constraints on nature.  <a href="#a33aa416100a4210ec107161332deaaf8">More...</a><br /></td></tr>
-<tr class="separator:a33aa416100a4210ec107161332deaaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d59929435946aa3b9f860ca5d0b051f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classcraam_1_1GRMDP.html">GRMDP</a>&lt; <a class="el" href="namespacecraam.html#aa3098e6f3c10e11c79f23508afc3b8c4">RegularState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f">MDP</a></td></tr>
-<tr class="memdesc:a9d59929435946aa3b9f860ca5d0b051f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular MDP with discrete actions and one outcome per action.  <a href="#a9d59929435946aa3b9f860ca5d0b051f">More...</a><br /></td></tr>
+<tr class="memitem:acb3b6f7746d387b74d5542a5e343ea1d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> = double</td></tr>
+<tr class="memdesc:acb3b6f7746d387b74d5542a5e343ea1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default precision used throughout the code.  <a href="#acb3b6f7746d387b74d5542a5e343ea1d">More...</a><br /></td></tr>
+<tr class="separator:acb3b6f7746d387b74d5542a5e343ea1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af393bad5be47e3d278e3a624e67be376"><td class="memItemLeft" align="right" valign="top"><a id="af393bad5be47e3d278e3a624e67be376"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> = vector&lt; <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> &gt;</td></tr>
+<tr class="memdesc:af393bad5be47e3d278e3a624e67be376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default numerical vector. <br /></td></tr>
+<tr class="separator:af393bad5be47e3d278e3a624e67be376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca27053b22486ddfd832df213e958f5"><td class="memItemLeft" align="right" valign="top"><a id="a0ca27053b22486ddfd832df213e958f5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a0ca27053b22486ddfd832df213e958f5">indvec</a> = vector&lt; long &gt;</td></tr>
+<tr class="memdesc:a0ca27053b22486ddfd832df213e958f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default index vector. <br /></td></tr>
+<tr class="separator:a0ca27053b22486ddfd832df213e958f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab13371d5f871b396622e494d03d0c059"><td class="memItemLeft" align="right" valign="top"><a id="ab13371d5f871b396622e494d03d0c059"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#ab13371d5f871b396622e494d03d0c059">vec_scal_t</a> = pair&lt; <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a>, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> &gt;</td></tr>
+<tr class="memdesc:ab13371d5f871b396622e494d03d0c059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pair of a vector and a scalar. <br /></td></tr>
+<tr class="separator:ab13371d5f871b396622e494d03d0c059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a54162887aba4ef983be0e17c879e3"><td class="memItemLeft" align="right" valign="top"><a id="a21a54162887aba4ef983be0e17c879e3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a21a54162887aba4ef983be0e17c879e3">ind_vec_scal_t</a> = tuple&lt; <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>, <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a>, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> &gt;</td></tr>
+<tr class="memdesc:a21a54162887aba4ef983be0e17c879e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tuple of a index, vector and a scalar. <br /></td></tr>
+<tr class="separator:a21a54162887aba4ef983be0e17c879e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d59929435946aa3b9f860ca5d0b051f"><td class="memItemLeft" align="right" valign="top"><a id="a9d59929435946aa3b9f860ca5d0b051f"></a>
+typedef <a class="el" href="classcraam_1_1GRMDP.html">GRMDP</a>&lt; <a class="el" href="namespacecraam.html#aa3098e6f3c10e11c79f23508afc3b8c4">RegularState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f">MDP</a></td></tr>
+<tr class="memdesc:a9d59929435946aa3b9f860ca5d0b051f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular MDP with discrete actions and one outcome per action. <br /></td></tr>
 <tr class="separator:a9d59929435946aa3b9f860ca5d0b051f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d936882aaf2071dc0e8b708a4a35bb7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classcraam_1_1GRMDP.html">GRMDP</a>&lt; <a class="el" href="namespacecraam.html#a0d73235b258cd971e16996bd8631c615">DiscreteRobustState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a5d936882aaf2071dc0e8b708a4a35bb7">RMDP_D</a></td></tr>
-<tr class="memdesc:a5d936882aaf2071dc0e8b708a4a35bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An uncertain MDP with discrete robustness.  <a href="#a5d936882aaf2071dc0e8b708a4a35bb7">More...</a><br /></td></tr>
-<tr class="separator:a5d936882aaf2071dc0e8b708a4a35bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81699764382753e44c8806b8959e3414"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classcraam_1_1GRMDP.html">GRMDP</a>&lt; <a class="el" href="namespacecraam.html#a8c144630644267ecf6e62d0e39363965">L1RobustState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414">RMDP_L1</a></td></tr>
-<tr class="memdesc:a81699764382753e44c8806b8959e3414"><td class="mdescLeft">&#160;</td><td class="mdescRight">An uncertain MDP with L1 constrained robustness.  <a href="#a81699764382753e44c8806b8959e3414">More...</a><br /></td></tr>
-<tr class="separator:a81699764382753e44c8806b8959e3414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca02932188df492fe829c1d54548d84"><td class="memItemLeft" align="right" valign="top"><a id="a0ca02932188df492fe829c1d54548d84"></a>
-typedef <a class="el" href="classcraam_1_1GSolution.html">GSolution</a>&lt; long, long &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a0ca02932188df492fe829c1d54548d84">SolutionDscDsc</a></td></tr>
-<tr class="memdesc:a0ca02932188df492fe829c1d54548d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solution with discrete action and outcome policies. <br /></td></tr>
-<tr class="separator:a0ca02932188df492fe829c1d54548d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af64c98c7312fbea06c6a5937a49b58f0"><td class="memItemLeft" align="right" valign="top"><a id="af64c98c7312fbea06c6a5937a49b58f0"></a>
-typedef <a class="el" href="classcraam_1_1GSolution.html">GSolution</a>&lt; long, <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#af64c98c7312fbea06c6a5937a49b58f0">SolutionDscProb</a></td></tr>
-<tr class="memdesc:af64c98c7312fbea06c6a5937a49b58f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solution with discrete action and randomized outcome policy. <br /></td></tr>
-<tr class="separator:af64c98c7312fbea06c6a5937a49b58f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b3d45d32289671966e6ad1057c8a67"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classcraam_1_1GRMDP.html">GRMDP</a>&lt; <a class="el" href="namespacecraam.html#af6a95cf995a232298306bb961b9d9daa">WeightedRobustState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a05b3d45d32289671966e6ad1057c8a67">RMDP</a></td></tr>
+<tr class="memdesc:a05b3d45d32289671966e6ad1057c8a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">An uncertain MDP with outcomes and weights.  <a href="#a05b3d45d32289671966e6ad1057c8a67">More...</a><br /></td></tr>
+<tr class="separator:a05b3d45d32289671966e6ad1057c8a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3098e6f3c10e11c79f23508afc3b8c4"><td class="memItemLeft" align="right" valign="top"><a id="aa3098e6f3c10e11c79f23508afc3b8c4"></a>
 typedef <a class="el" href="classcraam_1_1SAState.html">SAState</a>&lt; <a class="el" href="classcraam_1_1RegularAction.html">RegularAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#aa3098e6f3c10e11c79f23508afc3b8c4">RegularState</a></td></tr>
 <tr class="memdesc:aa3098e6f3c10e11c79f23508afc3b8c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular MDP state with no outcomes. <br /></td></tr>
 <tr class="separator:aa3098e6f3c10e11c79f23508afc3b8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d73235b258cd971e16996bd8631c615"><td class="memItemLeft" align="right" valign="top"><a id="a0d73235b258cd971e16996bd8631c615"></a>
-typedef <a class="el" href="classcraam_1_1SAState.html">SAState</a>&lt; <a class="el" href="classcraam_1_1DiscreteOutcomeAction.html">DiscreteOutcomeAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a0d73235b258cd971e16996bd8631c615">DiscreteRobustState</a></td></tr>
-<tr class="memdesc:a0d73235b258cd971e16996bd8631c615"><td class="mdescLeft">&#160;</td><td class="mdescRight">State with uncertain outcomes; unconstrained and now weights. <br /></td></tr>
-<tr class="separator:a0d73235b258cd971e16996bd8631c615"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c144630644267ecf6e62d0e39363965"><td class="memItemLeft" align="right" valign="top"><a id="a8c144630644267ecf6e62d0e39363965"></a>
-typedef <a class="el" href="classcraam_1_1SAState.html">SAState</a>&lt; <a class="el" href="namespacecraam.html#a83cacdfa40e4f7202af6f4b7aeccf1f9">L1OutcomeAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a8c144630644267ecf6e62d0e39363965">L1RobustState</a></td></tr>
-<tr class="memdesc:a8c144630644267ecf6e62d0e39363965"><td class="mdescLeft">&#160;</td><td class="mdescRight">State with uncertain outcomes with L1 constraints on the distribution. <br /></td></tr>
-<tr class="separator:a8c144630644267ecf6e62d0e39363965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a28345a790e3a8a01c57a7e509837970b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970b">Uncertainty</a> { <a class="el" href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970bacd8257a80d3498e67b8972607c8377c0">Uncertainty::Robust</a> = 0, 
-<a class="el" href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970bad3eccf1f42894b31bc0f2e6a2fd0c0b3">Uncertainty::Optimistic</a> = 1, 
-<a class="el" href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970bab1897515d548a960afe49ecf66a29021">Uncertainty::Average</a> = 2
- }<tr class="memdesc:a28345a790e3a8a01c57a7e509837970b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the behavior of nature in the uncertain MDP.  <a href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970b">More...</a><br /></td></tr>
-</td></tr>
-<tr class="separator:a28345a790e3a8a01c57a7e509837970b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a95cf995a232298306bb961b9d9daa"><td class="memItemLeft" align="right" valign="top"><a id="af6a95cf995a232298306bb961b9d9daa"></a>
+typedef <a class="el" href="classcraam_1_1SAState.html">SAState</a>&lt; <a class="el" href="classcraam_1_1WeightedOutcomeAction.html">WeightedOutcomeAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#af6a95cf995a232298306bb961b9d9daa">WeightedRobustState</a></td></tr>
+<tr class="memdesc:af6a95cf995a232298306bb961b9d9daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">State with uncertain outcomes with L1 constraints on the distribution. <br /></td></tr>
+<tr class="separator:af6a95cf995a232298306bb961b9d9daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a66ff4a92165f64a9d65bcd1e1801f55f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a66ff4a92165f64a9d65bcd1e1801f55f"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a66ff4a92165f64a9d65bcd1e1801f55f">sort_indexes</a> (vector&lt; T &gt; const &amp;v)</td></tr>
-<tr class="separator:a66ff4a92165f64a9d65bcd1e1801f55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada0ddcbebde052d50db3c6b1a7734ca9"><td class="memItemLeft" align="right" valign="top"><a id="ada0ddcbebde052d50db3c6b1a7734ca9"></a>
-template vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sort_indexes&lt; long &gt;</b> (vector&lt; long &gt; const &amp;)</td></tr>
-<tr class="separator:ada0ddcbebde052d50db3c6b1a7734ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbb9b66b8e8affca3fcd712bef796fcf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abbb9b66b8e8affca3fcd712bef796fcf"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#abbb9b66b8e8affca3fcd712bef796fcf">sort_indexes_desc</a> (vector&lt; T &gt; const &amp;v)</td></tr>
-<tr class="separator:abbb9b66b8e8affca3fcd712bef796fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a090c9dc018a1ba74711238268f8213dc"><td class="memItemLeft" align="right" valign="top">pair&lt; <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a090c9dc018a1ba74711238268f8213dc">worstcase_l1</a> (<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;z, <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;q, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> t)</td></tr>
-<tr class="separator:a090c9dc018a1ba74711238268f8213dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8813a46b6bfcd992eba453d5add516a4"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a8813a46b6bfcd992eba453d5add516a4"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a8813a46b6bfcd992eba453d5add516a4">operator&lt;&lt;</a> (std::ostream &amp;os, const std::vector&lt; T &gt; &amp;vec)</td></tr>
+<tr class="memdesc:a8813a46b6bfcd992eba453d5add516a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a useful functionality for debugging.  <a href="#a8813a46b6bfcd992eba453d5add516a4">More...</a><br /></td></tr>
+<tr class="separator:a8813a46b6bfcd992eba453d5add516a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1137a41f352f846f37b706ad82eb99e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad1137a41f352f846f37b706ad82eb99e"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#ad1137a41f352f846f37b706ad82eb99e">sort_indexes</a> (vector&lt; T &gt; const &amp;v)</td></tr>
+<tr class="memdesc:ad1137a41f352f846f37b706ad82eb99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort indices by values in ascending order.  <a href="#ad1137a41f352f846f37b706ad82eb99e">More...</a><br /></td></tr>
+<tr class="separator:ad1137a41f352f846f37b706ad82eb99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511a0767e8138429dccc2ad791f92fd2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a511a0767e8138429dccc2ad791f92fd2"><td class="memTemplItemLeft" align="right" valign="top">vector&lt; size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a511a0767e8138429dccc2ad791f92fd2">sort_indexes_desc</a> (vector&lt; T &gt; const &amp;v)</td></tr>
+<tr class="memdesc:a511a0767e8138429dccc2ad791f92fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort indices by values in descending order.  <a href="#a511a0767e8138429dccc2ad791f92fd2">More...</a><br /></td></tr>
+<tr class="separator:a511a0767e8138429dccc2ad791f92fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da052cea5bbecd99524d5e5cd9d5fac"><td class="memItemLeft" align="right" valign="top">pair&lt; <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a>, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a3da052cea5bbecd99524d5e5cd9d5fac">worstcase_l1</a> (<a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> const &amp;z, <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> const &amp;q, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> t)</td></tr>
+<tr class="memdesc:a3da052cea5bbecd99524d5e5cd9d5fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the solution of: min_p p^T * z s.t.  <a href="#a3da052cea5bbecd99524d5e5cd9d5fac">More...</a><br /></td></tr>
+<tr class="separator:a3da052cea5bbecd99524d5e5cd9d5fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae256dd56144dedc246525e537fe1e241"><td class="memTemplParams" colspan="2">template&lt;class Model &gt; </td></tr>
-<tr class="memitem:ae256dd56144dedc246525e537fe1e241"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a> (Model &amp;mdp, long fromid, long actionid, long outcomeid, long toid, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> probability, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> reward)</td></tr>
+<tr class="memitem:ae256dd56144dedc246525e537fe1e241"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#ae256dd56144dedc246525e537fe1e241">add_transition</a> (Model &amp;mdp, long fromid, long actionid, long outcomeid, long toid, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> probability, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> reward)</td></tr>
 <tr class="memdesc:ae256dd56144dedc246525e537fe1e241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a transition probability and reward for a particular outcome.  <a href="#ae256dd56144dedc246525e537fe1e241">More...</a><br /></td></tr>
 <tr class="separator:ae256dd56144dedc246525e537fe1e241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0f1f3720c84c2dd1ab57e753171e78d"><td class="memItemLeft" align="right" valign="top"><a id="ae0f1f3720c84c2dd1ab57e753171e78d"></a>
-template void&#160;</td><td class="memItemRight" valign="bottom"><b>add_transition&lt; MDP &gt;</b> (<a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f">MDP</a> &amp;mdp, long fromid, long actionid, long outcomeid, long toid, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> probability, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> reward)</td></tr>
-<tr class="separator:ae0f1f3720c84c2dd1ab57e753171e78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1fc70a69d7ad145c7048c607d26826f"><td class="memItemLeft" align="right" valign="top"><a id="aa1fc70a69d7ad145c7048c607d26826f"></a>
-template void&#160;</td><td class="memItemRight" valign="bottom"><b>add_transition&lt; RMDP_D &gt;</b> (<a class="el" href="namespacecraam.html#a5d936882aaf2071dc0e8b708a4a35bb7">RMDP_D</a> &amp;mdp, long fromid, long actionid, long outcomeid, long toid, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> probability, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> reward)</td></tr>
-<tr class="separator:aa1fc70a69d7ad145c7048c607d26826f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c8598ff7b1d28c851c7a62f57cbb534"><td class="memItemLeft" align="right" valign="top"><a id="a5c8598ff7b1d28c851c7a62f57cbb534"></a>
-template void&#160;</td><td class="memItemRight" valign="bottom"><b>add_transition&lt; RMDP_L1 &gt;</b> (<a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414">RMDP_L1</a> &amp;mdp, long fromid, long actionid, long outcomeid, long toid, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> probability, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> reward)</td></tr>
-<tr class="separator:a5c8598ff7b1d28c851c7a62f57cbb534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab97055b8d00b8659ff50330e044f4846"><td class="memTemplParams" colspan="2">template&lt;class Model &gt; </td></tr>
-<tr class="memitem:ab97055b8d00b8659ff50330e044f4846"><td class="memTemplItemLeft" align="right" valign="top">Model &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#ab97055b8d00b8659ff50330e044f4846">from_csv</a> (Model &amp;mdp, istream &amp;input, bool header=true)</td></tr>
-<tr class="memdesc:ab97055b8d00b8659ff50330e044f4846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an <a class="el" href="classcraam_1_1GRMDP.html" title="A general robust Markov decision process. ">GRMDP</a> definition from a simple csv file.  <a href="#ab97055b8d00b8659ff50330e044f4846">More...</a><br /></td></tr>
-<tr class="separator:ab97055b8d00b8659ff50330e044f4846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a587eac14a649a4834f0631c0b64b0d37"><td class="memItemLeft" align="right" valign="top"><a id="a587eac14a649a4834f0631c0b64b0d37"></a>
-template <a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f">MDP</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>from_csv</b> (<a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f">MDP</a> &amp;mdp, istream &amp;input, bool header)</td></tr>
-<tr class="separator:a587eac14a649a4834f0631c0b64b0d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada893f312ad7534d31b5763c89d75fb9"><td class="memItemLeft" align="right" valign="top"><a id="ada893f312ad7534d31b5763c89d75fb9"></a>
-template <a class="el" href="namespacecraam.html#a5d936882aaf2071dc0e8b708a4a35bb7">RMDP_D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>from_csv</b> (<a class="el" href="namespacecraam.html#a5d936882aaf2071dc0e8b708a4a35bb7">RMDP_D</a> &amp;mdp, istream &amp;input, bool header)</td></tr>
-<tr class="separator:ada893f312ad7534d31b5763c89d75fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf7f580daccdfb6101b248bb9a58a835"><td class="memItemLeft" align="right" valign="top"><a id="abf7f580daccdfb6101b248bb9a58a835"></a>
-template <a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414">RMDP_L1</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>from_csv</b> (<a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414">RMDP_L1</a> &amp;mdp, istream &amp;input, bool header)</td></tr>
-<tr class="separator:abf7f580daccdfb6101b248bb9a58a835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a65d4b04579bbdc5f6ffa68975641e7"><td class="memTemplParams" colspan="2">template&lt;class Model &gt; </td></tr>
-<tr class="memitem:a7a65d4b04579bbdc5f6ffa68975641e7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a7a65d4b04579bbdc5f6ffa68975641e7">set_outcome_thresholds</a> (Model &amp;mdp, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> threshold)</td></tr>
-<tr class="memdesc:a7a65d4b04579bbdc5f6ffa68975641e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uniformly sets the thresholds to the provided value for all states and actions.  <a href="#a7a65d4b04579bbdc5f6ffa68975641e7">More...</a><br /></td></tr>
-<tr class="separator:a7a65d4b04579bbdc5f6ffa68975641e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bc0e1c398408d004b325cc74949dac9"><td class="memItemLeft" align="right" valign="top"><a id="a4bc0e1c398408d004b325cc74949dac9"></a>
-template void&#160;</td><td class="memItemRight" valign="bottom"><b>set_outcome_thresholds</b> (<a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414">RMDP_L1</a> &amp;mdp, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> threshold)</td></tr>
-<tr class="separator:a4bc0e1c398408d004b325cc74949dac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba369f646e69933ff08a8543ce9a0e8"><td class="memTemplParams" colspan="2">template&lt;class Model &gt; </td></tr>
+<tr class="memitem:a5ba369f646e69933ff08a8543ce9a0e8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a5ba369f646e69933ff08a8543ce9a0e8">add_transition</a> (Model &amp;mdp, long fromid, long actionid, long toid, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> probability, <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a> reward)</td></tr>
+<tr class="memdesc:a5ba369f646e69933ff08a8543ce9a0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a transition probability and reward for a model with no outcomes.  <a href="#a5ba369f646e69933ff08a8543ce9a0e8">More...</a><br /></td></tr>
+<tr class="separator:a5ba369f646e69933ff08a8543ce9a0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a941e7ee92592a82bf50a483601320fa0"><td class="memTemplParams" colspan="2">template&lt;class Model &gt; </td></tr>
+<tr class="memitem:a941e7ee92592a82bf50a483601320fa0"><td class="memTemplItemLeft" align="right" valign="top">Model &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a941e7ee92592a82bf50a483601320fa0">from_csv</a> (Model &amp;mdp, istream &amp;input, bool header=true)</td></tr>
+<tr class="memdesc:a941e7ee92592a82bf50a483601320fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an <a class="el" href="classcraam_1_1GRMDP.html" title="A general robust Markov decision process. ">GRMDP</a> definition from a simple csv file.  <a href="#a941e7ee92592a82bf50a483601320fa0">More...</a><br /></td></tr>
+<tr class="separator:a941e7ee92592a82bf50a483601320fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9378b4f97a881c870ce77b309643ed"><td class="memTemplParams" colspan="2">template&lt;class Model &gt; </td></tr>
+<tr class="memitem:a9a9378b4f97a881c870ce77b309643ed"><td class="memTemplItemLeft" align="right" valign="top">Model &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a9a9378b4f97a881c870ce77b309643ed">from_csv_file</a> (Model &amp;mdp, const string &amp;filename, bool header=true)</td></tr>
+<tr class="memdesc:a9a9378b4f97a881c870ce77b309643ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the transition probabilities and rewards from a CSV file.  <a href="#a9a9378b4f97a881c870ce77b309643ed">More...</a><br /></td></tr>
+<tr class="separator:a9a9378b4f97a881c870ce77b309643ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51df4f72701a31ff5bbd0fbb029d90cf"><td class="memTemplParams" colspan="2"><a id="a51df4f72701a31ff5bbd0fbb029d90cf"></a>
 template&lt;class Model &gt; </td></tr>
 <tr class="memitem:a51df4f72701a31ff5bbd0fbb029d90cf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a51df4f72701a31ff5bbd0fbb029d90cf">set_uniform_outcome_dst</a> (Model &amp;mdp)</td></tr>
 <tr class="memdesc:a51df4f72701a31ff5bbd0fbb029d90cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the distribution for outcomes for each state and action to be uniform. <br /></td></tr>
 <tr class="separator:a51df4f72701a31ff5bbd0fbb029d90cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab68fb83ce407951869ff785f29b7b7ef"><td class="memItemLeft" align="right" valign="top"><a id="ab68fb83ce407951869ff785f29b7b7ef"></a>
-template void&#160;</td><td class="memItemRight" valign="bottom"><b>set_uniform_outcome_dst</b> (<a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414">RMDP_L1</a> &amp;mdp)</td></tr>
-<tr class="separator:ab68fb83ce407951869ff785f29b7b7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a5c8532414ba5bf80f0f8c0bc70de54"><td class="memTemplParams" colspan="2"><a id="a8a5c8532414ba5bf80f0f8c0bc70de54"></a>
 template&lt;class Model &gt; </td></tr>
-<tr class="memitem:a8a5c8532414ba5bf80f0f8c0bc70de54"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a8a5c8532414ba5bf80f0f8c0bc70de54">set_outcome_dst</a> (Model &amp;mdp, size_t stateid, size_t actionid, const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;dist)</td></tr>
+<tr class="memitem:a8a5c8532414ba5bf80f0f8c0bc70de54"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a8a5c8532414ba5bf80f0f8c0bc70de54">set_outcome_dst</a> (Model &amp;mdp, size_t stateid, size_t actionid, const <a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> &amp;dist)</td></tr>
 <tr class="memdesc:a8a5c8532414ba5bf80f0f8c0bc70de54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the distribution of outcomes for the given state and action. <br /></td></tr>
 <tr class="separator:a8a5c8532414ba5bf80f0f8c0bc70de54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91ae7fd95dfeee025272655a3634bd7d"><td class="memItemLeft" align="right" valign="top"><a id="a91ae7fd95dfeee025272655a3634bd7d"></a>
-template void&#160;</td><td class="memItemRight" valign="bottom"><b>set_outcome_dst</b> (<a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414">RMDP_L1</a> &amp;mdp, size_t stateid, size_t actionid, const <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> &amp;dist)</td></tr>
-<tr class="separator:a91ae7fd95dfeee025272655a3634bd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af09b1566b053b05cb7c1ffc1b9095082"><td class="memTemplParams" colspan="2">template&lt;class Model &gt; </td></tr>
 <tr class="memitem:af09b1566b053b05cb7c1ffc1b9095082"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#af09b1566b053b05cb7c1ffc1b9095082">is_outcome_dst_normalized</a> (const Model &amp;mdp)</td></tr>
 <tr class="memdesc:af09b1566b053b05cb7c1ffc1b9095082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether outcome distributions sum to 1 for all states and actions.  <a href="#af09b1566b053b05cb7c1ffc1b9095082">More...</a><br /></td></tr>
 <tr class="separator:af09b1566b053b05cb7c1ffc1b9095082"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af371bbfb7c851076aca9826eb2607526"><td class="memItemLeft" align="right" valign="top"><a id="af371bbfb7c851076aca9826eb2607526"></a>
-template bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_outcome_dst_normalized</b> (const <a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414">RMDP_L1</a> &amp;mdp)</td></tr>
-<tr class="separator:af371bbfb7c851076aca9826eb2607526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8546f7a1c52b977dfc6d0a49e50d9b"><td class="memTemplParams" colspan="2">template&lt;class Model &gt; </td></tr>
 <tr class="memitem:a8a8546f7a1c52b977dfc6d0a49e50d9b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a8a8546f7a1c52b977dfc6d0a49e50d9b">normalize_outcome_dst</a> (Model &amp;mdp)</td></tr>
 <tr class="memdesc:a8a8546f7a1c52b977dfc6d0a49e50d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes outcome distributions for all states and actions.  <a href="#a8a8546f7a1c52b977dfc6d0a49e50d9b">More...</a><br /></td></tr>
 <tr class="separator:a8a8546f7a1c52b977dfc6d0a49e50d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf8f712d5191b56d5f590c2deb69aee4"><td class="memItemLeft" align="right" valign="top"><a id="acf8f712d5191b56d5f590c2deb69aee4"></a>
-template void&#160;</td><td class="memItemRight" valign="bottom"><b>normalize_outcome_dst</b> (<a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414">RMDP_L1</a> &amp;mdp)</td></tr>
-<tr class="separator:acf8f712d5191b56d5f590c2deb69aee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af361fddc1a708d396cc8e121791911fa"><td class="memTemplParams" colspan="2">template&lt;class SType &gt; </td></tr>
-<tr class="memitem:af361fddc1a708d396cc8e121791911fa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classcraam_1_1GRMDP.html">GRMDP</a>&lt; SType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#af361fddc1a708d396cc8e121791911fa">robustify</a> (const <a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f">MDP</a> &amp;mdp, bool allowzeros)</td></tr>
-<tr class="memdesc:af361fddc1a708d396cc8e121791911fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds uncertainty to a regular MDP.  <a href="#af361fddc1a708d396cc8e121791911fa">More...</a><br /></td></tr>
-<tr class="separator:af361fddc1a708d396cc8e121791911fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08d227da2a6e6cfd96b3f499fc796298"><td class="memItemLeft" align="right" valign="top"><a id="a08d227da2a6e6cfd96b3f499fc796298"></a>
-<a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414">RMDP_L1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a08d227da2a6e6cfd96b3f499fc796298">robustify_l1</a> (const <a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f">MDP</a> &amp;mdp, bool allowzeros)</td></tr>
-<tr class="memdesc:a08d227da2a6e6cfd96b3f499fc796298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiated template version of robustify. <br /></td></tr>
-<tr class="separator:a08d227da2a6e6cfd96b3f499fc796298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe0e4539e81a7087ea2e839e0cb84832"><td class="memItemLeft" align="right" valign="top"><a id="abe0e4539e81a7087ea2e839e0cb84832"></a>
-template <a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414">RMDP_L1</a>&#160;</td><td class="memItemRight" valign="bottom"><b>robustify&lt; L1RobustState &gt;</b> (const <a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f">MDP</a> &amp;, bool)</td></tr>
-<tr class="separator:abe0e4539e81a7087ea2e839e0cb84832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ba369f646e69933ff08a8543ce9a0e8"><td class="memTemplParams" colspan="2">template&lt;class Model &gt; </td></tr>
-<tr class="memitem:a5ba369f646e69933ff08a8543ce9a0e8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a5ba369f646e69933ff08a8543ce9a0e8">add_transition</a> (Model &amp;mdp, long fromid, long actionid, long toid, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> probability, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> reward)</td></tr>
-<tr class="memdesc:a5ba369f646e69933ff08a8543ce9a0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a transition probability and reward for a model with no outcomes.  <a href="#a5ba369f646e69933ff08a8543ce9a0e8">More...</a><br /></td></tr>
-<tr class="separator:a5ba369f646e69933ff08a8543ce9a0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a9378b4f97a881c870ce77b309643ed"><td class="memTemplParams" colspan="2">template&lt;class Model &gt; </td></tr>
-<tr class="memitem:a9a9378b4f97a881c870ce77b309643ed"><td class="memTemplItemLeft" align="right" valign="top">Model &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a9a9378b4f97a881c870ce77b309643ed">from_csv_file</a> (Model &amp;mdp, const string &amp;filename, bool header=true)</td></tr>
-<tr class="memdesc:a9a9378b4f97a881c870ce77b309643ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the transition probabilities and rewards from a CSV file.  <a href="#a9a9378b4f97a881c870ce77b309643ed">More...</a><br /></td></tr>
-<tr class="separator:a9a9378b4f97a881c870ce77b309643ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8826fb5e0f9fb17c4afd2414370120a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecraam.html#a05b3d45d32289671966e6ad1057c8a67">RMDP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a8826fb5e0f9fb17c4afd2414370120a6">robustify</a> (const <a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f">MDP</a> &amp;mdp, bool allowzeros=false)</td></tr>
+<tr class="memdesc:a8826fb5e0f9fb17c4afd2414370120a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds uncertainty to a regular MDP.  <a href="#a8826fb5e0f9fb17c4afd2414370120a6">More...</a><br /></td></tr>
+<tr class="separator:a8826fb5e0f9fb17c4afd2414370120a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ae8c311f057fe3d1199ea2d825870df8d"><td class="memItemLeft" align="right" valign="top"><a id="ae8c311f057fe3d1199ea2d825870df8d"></a>
-const <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#ae8c311f057fe3d1199ea2d825870df8d">SOLPREC</a> = 0.0001</td></tr>
-<tr class="memdesc:ae8c311f057fe3d1199ea2d825870df8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default solution precision. <br /></td></tr>
-<tr class="separator:ae8c311f057fe3d1199ea2d825870df8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add2f4b94e6d33c32f1755954fcd63f1e"><td class="memItemLeft" align="right" valign="top"><a id="add2f4b94e6d33c32f1755954fcd63f1e"></a>
-const unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#add2f4b94e6d33c32f1755954fcd63f1e">MAXITER</a> = 100000</td></tr>
-<tr class="memdesc:add2f4b94e6d33c32f1755954fcd63f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default number of iterations. <br /></td></tr>
-<tr class="separator:add2f4b94e6d33c32f1755954fcd63f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9edf3be255b10576a37ac3bcad04fe03"><td class="memItemLeft" align="right" valign="top"><a id="a9edf3be255b10576a37ac3bcad04fe03"></a>
+constexpr <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a9edf3be255b10576a37ac3bcad04fe03">SOLPREC</a> = 0.0001</td></tr>
+<tr class="memdesc:a9edf3be255b10576a37ac3bcad04fe03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default solution precision. <br /></td></tr>
+<tr class="separator:a9edf3be255b10576a37ac3bcad04fe03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705fe1263cb078dfa7c4381b2e7d51e7"><td class="memItemLeft" align="right" valign="top"><a id="a705fe1263cb078dfa7c4381b2e7d51e7"></a>
+constexpr unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a705fe1263cb078dfa7c4381b2e7d51e7">MAXITER</a> = 100000</td></tr>
+<tr class="memdesc:a705fe1263cb078dfa7c4381b2e7d51e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default number of iterations. <br /></td></tr>
+<tr class="separator:a705fe1263cb078dfa7c4381b2e7d51e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9044328b253d72c465f884956c2491e0"><td class="memItemLeft" align="right" valign="top"><a id="a9044328b253d72c465f884956c2491e0"></a>
+constexpr <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a9044328b253d72c465f884956c2491e0">THRESHOLD</a> = 1e-5</td></tr>
+<tr class="memdesc:a9044328b253d72c465f884956c2491e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Numerical threshold. <br /></td></tr>
+<tr class="separator:a9044328b253d72c465f884956c2491e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a189c2527334a2113393d9fc546ed22b7"><td class="memItemLeft" align="right" valign="top"><a id="a189c2527334a2113393d9fc546ed22b7"></a>
-const <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tolerance</b> = 1e-5</td></tr>
+const <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecraam.html#a189c2527334a2113393d9fc546ed22b7">tolerance</a> = 1e-5</td></tr>
+<tr class="memdesc:a189c2527334a2113393d9fc546ed22b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">tolerance for checking whether a transition probability is normalized <br /></td></tr>
 <tr class="separator:a189c2527334a2113393d9fc546ed22b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main namespace which includes modeling a solving functionality. </p>
+<p>Value-function based methods (value iteration and policy iteration) style algorithms.</p>
+<p>Robust MDP methods for computing value functions.</p>
+<p>Provides abstractions that allow generalization to both robust and regular MDPs. </p>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a9d59929435946aa3b9f860ca5d0b051f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d59929435946aa3b9f860ca5d0b051f">&#9670;&nbsp;</a></span>MDP</h2>
+<a id="acb3b6f7746d387b74d5542a5e343ea1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb3b6f7746d387b74d5542a5e343ea1d">&#9670;&nbsp;</a></span>prec_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classcraam_1_1GRMDP.html">GRMDP</a>&lt;<a class="el" href="namespacecraam.html#aa3098e6f3c10e11c79f23508afc3b8c4">RegularState</a>&gt; <a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f">craam::MDP</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Regular MDP with discrete actions and one outcome per action. </p>
-<p>ActionId = long OutcomeId = long</p>
-<p>ActionPolicy = vector&lt;ActionId&gt; OutcomePolicy = vector&lt;OutcomeId&gt;</p>
-<p>Uncertainty type is ignored in these methods. </p>
-
-</div>
-</div>
-<a id="a33aa416100a4210ec107161332deaaf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33aa416100a4210ec107161332deaaf8">&#9670;&nbsp;</a></span>NatureConstr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef pair&lt;<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>,<a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&gt;(* craam::NatureConstr) (<a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const  &amp;z, <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const  &amp;q, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> t)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function representing the constraints on nature. </p>
-<p>The inputs are the q-values z, the reference distribution q, and the threshold t. The function returns the worst-case solution and the objective value. </p>
-
-</div>
-</div>
-<a id="ad526e720f0cb0df1020efaab65669d47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad526e720f0cb0df1020efaab65669d47">&#9670;&nbsp;</a></span>prec_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef double <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">craam::prec_t</a></td>
+          <td class="memname">using <a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">craam::prec_t</a> = typedef double</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -341,71 +246,20 @@ const <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47"
 
 </div>
 </div>
-<a id="a5d936882aaf2071dc0e8b708a4a35bb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d936882aaf2071dc0e8b708a4a35bb7">&#9670;&nbsp;</a></span>RMDP_D</h2>
+<a id="a05b3d45d32289671966e6ad1057c8a67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b3d45d32289671966e6ad1057c8a67">&#9670;&nbsp;</a></span>RMDP</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classcraam_1_1GRMDP.html">GRMDP</a>&lt;<a class="el" href="namespacecraam.html#a0d73235b258cd971e16996bd8631c615">DiscreteRobustState</a>&gt; <a class="el" href="namespacecraam.html#a5d936882aaf2071dc0e8b708a4a35bb7">craam::RMDP_D</a></td>
+          <td class="memname">typedef <a class="el" href="classcraam_1_1GRMDP.html">GRMDP</a>&lt;<a class="el" href="namespacecraam.html#af6a95cf995a232298306bb961b9d9daa">WeightedRobustState</a>&gt; <a class="el" href="namespacecraam.html#a05b3d45d32289671966e6ad1057c8a67">craam::RMDP</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>An uncertain MDP with discrete robustness. </p>
-<p>See <a class="el" href="namespacecraam.html#a0d73235b258cd971e16996bd8631c615" title="State with uncertain outcomes; unconstrained and now weights. ">craam::DiscreteRobustState</a> </p>
-
-</div>
-</div>
-<a id="a81699764382753e44c8806b8959e3414"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81699764382753e44c8806b8959e3414">&#9670;&nbsp;</a></span>RMDP_L1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classcraam_1_1GRMDP.html">GRMDP</a>&lt;<a class="el" href="namespacecraam.html#a8c144630644267ecf6e62d0e39363965">L1RobustState</a>&gt; <a class="el" href="namespacecraam.html#a81699764382753e44c8806b8959e3414">craam::RMDP_L1</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>An uncertain MDP with L1 constrained robustness. </p>
-<p>See <a class="el" href="namespacecraam.html#a8c144630644267ecf6e62d0e39363965" title="State with uncertain outcomes with L1 constraints on the distribution. ">craam::L1RobustState</a>. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a28345a790e3a8a01c57a7e509837970b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28345a790e3a8a01c57a7e509837970b">&#9670;&nbsp;</a></span>Uncertainty</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespacecraam.html#a28345a790e3a8a01c57a7e509837970b">craam::Uncertainty</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Describes the behavior of nature in the uncertain MDP. </p>
-<p>Robust corresponds to the worst-case behavior of nature, optimistic corresponds the best case, and average represents a weighted mean of the returns. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a28345a790e3a8a01c57a7e509837970bacd8257a80d3498e67b8972607c8377c0"></a>Robust&#160;</td><td class="fielddoc"><p>Treat uncertainty as a worst case. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a28345a790e3a8a01c57a7e509837970bad3eccf1f42894b31bc0f2e6a2fd0c0b3"></a>Optimistic&#160;</td><td class="fielddoc"><p>Treat uncertainty as a best case. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a28345a790e3a8a01c57a7e509837970bab1897515d548a960afe49ecf66a29021"></a>Average&#160;</td><td class="fielddoc"><p>Average over uncertain outcomes (type of average depends on the type) </p>
-</td></tr>
-</table>
+<p>An uncertain MDP with outcomes and weights. </p>
+<p>See craam::L1RobustState. </p>
 
 </div>
 </div>
@@ -417,6 +271,9 @@ const <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47"
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class Model &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void craam::add_transition </td>
@@ -451,13 +308,13 @@ template&lt;class Model &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td>
           <td class="paramname"><em>probability</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td>
           <td class="paramname"><em>reward</em>&#160;</td>
         </tr>
         <tr>
@@ -466,6 +323,11 @@ template&lt;class Model &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds a transition probability and reward for a particular outcome. </p>
@@ -490,6 +352,9 @@ template&lt;class Model &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class Model &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void craam::add_transition </td>
@@ -518,13 +383,13 @@ template&lt;class Model &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td>
           <td class="paramname"><em>probability</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td>
           <td class="paramname"><em>reward</em>&#160;</td>
         </tr>
         <tr>
@@ -533,6 +398,11 @@ template&lt;class Model &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds a transition probability and reward for a model with no outcomes. </p>
@@ -551,16 +421,19 @@ template&lt;class Model &gt; </div>
 
 </div>
 </div>
-<a id="ab97055b8d00b8659ff50330e044f4846"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab97055b8d00b8659ff50330e044f4846">&#9670;&nbsp;</a></span>from_csv()</h2>
+<a id="a941e7ee92592a82bf50a483601320fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a941e7ee92592a82bf50a483601320fa0">&#9670;&nbsp;</a></span>from_csv()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class Model &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Model &amp; craam::from_csv </td>
+          <td class="memname">Model&amp; craam::from_csv </td>
           <td>(</td>
           <td class="paramtype">Model &amp;&#160;</td>
           <td class="paramname"><em>mdp</em>, </td>
@@ -583,6 +456,11 @@ template&lt;class Model &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Loads an <a class="el" href="classcraam_1_1GRMDP.html" title="A general robust Markov decision process. ">GRMDP</a> definition from a simple csv file. </p>
@@ -607,6 +485,9 @@ template&lt;class Model &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class Model &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Model&amp; craam::from_csv_file </td>
@@ -632,6 +513,11 @@ template&lt;class Model &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Loads the transition probabilities and rewards from a CSV file. </p>
@@ -654,6 +540,9 @@ template&lt;class Model &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class Model &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool craam::is_outcome_dst_normalized </td>
@@ -663,10 +552,15 @@ template&lt;class Model &gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Checks whether outcome distributions sum to 1 for all states and actions. </p>
-<p>This function only applies to models that have thresholds, such as ones using "WeightedOutcomeAction" or its derivatives. </p>
+<p>This function only applies to models that have outcomes, such as ones using "WeightedOutcomeAction" or its derivatives. </p>
 
 </div>
 </div>
@@ -677,6 +571,9 @@ template&lt;class Model &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class Model &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void craam::normalize_outcome_dst </td>
@@ -686,23 +583,61 @@ template&lt;class Model &gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Normalizes outcome distributions for all states and actions. </p>
-<p>This function only applies to models that have thresholds, such as ones using "WeightedOutcomeAction" or its derivatives. </p>
+<p>This function only applies to models that have outcomes, such as ones using "WeightedOutcomeAction" or its derivatives. </p>
 
 </div>
 </div>
-<a id="af361fddc1a708d396cc8e121791911fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af361fddc1a708d396cc8e121791911fa">&#9670;&nbsp;</a></span>robustify()</h2>
+<a id="a8813a46b6bfcd992eba453d5add516a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8813a46b6bfcd992eba453d5add516a4">&#9670;&nbsp;</a></span>operator<<()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class SType &gt; </div>
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classcraam_1_1GRMDP.html">GRMDP</a>&lt; SType &gt; craam::robustify </td>
+          <td class="memname">std::ostream&amp; craam::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is a useful functionality for debugging. </p>
+
+</div>
+</div>
+<a id="a8826fb5e0f9fb17c4afd2414370120a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8826fb5e0f9fb17c4afd2414370120a6">&#9670;&nbsp;</a></span>robustify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacecraam.html#a05b3d45d32289671966e6ad1057c8a67">RMDP</a> craam::robustify </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacecraam.html#a9d59929435946aa3b9f860ca5d0b051f">MDP</a> &amp;&#160;</td>
           <td class="paramname"><em>mdp</em>, </td>
@@ -711,7 +646,7 @@ template&lt;class SType &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>allowzeros</em>&#160;</td>
+          <td class="paramname"><em>allowzeros</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -719,6 +654,11 @@ template&lt;class SType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds uncertainty to a regular MDP. </p>
@@ -736,15 +676,6 @@ template&lt;class SType &gt; </div>
 <li>Rewards are: \( \bar{r}(s_i,a,b_k,s_k) = r(s_i,a,s_{z_k(s_i,a)}) \)</li>
 <li>Nominal outcome probabilities are: \( d(s,a,b_k) = P(s,a,z_k(s,a)) \)</li>
 </ul>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">SType</td><td>State type for the RMDP being constructed. The actions must support methods:<ul>
-<li>set_distribution(long outcomeid, prec_t weight)</li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mdp</td><td>MDP \( \mathcal{M} \) used as the input </td></tr>
@@ -756,125 +687,105 @@ template&lt;class SType &gt; </div>
 
 </div>
 </div>
-<a id="a7a65d4b04579bbdc5f6ffa68975641e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a65d4b04579bbdc5f6ffa68975641e7">&#9670;&nbsp;</a></span>set_outcome_thresholds()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Model &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void craam::set_outcome_thresholds </td>
-          <td>(</td>
-          <td class="paramtype">Model &amp;&#160;</td>
-          <td class="paramname"><em>mdp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
-          <td class="paramname"><em>threshold</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Uniformly sets the thresholds to the provided value for all states and actions. </p>
-<p>This method should be used only with models that support thresholds.</p>
-<p>This function only applies to models that have thresholds, such as ones using "WeightedOutcomeAction" or its derivatives.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">model</td><td>Model to set thresholds for </td></tr>
-    <tr><td class="paramname">threshold</td><td>New thresholds value </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a66ff4a92165f64a9d65bcd1e1801f55f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66ff4a92165f64a9d65bcd1e1801f55f">&#9670;&nbsp;</a></span>sort_indexes()</h2>
+<a id="ad1137a41f352f846f37b706ad82eb99e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1137a41f352f846f37b706ad82eb99e">&#9670;&nbsp;</a></span>sort_indexes()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; size_t &gt; craam::sort_indexes </td>
+          <td class="memname">vector&lt;size_t&gt; craam::sort_indexes </td>
           <td>(</td>
           <td class="paramtype">vector&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Sort indices by values in ascending order</p>
+
+<p>Sort indices by values in ascending order. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>List of values </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Sorted indices</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Sorted indices </dd></dl>
 
 </div>
 </div>
-<a id="abbb9b66b8e8affca3fcd712bef796fcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbb9b66b8e8affca3fcd712bef796fcf">&#9670;&nbsp;</a></span>sort_indexes_desc()</h2>
+<a id="a511a0767e8138429dccc2ad791f92fd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a511a0767e8138429dccc2ad791f92fd2">&#9670;&nbsp;</a></span>sort_indexes_desc()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">vector&lt; size_t &gt; craam::sort_indexes_desc </td>
+          <td class="memname">vector&lt;size_t&gt; craam::sort_indexes_desc </td>
           <td>(</td>
           <td class="paramtype">vector&lt; T &gt; const &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Sort indices by values in descending order</p>
+
+<p>Sort indices by values in descending order. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>List of values </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Sorted indices</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Sorted indices </dd></dl>
 
 </div>
 </div>
-<a id="a090c9dc018a1ba74711238268f8213dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a090c9dc018a1ba74711238268f8213dc">&#9670;&nbsp;</a></span>worstcase_l1()</h2>
+<a id="a3da052cea5bbecd99524d5e5cd9d5fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3da052cea5bbecd99524d5e5cd9d5fac">&#9670;&nbsp;</a></span>worstcase_l1()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pair&lt; <a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a>, <a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a> &gt; craam::worstcase_l1 </td>
+          <td class="memname">pair&lt;<a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a>,<a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&gt; craam::worstcase_l1 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> const &amp;&#160;</td>
           <td class="paramname"><em>z</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#a321eec4e65c9fe25bacb34106d1eb491">numvec</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#af393bad5be47e3d278e3a624e67be376">numvec</a> const &amp;&#160;</td>
           <td class="paramname"><em>q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacecraam.html#ad526e720f0cb0df1020efaab65669d47">prec_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecraam.html#acb3b6f7746d387b74d5542a5e343ea1d">prec_t</a>&#160;</td>
           <td class="paramname"><em>t</em>&#160;</td>
         </tr>
         <tr>
@@ -883,18 +794,25 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Computes the solution of: min_p p^T * z s.t. ||p - q|| &lt;= t 1^T p = 1 p &gt;= 0</p>
+
+<p>Computes the solution of: min_p p^T * z s.t. </p>
+<p>||p - q|| &lt;= t 1^T p = 1 p &gt;= 0</p>
 <h2>Notes </h2>
 <p>This implementation works in O(n log n) time because of the sort. Using quickselect to choose the right quantile would work in O(n) time.</p>
-<p>This function does not check whether the probability distribution sums to 1.</p>
+<p>This function does not check whether the probability distribution sums to 1. </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 27 2017 09:21:36 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 20 2017 23:37:17 for CRAAM by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

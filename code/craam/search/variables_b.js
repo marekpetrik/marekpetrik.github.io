@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['valid',['valid',['../classcraam_1_1RegularAction.html#ac427ca35f1b3f511fbd95763ac3c589e',1,'craam::RegularAction::valid()'],['../classcraam_1_1OutcomeManagement.html#ab8a77e60f5e9c7a70a6965995e3543f2',1,'craam::OutcomeManagement::valid()']]]
+  ['threshold',['THRESHOLD',['../namespacecraam.html#a9044328b253d72c465f884956c2491e0',1,'craam']]],
+  ['tolerance',['tolerance',['../namespacecraam.html#a189c2527334a2113393d9fc546ed22b7',1,'craam']]]
 ];
