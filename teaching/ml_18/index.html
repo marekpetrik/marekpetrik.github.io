@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>2017: Intro to ML - Marek Petrik</title>
+	<title>2018: Machine Learning - Marek Petrik</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -80,16 +80,16 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teaching <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
-                        <li >
-                            <a href="../ml_18/">2018: Machine Learning</a>
+                        <li class="active">
+                            <a href="./">2018: Machine Learning</a>
                         </li>
                     
                         <li >
                             <a href="../adv_topics_ml_17/">2017: Advanced ML</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">2017: Intro to ML</a>
+                        <li >
+                            <a href="../intro_ml_17/">2017: Intro to ML</a>
                         </li>
                     
                         <li >
@@ -134,289 +134,10 @@
             
             <div class="col-md-9" role="main">
 
-<h1 id="cs780-cs880-introduction-to-machine-learning">CS780 / CS880: Introduction to Machine Learning</h1>
-<h3 id="when-and-where">When and Where</h3>
-<p>Tue &amp; Thu, 12:40 pm - 2:00 pm
-Kingsbury N133</p>
-<p>See <a href="../intro_ml_17_files/overview.pdf">class overview</a> for more information on textbooks, syllabus, assignments, office hours, and grading.</p>
-<h2 id="assignments">Assignments</h2>
-<p>Please use <a href="https://piazza.com/unh/spring2017/cs780cs880">Piazza</a> for questions about assignments.</p>
-<table>
-<thead>
-<tr>
-<th>Assignment</th>
-<th>Due Date</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../intro_ml_17_files/assignment1.pdf">Assignment 1</a></td>
-<td>2/14/17 at 12:40PM</td>
-</tr>
-<tr>
-<td><a href="../intro_ml_17_files/assignment2.pdf">Assignment 2</a></td>
-<td>2/21/17 at 12:40PM</td>
-</tr>
-<tr>
-<td><a href="../intro_ml_17_files/assignment3.pdf">Assignment 3</a></td>
-<td>3/09/17 at 12:40PM</td>
-</tr>
-<tr>
-<td><a href="../intro_ml_17_files/assignment4.pdf">Assignment 4</a></td>
-<td>4/06/17 at 12:40PM</td>
-</tr>
-<tr>
-<td><a href="../intro_ml_17_files/assignment5.pdf">Assignment 5</a></td>
-<td>4/20/17 at 12:40PM</td>
-</tr>
-</tbody>
-</table>
-<h2 id="syllabus">Syllabus</h2>
-<table>
-<thead>
-<tr>
-<th>Date</th>
-<th>Slides</th>
-<th>Reading</th>
-<th>Notebooks</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1/26</td>
-<td><a href="../intro_ml_17_files/class1.pdf">Statistical learning</a></td>
-<td>ISL 1,2</td>
-<td><a href="../intro_ml_17_files/introduction.html">(html)</a> <a href="../intro_ml_17_files/introduction.Rmd">(RMD)</a></td>
-</tr>
-<tr>
-<td>1/31</td>
-<td><a href="../intro_ml_17_files/class2.pdf">Linear regression I</a></td>
-<td>ISL 3.1-2</td>
-<td><a href="../intro_ml_17_files/linear_regression.html">(html)</a> <a href="../intro_ml_17_files/linear_regression.Rmd">(RMD)</a></td>
-</tr>
-<tr>
-<td>2/02</td>
-<td><em>No class</em></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2/07</td>
-<td><a href="../intro_ml_17_files/class3.pdf">Linear regression II</a></td>
-<td>ISL 3.3-6</td>
-<td></td>
-</tr>
-<tr>
-<td>2/09</td>
-<td><em>No class</em></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2/14</td>
-<td><a href="../intro_ml_17_files/class4.pdf">Logistic regression</a></td>
-<td>ISL 4.1-3</td>
-<td><a href="../intro_ml_17_files/logistic_regression.html">(html)</a><a href="../intro_ml_17_files/logistic_regression.Rmd">(RMD)</a></td>
-</tr>
-<tr>
-<td>2/16</td>
-<td><a href="../intro_ml_17_files/class5.pdf">LDA, QDA, Bayes</a></td>
-<td>ISL 4.4-6</td>
-<td></td>
-</tr>
-<tr>
-<td>2/21</td>
-<td><a href="../intro_ml_17_files/class6.pdf">Cross-validation</a></td>
-<td>ISL 5</td>
-<td></td>
-</tr>
-<tr>
-<td>2/23</td>
-<td><a href="../intro_ml_17_files/class7.pdf">Model selection</a></td>
-<td>ISL 6.1-6.2</td>
-<td></td>
-</tr>
-<tr>
-<td>2/28</td>
-<td><a href="../intro_ml_17_files/class8.pdf">Dimensionality</a></td>
-<td>ISL 6.3-6.4</td>
-<td></td>
-</tr>
-<tr>
-<td>3/2</td>
-<td><a href="../intro_ml_17_files/class9.pdf">PCA</a> <a href="../intro_ml_17_files/class9b.pdf">ML/MAP</a></td>
-<td>ISL 10.1-2</td>
-<td><a href="../intro_ml_17_files/maxlikelihood.Rmd">ML</a> <a href="../intro_ml_17_files/pca.Rmd">PCA</a></td>
-</tr>
-<tr>
-<td>3/6</td>
-<td><a href="../intro_ml_17_files/class10.pdf">Clustering and EM</a></td>
-<td>ISL 10.3-5</td>
-<td><a href="../intro_ml_17_files/kmeans.Rmd">kmeans</a></td>
-</tr>
-<tr>
-<td>3/9</td>
-<td>Midterm Review</td>
-<td>ISL 1-6, 10</td>
-<td></td>
-</tr>
-<tr>
-<td>3/21</td>
-<td><strong> Midterm </strong></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>3/23</td>
-<td><a href="../intro_ml_17_files/class11.pdf">Linear algebra</a></td>
-<td>LAO 1.1-2,2,3</td>
-<td></td>
-</tr>
-<tr>
-<td>3/28</td>
-<td><a href="../intro_ml_17_files/linearalgebra.pdf">LA in ML</a></td>
-<td>LAR</td>
-<td><a href="../intro_ml_17_files/linearalgebra.Rmd">linear algebra</a></td>
-</tr>
-<tr>
-<td>3/30</td>
-<td><a href="../intro_ml_17_files/linearalgebra.pdf">LA in ML</a></td>
-<td>LAR</td>
-<td><a href="../intro_ml_17_files/linearalgebra.Rmd">linear algebra</a></td>
-</tr>
-<tr>
-<td>4/04</td>
-<td><a href="../intro_ml_17_files/class13.pdf">SVM</a></td>
-<td>ISL 9</td>
-<td></td>
-</tr>
-<tr>
-<td>4/06</td>
-<td><a href="../intro_ml_17_files/class14.pdf">Decision trees and boosting</a></td>
-<td>ISL 8</td>
-<td></td>
-</tr>
-<tr>
-<td>4/11</td>
-<td><a href="../intro_ml_17_files/class15.pdf">Nonlinear methods</a></td>
-<td>ISL 7</td>
-<td></td>
-</tr>
-<tr>
-<td>4/13</td>
-<td><a href="../intro_ml_17_files/class16.pdf">Recommender systems</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>4/18</td>
-<td><a href="../intro_ml_17_files/class17.pdf">Bayes nets</a></td>
-<td>MLP 10</td>
-<td></td>
-</tr>
-<tr>
-<td>4/20</td>
-<td><a href="../intro_ml_17_files/class18.pdf">Reinforcement learning</a></td>
-<td>RL</td>
-<td></td>
-</tr>
-<tr>
-<td>4/25</td>
-<td><a href="../intro_ml_17_files/class19.pdf">Final exam review</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>4/27</td>
-<td>Project presentations (Graduate)</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5/02</td>
-<td>Deep learning and big data</td>
-<td>DL</td>
-<td></td>
-</tr>
-<tr>
-<td>5/04</td>
-<td>Project presentations (Undergraduate)</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="project">Project</h2>
-<p>See the <a href="../intro_ml_17_files/mlproject.pdf">project overview</a> for details on the details of deliverables. The deliverable are due by the end of the day (midnight).</p>
-<table>
-<thead>
-<tr>
-<th>Date</th>
-<th>Deliverable</th>
-<th>Page Limit</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2/24</td>
-<td>Project description and data sources</td>
-<td>1</td>
-</tr>
-<tr>
-<td>3/07</td>
-<td>Evaluation methodology</td>
-<td>1</td>
-</tr>
-<tr>
-<td>3/23</td>
-<td>Method and literature overview</td>
-<td>2</td>
-</tr>
-<tr>
-<td>4/06</td>
-<td>Preliminary results</td>
-<td>3</td>
-</tr>
-<tr>
-<td>4/27</td>
-<td>Final report</td>
-<td>7</td>
-</tr>
-</tbody>
-</table>
-<h2 id="exams">Exams</h2>
-<p>See <a href="../intro_ml_17_files/test_questions.pdf">practice questions</a> for questions you should be able to answer to be ready for the midterm and final exams.</p>
-<table>
-<thead>
-<tr>
-<th>Date</th>
-<th>Exam</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>3/21</td>
-<td>Midterm (take home)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="textbooks">Textbooks</h2>
-<h3 id="main-reference">Main reference:</h3>
-<p>ISL: <a href="http://www-bcf.usc.edu/~gareth/ISL/">James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2013). An Introduction to Statistical Learning</a></p>
-<h3 id="more-in-depth-material">More in-depth material:</h3>
-<p>ESL: <a href="http://statweb.stanford.edu/~tibs/ElemStatLearn">Hastie, T., Tibshirani, R., &amp; Friedman, J. (2009). The Elements of Statistical Learning. Springer Series in Statistics (2nd ed.)</a></p>
-<h3 id="related-topics">Related topics:</h3>
-<ul>
-<li>LAO: Hefferon, J. <a href="http://joshua.smcvt.edu/linearalgebra/#current_version">Linear Algebra</a> (2017)</li>
-<li>LA: Strang, G. <a href="http://math.mit.edu/~gs/linearalgebra/">Introduction to Linear Algebra</a>. (2016) <em>Also see:</em> <a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/">online lectures</a></li>
-<li>LAR: <a href="http://bendixcarstensen.com/APC/linalg-notes-BxC.pdf">Introductory Linear Agebra with R</a></li>
-<li>CO: Boyd, S., &amp; Vandenberghe, L. (2004). <a href="http://web.stanford.edu/~boyd/cvxbook/">Convex Optimization</a>. </li>
-<li>RL: Sutton, R. S., &amp; Barto, A. (2012). <a href="http://people.inf.elte.hu/lorincz/Files/RL_2006/SuttonBook.pdf">Reinforcement learning</a>. 2nd edition (forthcoming?)</li>
-<li>RLA: Szepesvari, C. (2013), <a href="https://sites.ualberta.ca/~szepesva/RLBook.html">Algorithms for Reinforcement Learning</a></li>
-<li>DL: Goodfellow, I., Bengio, Y., &amp; Courville, A. (2016). <a href="https://github.com/HFTrader/DeepLearningBook">Deep Learning</a> </li>
-<li>MLP: Murphy, K (2012). Machine Learning, A Probabilistic Perspective.</li>
-</ul>
-<p>See <a href="../intro_ml_17_files">class overview</a> for more information on the textbook.</p>
+<h1 id="cs780-cs880-machine-learning">CS780 / CS880: Machine Learning</h1>
+<p>Please see the main <a href="https://gitlab.com/marekpetrik/ML-Spring2018">class website</a> for detailed up to date information.</p>
+<h2 id="when-and-where">When and Where</h2>
+<p>Mon &amp; Wed, 11:10 am - 12:40 pm in <strong>Kingsbury N113</strong></p>
 <h2 id="class-content">Class Content</h2>
 <p>The goal of this class is to teach you how to use <em>machine learning</em> to <em>understand data</em> and <em>make predictions</em> in practice. The class will cover the fundamental concepts and algorithms in machine learning and data science as well as a wide variety of practical algorithms. The main topics we will cover are:</p>
 <ol>
@@ -432,8 +153,13 @@ Kingsbury N133</p>
 <p>The graduate version of the class will cover the same topics in greater depth.</p>
 <h3 id="programming-language">Programming Language</h3>
 <p>The class will involve hand-on data analysis using machine learning methods. The recommended language for programming assignments is <a href="https://www.r-project.org/">R</a> which is an excellent tool for statistical analysis and machine learning. <em>No prior knowledge of R is needed or expected</em>; the book and lecture will cover a gentle introduction to the language. Experienced students may also choose other alternatives, such as Python or Matlab.</p>
+<p>We recommend using the free <a href="https://www.rstudio.com">R Studio</a> for completing programming assignments. R Notebooks are very convenient for producing reproducible reports and we encourage you to use them. Jupyter is a similar alternative for Python.</p>
 <h2 id="pre-requisites">Pre-requisites</h2>
-<p>Basic programming skills (scripting languages like Python are OK) and some familiarity with statistics and calculus. If in doubt, please email me.</p></div>
+<p>Basic programming skills (scripting languages like Python are OK) and some familiarity with statistics and calculus. If in doubt, please email me.</p>
+<p>See <a href="../intro_ml_17_files/overview.pdf">class overview</a> for more information on textbooks, syllabus, assignments, office hours, and grading.</p>
+<h2 id="textbooks">Textbooks</h2>
+<h3 id="main-reference">Main Reference:</h3>
+<p><strong>ISL</strong>: <a href="http://www-bcf.usc.edu/~gareth/ISL/">James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2013). An Introduction to Statistical Learning</a></p></div>
         </div>
 
         <footer class="col-md-12">
