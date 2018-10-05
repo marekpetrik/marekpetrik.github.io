@@ -1,48 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-     <loc>None</loc>
-     <lastmod>2018-08-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2018-08-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2018-08-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2018-08-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2018-08-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2018-08-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2018-08-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2018-08-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>None</loc>
-     <lastmod>2018-08-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/cv/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/publications/</loc>
+  </url>
+  
+  <url>
+    <loc>/teaching/</loc>
+  </url>
+  
+  <url>
+    <loc>/teaching/adv_topics_ml_16/</loc>
+  </url>
+  
+  <url>
+    <loc>/teaching/adv_topics_ml_17/</loc>
+  </url>
+  
+  <url>
+    <loc>/teaching/aml_18/</loc>
+  </url>
+  
+  <url>
+    <loc>/teaching/intro_ml_17/</loc>
+  </url>
+  
+  <url>
+    <loc>/teaching/ml_18/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
 </urlset>

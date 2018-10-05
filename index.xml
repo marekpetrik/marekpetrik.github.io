@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marek Petrik</title>
+    <link>/</link>
+    <description>Recent content on Marek Petrik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cv/</guid>
+      <description>CV Please see the PDF version of my CV.
+About Marek Marek Petrik is an assistant professor of Computer Science at the University of New Hampshire. Until 2016, he was a research staff member at the Mathematical Sciences Department of IBM&amp;rsquo;s T. J. Watson Research Center. He received his Ph.D. in Computer Science in 2010 from the University of Massachusetts, Amherst. His research focuses on developing better methods for safe, robust, and risk-averse reinforcement learning and their applications to domains that involve high-stakes decisions under uncertainty.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/</guid>
+      <description>Publications and Presentations 2018 Interpretable Reinforcement Learning with Ensemble Methods, Alexander Brown, Marek Petrik, arXiv:1809.06995.
+Policy Conditioned Uncertainty Sets for Robust Markov Decision Processes, Andrea Tirinzoni, Xiangli Chen, Marek Petrik, Brian Ziebart, To appear at Neural Information Processing Systems (NIPS) 2018.
+Fast Bellman Updates for Robust MDPs, Chin Pang Ho, Marek Petrik, Wolfram Wiesemann, International Conference on Machine Learning (ICML), 2018. [Full Paper], [Slides].
+Feature Selection by Singular Value Decomposition for Reinforcement Learning, Bahram Behzadian, Marek Petrik, Prediction and Generative Modeling Workshop at IJCAI/ICML, 2018.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/teaching/adv_topics_ml_16/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching/adv_topics_ml_16/</guid>
+      <description>CS980: Advanced Machine Learning Where Kingsbury N233
+When MW 3:40pm - 5:00pm
+What In this seminar, we will cover how to make good decisions using machine learning. Reinforcement learning and multi-armed bandits are just some of the methods that combine decision making with machine learning. These methods play a crucial role in countless real problems such as when personalizing websites, navigating robots, managing supply chains and revenue, and even when playing Go!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/teaching/adv_topics_ml_17/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching/adv_topics_ml_17/</guid>
+      <description>CS980: Advanced ML: Reinforcement Learning Please see the class homepage for schedule and other up-to-date information.
+Where Kingsbury N233
+When MW 3:40pm - 5:00pm
+What In this seminar, we will cover reinforcement learning, or how to make good decisions driven by data. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Reinforcement learning methods can be applied in various domains, such as when managing ecosystems, optimizing website, to robotics, and healthcare.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/teaching/aml_18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching/aml_18/</guid>
+      <description>CS980: Advanced ML: Reinforcement Learning Please see the class homepage for schedule and other up-to-date information.
+Where and When  Kingsbury N233 MW 3:40pm - 5:00pm  What This seminar will cover reinforcement learning. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Instead of trying to cover all reinforcement learning topics, we will focus on the foundations needed to understand other concepts.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/teaching/intro_ml_17/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching/intro_ml_17/</guid>
+      <description>CS780 / CS880: Introduction to Machine Learning When and Where Tue &amp;amp; Thu, 12:40 pm - 2:00 pm Kingsbury N133
+See class overview for more information on textbooks, syllabus, assignments, office hours, and grading.
+Assignments Please use Piazza for questions about assignments.
+   Assignment Due Date     Assignment 1 2/14/17 at 12:40PM   Assignment 2 2/21/17 at 12:40PM   Assignment 3 3/09/17 at 12:40PM   Assignment 4 4/06/17 at 12:40PM   Assignment 5 4/20/17 at 12:40PM    Syllabus    Date Slides Reading Notebooks     1&amp;frasl;26 Statistical learning ISL 1,2 (html) (RMD)   1&amp;frasl;31 Linear regression I ISL 3.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/teaching/ml_18/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching/ml_18/</guid>
+      <description>CS780 / CS880: Machine Learning Please see the main class website for detailed up to date information.
+When and Where Mon &amp;amp; Wed, 11:10 am - 12:40 pm in Kingsbury N113
+Class Content The goal of this class is to teach you how to use machine learning to understand data and make predictions in practice. The class will cover the fundamental concepts and algorithms in machine learning and data science as well as a wide variety of practical algorithms.</description>
+    </item>
+    
+  </channel>
+</rss>
