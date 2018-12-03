@@ -26,10 +26,10 @@ About Marek Marek Petrik is an assistant professor of Computer Science at the Un
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/</guid>
-      <description>Publications and Presentations 2018 Interpretable Reinforcement Learning with Ensemble Methods, Alexander Brown, Marek Petrik, arXiv:1809.06995.
-Policy Conditioned Uncertainty Sets for Robust Markov Decision Processes, Andrea Tirinzoni, Xiangli Chen, Marek Petrik, Brian Ziebart, To appear at Neural Information Processing Systems (NIPS) 2018.
-Fast Bellman Updates for Robust MDPs, Chin Pang Ho, Marek Petrik, Wolfram Wiesemann, International Conference on Machine Learning (ICML), 2018. [Full Paper], [Slides].
-Feature Selection by Singular Value Decomposition for Reinforcement Learning, Bahram Behzadian, Marek Petrik, Prediction and Generative Modeling Workshop at IJCAI/ICML, 2018.</description>
+      <description>Publications and Presentations 2018 Tight Bayesian Ambiguity Sets for Robust MDPs Reazul Hasan Russel, Marek Petrik, Infer2Control NIPS Workshop, 2018.
+Proximal Gradient Temporal Difference Learning: Stable Reinforcement Learning with Polynomial Sample Complexity , Bo Liu, Mohammad Ghavamzadeh, Ian Gemp, Mohammad Ghavamzadeh, Ji Liu, Sridhar Mahadevan, Marek Petrik, Journal of Artificial Intelligence Research (63):462-493, 2018.
+Interpretable Reinforcement Learning with Ensemble Methods, Alexander Brown, Marek Petrik, arXiv:1809.06995.
+Policy Conditioned Uncertainty Sets for Robust Markov Decision Processes, Andrea Tirinzoni, Xiangli Chen, Marek Petrik, Brian Ziebart, Advances in Neural Information Processing Systems (NIPS) 2018.</description>
     </item>
     
     <item>
