@@ -26,10 +26,10 @@ About Marek Marek Petrik is an assistant professor of Computer Science at the Un
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/</guid>
-      <description>Publications and Presentations 2019 Beyond Confidence Regions: Tight Bayesian Ambiguity Sets for Robust MDPs, Marek Petrik, Reazul Hasan Russell, arXiv:1902.07605, 2019.
-Fast Feature Selection for Linear Value Function Approximation, Bahram Behzadian, Soheil Gharatappeh, Marek Petrik, International Conference on Automated Planning and Scheduling (ICAPS) 2019.
-Inverse Reinforcement Learning of Interaction Dynamics from Demonstrations, Mostafa Hussein, Momotaz Begum, and Marek Petrik, International Conference on Robotics and Automation (ICRA), 2019.
-Real-time Planning as Decision-making Under Uncertainty, Andrew Mitchell, Wheeler Ruml, Fabian Spaniol, Joerg Hoffmann, Marek Petrik, AAAI Conference on Artificial Intelligence, 2019.</description>
+      <description>Publications and Presentations 2019 Robust Exploration with Tight Bayesian Plausibility Sets, Reazul Hasan Russel, Tianyi Gu, Marek Petrik, RLDM 2019
+Robust Pest Management Using Reinforcement Learning, Talha Siddique, Jia Lin Hau, Shadi Atallah, Marek Petrik, RLDM 2019
+Beyond Confidence Regions: Tight Bayesian Ambiguity Sets for Robust MDPs, Marek Petrik, Reazul Hasan Russell, arXiv:1902.07605, 2019.
+Fast Feature Selection for Linear Value Function Approximation, Bahram Behzadian, Soheil Gharatappeh, Marek Petrik, International Conference on Automated Planning and Scheduling (ICAPS) 2019.</description>
     </item>
     
     <item>
@@ -67,6 +67,16 @@ Where and When  Kingsbury N233 MW 3:40pm - 5:00pm  What This seminar will cover 
     
     <item>
       <title></title>
+      <link>/teaching/aml_19/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching/aml_19/</guid>
+      <description>CS980: Advanced ML: Reinforcement Learning Please see the class homepage for more information.
+Where and When  Kingsbury N233 TR 3:40pm - 5:00pm  What This seminar will cover reinforcement learning. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Instead of trying to cover all reinforcement learning topics, we will focus on the foundations needed to understand other concepts.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/teaching/intro_ml_17/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -95,8 +105,41 @@ Class Content The goal of this class is to teach you how to use machine learning
       
       <guid>/teaching/ml_19/</guid>
       <description>CS750 / CS850: Machine Learning Please see the main class website for detailed up-to-date information.
-When and Where Mon &amp;amp; Wed, 11:10 am - 12:40 pm in Spauldin Life Sciences Hall G26 Fri: A possible recitation (TBD)
+When and Where Mon &amp;amp; Wed, 11:10 am - 12:40 pm in Spaulding Life Sciences Hall G26 Fri: 11:00 am (recitation)
 Class Content The goal of this class is to teach you how to use machine learning to understand data and make predictions in practice. The class will cover the fundamental concepts and algorithms in machine learning and data science as well as a wide variety of practical algorithms.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/teaching/opt_19/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching/opt_19/</guid>
+      <description>CS757/CS857: Mathematical Optimization for Applications Co-taught with Mark Lyon.
+When and Where Mon &amp;amp; Wed, 9:40 am - 11:00 am Wed: Recitation
+Class Content The goal of the class is to teach the foundations that underlie mathematical optimization techniques. The methods play an important role in machine learning, operations research, applied mathematics, industrial engineering.
+ Unconstrained optimization methods Gradient descent and line search Trust region methods Newton and Quasi-Newton methods (BFGS) Constrained optimization problems Lagrange multiplies and KKT conditions Linear and quadratic programming Convex analysis  Programming Language MATLAB, Python, R, or Julia</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/tutorials/risk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorials/risk/</guid>
+      <description>AAAI-2017: Tutorial on Risk-averse Decision Making and Control Presenters:
+ Marek Petrik, University of New Hampshire Mohammad Ghavamzadeh, Adobe Research  Location: Continental 1-3, Ballroom Level
+Schedule  9:00AM - 9:20AM: Introduction to risk-averse modeling 9:20AM - 9:40AM: Value at Risk and Conditional Value at Risk 9:40AM - 9:50AM: Break 9:50AM - 10:30AM: Coherent Measures of Risk: Properties and methods 10:30AM - 11:00AM: Coffee break 11:00AM - 12:00PM: Risk-averse reinforcement learning 12:00PM - 12:15PM: Break 12:15PM - 12:45PM: Time consistent measures of risk  Slides  Coherent Measures of Risk (Dynamic and Static) Risk-averse Reinforcement Learning  Detailed Description Traditional decision methods in artificial intelligence focus on maximizing the expected return (or minimizing the expected cost).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/tutorials/robustrl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorials/robustrl/</guid>
+      <description>Robust Reinforcement Learning This is a tutorial on robust reinforcement learning that was presented on 7/31/2019 as a part of the Deep Learning and Reinforcement Learning Summer School in Edmonton, Canada.
+A slightly-edited version of the slides that were presented are here and an extended version is here.</description>
     </item>
     
   </channel>
