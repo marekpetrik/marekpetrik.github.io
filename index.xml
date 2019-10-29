@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marek Petrik</title>
@@ -26,10 +26,10 @@ About Marek Marek Petrik is an assistant professor of Computer Science at the Un
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/</guid>
-      <description>Publications and Presentations 2019 Robust Exploration with Tight Bayesian Plausibility Sets, Reazul Hasan Russel, Tianyi Gu, Marek Petrik, RLDM 2019
-Robust Pest Management Using Reinforcement Learning, Talha Siddique, Jia Lin Hau, Shadi Atallah, Marek Petrik, RLDM 2019
-Beyond Confidence Regions: Tight Bayesian Ambiguity Sets for Robust MDPs, Marek Petrik, Reazul Hasan Russell, arXiv:1902.07605, 2019.
-Fast Feature Selection for Linear Value Function Approximation, Bahram Behzadian, Soheil Gharatappeh, Marek Petrik, International Conference on Automated Planning and Scheduling (ICAPS) 2019.</description>
+      <description>Publications and Presentations 2019 Beyond Confidence Regions: Tight Bayesian Ambiguity Sets for Robust MDPs, Reazul Hasan Russel, Marek Petrik, Advances in Neural Information Processing Systems (NeurIPS) 2019
+High-Confidence Policy Optimization: Reshaping Ambiguity Sets in Robust MDPs, Bahram Behzadian, Reazul Hasan Russel, Marek Petrik, arXiv:1910.10786
+Robust Risk-Averse Sequential Decision Making, Jason Carter, Marek Petrik, NeurIPS 2019 Safety and Robustness in Decision Making Workshop 2019
+Optimizing Norm-bounded Weighted Ambiguity Sets for Robust MDPs Bahram Behzadian, Reazul Hasan Russel, Marek Petrik, NeurIPS 2019 Safety and Robustness in Decision Making Workshop 2019</description>
     </item>
     
     <item>
