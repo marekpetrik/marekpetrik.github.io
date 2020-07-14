@@ -50,7 +50,7 @@ Where and When  Kingsbury N233 MW 3:40pm - 5:00pm  What This seminar will cover 
       
       <guid>/teaching/aml_19/</guid>
       <description>CS980: Advanced ML: Reinforcement Learning Please see the class homepage for more information.
-Where and When  Kingsbury N233 TR 3:40pm - 5:00pm  What This seminar will cover reinforcement learning. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Instead of trying to cover all reinforcement learning topics, we will focus on the foundations needed to understand other concepts.</description>
+Where and When  Kingsbury N233 TR 3:40pm - 5:00pm  What This seminar will cover reinforcement learning. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Instead of trying to cover all reinforcement learning topics, we will focus on the foundations needed to understand other concepts. Below are some examples of relevant topics:</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@ Where and When  Kingsbury N233 TR 3:40pm - 5:00pm  What This seminar will cover 
       <description>CS780 / CS880: Introduction to Machine Learning When and Where Tue &amp;amp; Thu, 12:40 pm - 2:00 pm Kingsbury N133
 See class overview for more information on textbooks, syllabus, assignments, office hours, and grading.
 Assignments Please use Piazza for questions about assignments.
-   Assignment Due Date     Assignment 1 2/14/17 at 12:40PM   Assignment 2 2/21/17 at 12:40PM   Assignment 3 3/09/17 at 12:40PM   Assignment 4 4/06/17 at 12:40PM   Assignment 5 4/20/17 at 12:40PM    Syllabus    Date Slides Reading Notebooks     1&amp;frasl;26 Statistical learning ISL 1,2 (html) (RMD)   1&amp;frasl;31 Linear regression I ISL 3.</description>
+   Assignment Due Date     Assignment 1 2/14/17 at 12:40PM   Assignment 2 2/21/17 at 12:40PM   Assignment 3 3/09/17 at 12:40PM   Assignment 4 4/06/17 at 12:40PM   Assignment 5 4/20/17 at 12:40PM    Syllabus    Date Slides Reading Notebooks     1/26 Statistical learning ISL 1,2 (html) (RMD)   1/31 Linear regression I ISL 3.</description>
     </item>
     
     <item>
@@ -96,7 +96,7 @@ Class Content The goal of this class is to teach you how to use machine learning
       <description>CS757/CS857: Mathematical Optimization for Applications Co-taught with Mark Lyon.
 When and Where Mon &amp;amp; Wed, 9:40 am - 11:00 am Wed: Recitation
 Class Content The goal of the class is to teach the foundations that underlie mathematical optimization techniques. The methods play an important role in machine learning, operations research, applied mathematics, industrial engineering.
- Unconstrained optimization methods Gradient descent and line search Trust region methods Newton and Quasi-Newton methods (BFGS) Constrained optimization problems Lagrange multiplies and KKT conditions Linear and quadratic programming Convex analysis  Programming Language MATLAB, Python, R, or Julia</description>
+ Unconstrained optimization methods   Gradient descent and line search Trust region methods Newton and Quasi-Newton methods (BFGS) Constrained optimization problems Lagrange multiplies and KKT conditions Linear and quadratic programming Convex analysis  Programming Language MATLAB, Python, R, or Julia</description>
     </item>
     
   </channel>
