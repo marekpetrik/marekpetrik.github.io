@@ -13,8 +13,8 @@
       
       <guid>/tutorials/risk/</guid>
       <description>AAAI-2017: Tutorial on Risk-averse Decision Making and Control Presenters:
- Marek Petrik, University of New Hampshire Mohammad Ghavamzadeh, Adobe Research  Location: Continental 1-3, Ballroom Level
-Schedule  9:00AM - 9:20AM: Introduction to risk-averse modeling 9:20AM - 9:40AM: Value at Risk and Conditional Value at Risk 9:40AM - 9:50AM: Break 9:50AM - 10:30AM: Coherent Measures of Risk: Properties and methods 10:30AM - 11:00AM: Coffee break 11:00AM - 12:00PM: Risk-averse reinforcement learning 12:00PM - 12:15PM: Break 12:15PM - 12:45PM: Time consistent measures of risk  Slides  Coherent Measures of Risk (Dynamic and Static) Risk-averse Reinforcement Learning  Detailed Description Traditional decision methods in artificial intelligence focus on maximizing the expected return (or minimizing the expected cost).</description>
+Marek Petrik, University of New Hampshire Mohammad Ghavamzadeh, Adobe Research Location: Continental 1-3, Ballroom Level
+Schedule 9:00AM - 9:20AM: Introduction to risk-averse modeling 9:20AM - 9:40AM: Value at Risk and Conditional Value at Risk 9:40AM - 9:50AM: Break 9:50AM - 10:30AM: Coherent Measures of Risk: Properties and methods 10:30AM - 11:00AM: Coffee break 11:00AM - 12:00PM: Risk-averse reinforcement learning 12:00PM - 12:15PM: Break 12:15PM - 12:45PM: Time consistent measures of risk Slides Coherent Measures of Risk (Dynamic and Static) Risk-averse Reinforcement Learning Detailed Description Traditional decision methods in artificial intelligence focus on maximizing the expected return (or minimizing the expected cost).</description>
     </item>
     
     <item>
