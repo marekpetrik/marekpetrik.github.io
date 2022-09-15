@@ -13,7 +13,7 @@
       
       <guid>/cv/</guid>
       <description>CV Please see the PDF version of my CV.
-About Marek Marek Petrik is an assistant professor of Computer Science at the University of New Hampshire. Until 2016, he was a research staff member at the Mathematical Sciences Department of IBM&amp;rsquo;s T. J. Watson Research Center. He received his Ph.D. in Computer Science in 2010 from the University of Massachusetts, Amherst. His research focuses on developing better methods for safe, robust, and risk-averse reinforcement learning and their applications to domains that involve high-stakes decisions under uncertainty.</description>
+About Marek Marek Petrik is an associate professor of Computer Science at the University of New Hampshire. Until 2016, he was a research staff member at the Mathematical Sciences Department of IBM&amp;rsquo;s T. J. Watson Research Center. He received his Ph.D. in Computer Science in 2010 from the University of Massachusetts, Amherst. His research focuses on developing better methods for safe, robust, and risk-averse reinforcement learning and their applications to domains that involve high-stakes decisions under uncertainty.</description>
     </item>
     
     <item>
@@ -22,9 +22,10 @@ About Marek Marek Petrik is an assistant professor of Computer Science at the Un
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/</guid>
-      <description>Publications and Presentations Selected Publications 2022 2021 Fast Algorithms for L-infinity constrained S-rectangular Robust MDPs, Bahram Behzadian, Marek Petrik, Chin Pang Ho, Neural Information Processing Systems (NeurIPS), 2021.
-Partial Policy Iteration for L1-Robust Markov Decision Processes, Chin Pang Ho, Marek Petrik, Wolfram Wiesemann, Journal of Machine Learning Research (JMLR), 2021. Preprint
-Optimizing Percentile Criterion using Robust MDPs, Bahram Behzadian, Reazul Hasan Russel, Marek Petrik, Chin Pang Ho, Artificial Intelligence and Statistics (AISTATS), 2021.</description>
+      <description>Publications and Presentations Selected Works 2022 Robust Phi-Divergence MDPs, Chin Pang Ho, Marek Petrik, Wolfram Wiesemann, to appear at Neural Information Processing Systems (NeurIPS), 2022.
+RASR: Risk-Averse Soft-Robust MDPs with EVaR and Entropic Risk, Jia Lin Hau, Marek Petrik, Mohammad Ghavamzadeh, Reazul Russel, 2022.
+Data Poisoning Attacks on Off-Policy Policy Evaluation Methods, Elita Lobo, Harvineet Singh, Marek Petrik, Cynthia Rudin, Himabindu Lakkaraju, Uncertainty in Artificial Intelligence, 2022. Proofs
+2021 Fast Algorithms for L-infinity constrained S-rectangular Robust MDPs, Bahram Behzadian, Marek Petrik, Chin Pang Ho, Neural Information Processing Systems (NeurIPS), 2021.</description>
     </item>
     
     <item>
