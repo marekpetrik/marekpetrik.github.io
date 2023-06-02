@@ -3,49 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/cv/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/publications/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/teaching/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/teaching/adv_topics_ml_16/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/teaching/adv_topics_ml_17/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/teaching/aml_18/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/teaching/aml_19/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/teaching/intro_ml_17/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/teaching/ml_18/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/teaching/ml_19/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/teaching/opt_19/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/tutorials/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/tutorials/risk/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/tutorials/robustrl/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>/categories/</loc>
   </url><url>

@@ -22,10 +22,10 @@ About Marek Marek Petrik is an associate professor of Computer Science at the Un
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/publications/</guid>
-      <description>Publications and Preprints Selected Works 2023 Entropic Risk Optimization in Discounted MDPs, Jia Lin Hau, Marek Petrik, Mohammad Ghavamzadeh, Artificial Intelligence and Statistics, 2023.
-Reducing Blackwell and Average Optimality to Discounted MDPs via the Blackwell Discount Factor, Julien Grand-Clement, Marek Petrik, 2023.
-2022 On the Convergence of Policy Gradient in Robust MDPs, Qiuhao Wang, Chin Pang Ho, Marek Petrik, 2022.
-On the convex formulations of robust Markov decision processes, Julien Grand-Clément, Marek Petrik, 2022.</description>
+      <description>Publications and Preprints Selected Works 2023 A Convex Relaxation Approach to Bayesian Regret Minimization in Offline Bandits, Mohammad Ghavamzadeh, Marek Petrik, Guy Tennenholtz, Arxiv, 2023.
+On Dynamic Programming Decompositions of Static Risk Measures in Markov Decision Processes , Jia Lin Hau, Erick Delage, Mohammad Ghavamzadeh, Marek Petrik, Arxiv, 2023.
+Solving Multi-Model MDPs by Coordinate Ascent and Dynamic Programming, Xihong Su, Marek Petrik, Uncertainty in Artificial Intelligence (UAI), 2023.
+Policy Gradient in Robust MDPs with Global Convergence Guarantee, Qiuhao Wang, Chin Pang Ho, Marek Petrik, International Conference on Machine Learning (ICML), 2023.</description>
     </item>
     
     <item>
