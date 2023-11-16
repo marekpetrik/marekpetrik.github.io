@@ -5,95 +5,80 @@
     <link>/teaching/</link>
     <description>Recent content on Marek Petrik</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>/teaching/adv_topics_ml_16/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/teaching/adv_topics_ml_16/</guid>
       <description>CS980: Advanced Machine Learning Where Kingsbury N233
 When MW 3:40pm - 5:00pm
 What In this seminar, we will cover how to make good decisions using machine learning. Reinforcement learning and multi-armed bandits are just some of the methods that combine decision making with machine learning. These methods play a crucial role in countless real problems such as when personalizing websites, navigating robots, managing supply chains and revenue, and even when playing Go!</description>
     </item>
-    
     <item>
       <title></title>
       <link>/teaching/adv_topics_ml_17/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/teaching/adv_topics_ml_17/</guid>
       <description>CS980: Advanced ML: Reinforcement Learning Please see the class homepage for schedule and other up-to-date information.
 Where Kingsbury N233
 When MW 3:40pm - 5:00pm
 What In this seminar, we will cover reinforcement learning, or how to make good decisions driven by data. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Reinforcement learning methods can be applied in various domains, such as when managing ecosystems, optimizing website, to robotics, and healthcare.</description>
     </item>
-    
     <item>
       <title></title>
       <link>/teaching/aml_18/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/teaching/aml_18/</guid>
       <description>CS980: Advanced ML: Reinforcement Learning Please see the class homepage for schedule and other up-to-date information.
 Where and When Kingsbury N233 MW 3:40pm - 5:00pm What This seminar will cover reinforcement learning. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Instead of trying to cover all reinforcement learning topics, we will focus on the foundations needed to understand other concepts.</description>
     </item>
-    
     <item>
       <title></title>
       <link>/teaching/aml_19/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/teaching/aml_19/</guid>
       <description>CS980: Advanced ML: Reinforcement Learning Please see the class homepage for more information.
 Where and When Kingsbury N233 TR 3:40pm - 5:00pm What This seminar will cover reinforcement learning. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Instead of trying to cover all reinforcement learning topics, we will focus on the foundations needed to understand other concepts. Below are some examples of relevant topics:</description>
     </item>
-    
     <item>
       <title></title>
       <link>/teaching/intro_ml_17/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/teaching/intro_ml_17/</guid>
       <description>CS780 / CS880: Introduction to Machine Learning When and Where Tue &amp;amp; Thu, 12:40 pm - 2:00 pm Kingsbury N133
 See class overview for more information on textbooks, syllabus, assignments, office hours, and grading.
 Assignments Please use Piazza for questions about assignments.
 Assignment Due Date Assignment 1 2/14/17 at 12:40PM Assignment 2 2/21/17 at 12:40PM Assignment 3 3/09/17 at 12:40PM Assignment 4 4/06/17 at 12:40PM Assignment 5 4/20/17 at 12:40PM Syllabus Date Slides Reading Notebooks 1/26 Statistical learning ISL 1,2 (html) (RMD) 1/31 Linear regression I ISL 3.</description>
     </item>
-    
     <item>
       <title></title>
       <link>/teaching/ml_18/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/teaching/ml_18/</guid>
       <description>CS780 / CS880: Machine Learning Please see the main class website for detailed up to date information.
 When and Where Mon &amp;amp; Wed, 11:10 am - 12:40 pm in Kingsbury N113
 Class Content The goal of this class is to teach you how to use machine learning to understand data and make predictions in practice. The class will cover the fundamental concepts and algorithms in machine learning and data science as well as a wide variety of practical algorithms.</description>
     </item>
-    
     <item>
       <title></title>
       <link>/teaching/ml_19/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/teaching/ml_19/</guid>
       <description>CS750 / CS850: Machine Learning Please see the main class website for detailed up-to-date information.
 When and Where Mon &amp;amp; Wed, 11:10 am - 12:40 pm in Spaulding Life Sciences Hall G26 Fri: 11:00 am (recitation)
 Class Content The goal of this class is to teach you how to use machine learning to understand data and make predictions in practice. The class will cover the fundamental concepts and algorithms in machine learning and data science as well as a wide variety of practical algorithms.</description>
     </item>
-    
     <item>
       <title></title>
       <link>/teaching/opt_19/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/teaching/opt_19/</guid>
       <description>CS757/CS857: Mathematical Optimization for Applications Co-taught with Mark Lyon.
 When and Where Mon &amp;amp; Wed, 9:40 am - 11:00 am Wed: Recitation
 Class Content The goal of the class is to teach the foundations that underlie mathematical optimization techniques. The methods play an important role in machine learning, operations research, applied mathematics, industrial engineering.
 Unconstrained optimization methods Gradient descent and line search Trust region methods Newton and Quasi-Newton methods (BFGS) Constrained optimization problems Lagrange multiplies and KKT conditions Linear and quadratic programming Convex analysis Programming Language MATLAB, Python, R, or Julia</description>
     </item>
-    
   </channel>
 </rss>
