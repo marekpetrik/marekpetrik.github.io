@@ -20,9 +20,9 @@ About Marek Marek Petrik is an associate professor of Computer Science at the Un
       <link>/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/publications/</guid>
-      <description>Publications and Preprints Selected Works 2023 On Dynamic Programming Decompositions of Static Risk Measures in Markov Decision Processes, Jia Lin Hau, Erick Delage, Mohammad Ghavamzadeh, Marek Petrik, Neural Information Processing Systems (Neurips), 2023.
-[Percentile Criterion Optimization in Offline Reinforcement Learning], Cyrus Cousins, Elita Lobo, Marek Petrik, Yair Zick, Neural Information Processing Systems (Neurips), 2023.
-Reducing Blackwell and Average Optimality to Discounted MDPs via the Blackwell Discount Factor, Julien Grand-Clement, Marek Petrik, Neural Information Processing Systems (Neurips), 2023.</description>
+      <description>Publications and Preprints Selected Works 2023 Beyond discounted returns: Robust Markov decision processes with average and Blackwell optimality, Julien Grand-Clement, Marek Petrik, Nicolas Vielle, Arxiv, 2023.
+On Dynamic Programming Decompositions of Static Risk Measures in Markov Decision Processes, Jia Lin Hau, Erick Delage, Mohammad Ghavamzadeh, Marek Petrik, Neural Information Processing Systems (Neurips), 2023.
+Percentile Criterion Optimization in Offline Reinforcement Learning, Cyrus Cousins, Elita Lobo, Marek Petrik, Yair Zick, Neural Information Processing Systems (Neurips), 2023.</description>
     </item>
     <item>
       <title></title>
