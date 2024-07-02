@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="/xml/base.min.xml" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marek Petrik</title>
+    <link>/teaching/</link>
+    <description>Recent content on Marek Petrik</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link rel="self" href="/teaching/feed.xml" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/teaching/adv_topics_ml_16/</link>
+      <guid>/teaching/adv_topics_ml_16/</guid>
+      <description>
+
+
+&lt;h1 id=&#34;cs980-advanced-machine-learning&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/adv_topics_ml_16/#cs980-advanced-machine-learning&#34;&gt;CS980: Advanced Machine Learning&lt;/a&gt;
+&lt;/h1&gt;
+
+
+
+&lt;h3 id=&#34;where&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/adv_topics_ml_16/#where&#34;&gt;Where&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Kingsbury N233&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;when&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/adv_topics_ml_16/#when&#34;&gt;When&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;MW  3:40pm - 5:00pm&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;what&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/adv_topics_ml_16/#what&#34;&gt;What&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;In this seminar, we will cover how to make good decisions using machine learning. &lt;em&gt;Reinforcement learning&lt;/em&gt; and &lt;em&gt;multi-armed bandits&lt;/em&gt; are just some of the methods that combine decision making with machine learning. These methods play a crucial role in countless real problems such as when personalizing websites, navigating robots, managing supply chains and revenue, and even when playing Go!&lt;/p&gt;
+&lt;p&gt;We will cover how to trade off &lt;em&gt;exploitation&lt;/em&gt; and &lt;em&gt;exploration&lt;/em&gt;; that is when to act with the current data versus acquiring additional data to make a better decision later. The exploration/exploitation tradeoff is a key challenge in reinforcement learning. We will also cover the related issues of &lt;em&gt;reliability&lt;/em&gt; and &lt;em&gt;robustness&lt;/em&gt; in machine learning.&lt;/p&gt;
+&lt;p&gt;Some of the specific topics we will cover are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A/B testing and randomized experiments&lt;/li&gt;
+&lt;li&gt;Optimizer&amp;rsquo;s curse&lt;/li&gt;
+&lt;li&gt;Thompson sampling, UCB, EXP3&lt;/li&gt;
+&lt;li&gt;(Robust) Markov decision processes&lt;/li&gt;
+&lt;li&gt;Gittins and Whittle indices&lt;/li&gt;
+&lt;li&gt;Tree and policy search&lt;/li&gt;
+&lt;li&gt;Covariate shift&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The class will start with an overview of fundamental problems, methods, and techniques and will continue with student presentations and a research project.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;pre-requisites&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/adv_topics_ml_16/#pre-requisites&#34;&gt;Pre-requisites&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Statistics and some linear algebra. Machine learning is not a pre-requisite. We will cover topics that are closely related to ML but do not depend on it.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/teaching/adv_topics_ml_17/</link>
+      <guid>/teaching/adv_topics_ml_17/</guid>
+      <description>
+
+
+&lt;h1 id=&#34;cs980-advanced-ml-reinforcement-learning&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/adv_topics_ml_17/#cs980-advanced-ml-reinforcement-learning&#34;&gt;CS980: Advanced ML: Reinforcement Learning&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Please see the class &lt;a href=&#34;https://gitlab.com/marekpetrik/cs980_2017&#34;&gt;homepage&lt;/a&gt; for schedule and other up-to-date information.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;where&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/adv_topics_ml_17/#where&#34;&gt;Where&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Kingsbury N233&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;when&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/adv_topics_ml_17/#when&#34;&gt;When&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;MW  3:40pm - 5:00pm&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;what&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/adv_topics_ml_17/#what&#34;&gt;What&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;In this seminar, we will cover &lt;em&gt;reinforcement learning&lt;/em&gt;, or how to make good decisions driven by data. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Reinforcement learning methods can be applied in various domains, such as when managing ecosystems, optimizing website, to robotics, and healthcare.&lt;/p&gt;
+&lt;p&gt;Our focus will be on reinforcement learning that can learn from batch data sets without interacting with the environment. The algorithms have to learn how to interact with the environment based on a historical data. These batch methods are important when the cost of failure is high, such as in healthcare of agriculture, when using trial and error is impractical.&lt;/p&gt;
+&lt;p&gt;Some of the topics that we will cover are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Markov decision processes: Policy iteration, Value iteration, Linear programming&lt;/li&gt;
+&lt;li&gt;Policy evaluation (online and offline): TD, LSTD&lt;/li&gt;
+&lt;li&gt;Batch policy improvement: Q-learning, LSPI&lt;/li&gt;
+&lt;li&gt;Convex optimization: Linear programming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The focus of the class will be on depth rather than breadth. The main goal of the class is delivering an interesting reinforcement learning group project. As much as possible we will work on the same code-base using a subset of C++, Python, and R. The class will require independent study of reading materials and in-class group problem solving and paper discussions.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;textbooks&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/adv_topics_ml_17/#textbooks&#34;&gt;Textbooks&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Follow the links for free online versions.&lt;/p&gt;
+&lt;p&gt;Our main textbook will be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Szepesvári, C. (2010). &lt;a href=&#34;https://sites.ualberta.ca/~szepesva/RLBook.html&#34;&gt;Algorithms for Reinforcement Learning&lt;/a&gt;. Synthesis Lectures on Artificial Intelligence and Machine Learning, 4(1), 1–103.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Additional material can be found in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Puterman, M. L. (2005). Markov decision processes: Discrete stochastic dynamic programming. John Wiley &amp;amp; Sons, Inc.&lt;/li&gt;
+&lt;li&gt;Sutton, R. S., &amp;amp; Barto, A. (1998). &lt;a href=&#34;http://incompleteideas.net/sutton/book/ebook/the-book.html&#34;&gt;Reinforcement learning&lt;/a&gt;. MIT Press.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;pre-requisites&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/adv_topics_ml_17/#pre-requisites&#34;&gt;Pre-requisites&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Statistics, some linear algebra and ideally familiarity with machine learning.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;more-details&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/adv_topics_ml_17/#more-details&#34;&gt;More details&lt;/a&gt;
+&lt;/h2&gt;
+</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/teaching/aml_18/</link>
+      <guid>/teaching/aml_18/</guid>
+      <description>
+
+
+&lt;h1 id=&#34;cs980-advanced-ml-reinforcement-learning&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/aml_18/#cs980-advanced-ml-reinforcement-learning&#34;&gt;CS980: Advanced ML: Reinforcement Learning&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Please see the class &lt;a href=&#34;https://gitlab.com/marekpetrik/2018F-AML&#34;&gt;homepage&lt;/a&gt; for schedule and other up-to-date information.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;where-and-when&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/aml_18/#where-and-when&#34;&gt;Where and When&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Kingsbury N233&lt;/li&gt;
+&lt;li&gt;MW  3:40pm - 5:00pm&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h2 id=&#34;what&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/aml_18/#what&#34;&gt;What&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;This seminar will cover &lt;em&gt;reinforcement learning&lt;/em&gt;. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Instead of trying to cover all reinforcement learning topics, we will focus on the foundations needed to understand other concepts.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Markov decision processes: Policy iteration, Value iteration, Linear programming&lt;/li&gt;
+&lt;li&gt;Value Function Approximation: LSTD, LSPI, ALP, ABP&lt;/li&gt;
+&lt;li&gt;Uncertainty: Bandits and Robust Markov Decision Processes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We will use Python, R, or C++ and cover relevant topics from linear algebra, mathematical optimization, and statistics as needed.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;more-info&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/aml_18/#more-info&#34;&gt;More Info&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Please see the class &lt;a href=&#34;https://gitlab.com/marekpetrik/2018F-AML&#34;&gt;homepage&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/teaching/aml_19/</link>
+      <guid>/teaching/aml_19/</guid>
+      <description>
+
+
+&lt;h1 id=&#34;cs980-advanced-ml-reinforcement-learning&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/aml_19/#cs980-advanced-ml-reinforcement-learning&#34;&gt;CS980: Advanced ML: Reinforcement Learning&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Please see the class &lt;a href=&#34;https://gitlab.com/marekpetrik/AML-Fall2019&#34;&gt;homepage&lt;/a&gt; for more information.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;where-and-when&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/aml_19/#where-and-when&#34;&gt;Where and When&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Kingsbury N233&lt;/li&gt;
+&lt;li&gt;TR  3:40pm - 5:00pm&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h2 id=&#34;what&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/aml_19/#what&#34;&gt;What&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;This seminar will cover &lt;em&gt;reinforcement learning&lt;/em&gt;. The goal in reinforcement learning is to learn how to act while interacting with a dynamic and complex environment. Instead of trying to cover all reinforcement learning topics, we will focus on the foundations needed to understand other concepts. Below are some examples of relevant topics:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Markov decision processes: Policy iteration, Value iteration, Linear programming&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Standard RL methods: SARSA, TD, Q-learning&lt;/li&gt;
+&lt;li&gt;Model-based methods: Dyna and others&lt;/li&gt;
+&lt;li&gt;Value Function Approximation: LSTD, LSPI, ALP, ABP&lt;/li&gt;
+&lt;li&gt;Uncertainty: Exploration and Robustness&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We will use Python, R, or C++ and cover relevant topics from linear algebra, mathematical optimization, and statistics as needed.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;textbook&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/aml_19/#textbook&#34;&gt;Textbook&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Richard Sutton, Andrew Barto, &lt;a href=&#34;http://incompleteideas.net/book/the-book-2nd.html&#34;&gt;Reinforcement Learning: An Introduction&lt;/a&gt;, 2018.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/teaching/intro_ml_17/</link>
+      <guid>/teaching/intro_ml_17/</guid>
+      <description>
+
+
+&lt;h1 id=&#34;cs780--cs880-introduction-to-machine-learning&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#cs780--cs880-introduction-to-machine-learning&#34;&gt;CS780 / CS880: Introduction to Machine Learning&lt;/a&gt;
+&lt;/h1&gt;
+
+
+
+&lt;h3 id=&#34;when-and-where&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#when-and-where&#34;&gt;When and Where&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Tue &amp;amp; Thu, 12:40 pm - 2:00 pm
+Kingsbury N133&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;intro_ml_17_files/overview.pdf&#34;&gt;class overview&lt;/a&gt; for more information on textbooks, syllabus, assignments, office hours, and grading.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;assignments&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#assignments&#34;&gt;Assignments&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Please use &lt;a href=&#34;https://piazza.com/unh/spring2017/cs780cs880&#34;&gt;Piazza&lt;/a&gt; for questions about assignments.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Assignment&lt;/th&gt;
+&lt;th&gt;Due Date&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/assignment1.pdf&#34;&gt;Assignment 1&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2/14/17 at 12:40PM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/assignment2.pdf&#34;&gt;Assignment 2&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2/21/17 at 12:40PM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/assignment3.pdf&#34;&gt;Assignment 3&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;3/09/17 at 12:40PM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/assignment4.pdf&#34;&gt;Assignment 4&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;4/06/17 at 12:40PM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/assignment5.pdf&#34;&gt;Assignment 5&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;4/20/17 at 12:40PM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+&lt;h2 id=&#34;syllabus&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#syllabus&#34;&gt;Syllabus&lt;/a&gt;
+&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;Slides&lt;/th&gt;
+&lt;th&gt;Reading&lt;/th&gt;
+&lt;th&gt;Notebooks&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1/26&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class1.pdf&#34;&gt;Statistical learning&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 1,2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/introduction.html&#34;&gt;(html)&lt;/a&gt; &lt;a href=&#34;intro_ml_17_files/introduction.Rmd&#34;&gt;(RMD)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1/31&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class2.pdf&#34;&gt;Linear regression I&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 3.1-2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/linear_regression.html&#34;&gt;(html)&lt;/a&gt; &lt;a href=&#34;intro_ml_17_files/linear_regression.Rmd&#34;&gt;(RMD)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2/02&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;No class&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2/07&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class3.pdf&#34;&gt;Linear regression II&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 3.3-6&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2/09&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;No class&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2/14&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class4.pdf&#34;&gt;Logistic regression&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 4.1-3&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/logistic_regression.html&#34;&gt;(html)&lt;/a&gt;&lt;a href=&#34;intro_ml_17_files/logistic_regression.Rmd&#34;&gt;(RMD)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2/16&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class5.pdf&#34;&gt;LDA, QDA, Bayes&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 4.4-6&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2/21&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class6.pdf&#34;&gt;Cross-validation&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 5&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2/23&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class7.pdf&#34;&gt;Model selection&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 6.1-6.2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2/28&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class8.pdf&#34;&gt;Dimensionality&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 6.3-6.4&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3/2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class9.pdf&#34;&gt;PCA&lt;/a&gt; &lt;a href=&#34;intro_ml_17_files/class9b.pdf&#34;&gt;ML/MAP&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 10.1-2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/maxlikelihood.Rmd&#34;&gt;ML&lt;/a&gt; &lt;a href=&#34;intro_ml_17_files/pca.Rmd&#34;&gt;PCA&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3/6&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class10.pdf&#34;&gt;Clustering and EM&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 10.3-5&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/kmeans.Rmd&#34;&gt;kmeans&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3/9&lt;/td&gt;
+&lt;td&gt;Midterm Review&lt;/td&gt;
+&lt;td&gt;ISL 1-6, 10&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3/21&lt;/td&gt;
+&lt;td&gt;** Midterm **&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3/23&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class11.pdf&#34;&gt;Linear algebra&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;LAO 1.1-2,2,3&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3/28&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/linearalgebra.pdf&#34;&gt;LA in ML&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;LAR&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/linearalgebra.Rmd&#34;&gt;linear algebra&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3/30&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/linearalgebra.pdf&#34;&gt;LA in ML&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;LAR&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/linearalgebra.Rmd&#34;&gt;linear algebra&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4/04&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class13.pdf&#34;&gt;SVM&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 9&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4/06&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class14.pdf&#34;&gt;Decision trees and boosting&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 8&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4/11&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class15.pdf&#34;&gt;Nonlinear methods&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ISL 7&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4/13&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class16.pdf&#34;&gt;Recommender systems&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4/18&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class17.pdf&#34;&gt;Bayes nets&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;MLP 10&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4/20&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class18.pdf&#34;&gt;Reinforcement learning&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;RL&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4/25&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;intro_ml_17_files/class19.pdf&#34;&gt;Final exam review&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4/27&lt;/td&gt;
+&lt;td&gt;Project presentations (Graduate)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5/02&lt;/td&gt;
+&lt;td&gt;Deep learning and big data&lt;/td&gt;
+&lt;td&gt;DL&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5/04&lt;/td&gt;
+&lt;td&gt;Project presentations (Undergraduate)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+&lt;h2 id=&#34;project&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#project&#34;&gt;Project&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;See the &lt;a href=&#34;intro_ml_17_files/mlproject.pdf&#34;&gt;project overview&lt;/a&gt; for details on the details of deliverables. The deliverable are due by the end of the day (midnight).&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;Deliverable&lt;/th&gt;
+&lt;th&gt;Page Limit&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2/24&lt;/td&gt;
+&lt;td&gt;Project description and data sources&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3/07&lt;/td&gt;
+&lt;td&gt;Evaluation methodology&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3/23&lt;/td&gt;
+&lt;td&gt;Method and literature overview&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4/06&lt;/td&gt;
+&lt;td&gt;Preliminary results&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4/27&lt;/td&gt;
+&lt;td&gt;Final report&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+&lt;h2 id=&#34;exams&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#exams&#34;&gt;Exams&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;intro_ml_17_files/test_questions.pdf&#34;&gt;practice questions&lt;/a&gt; for questions you should be able to answer to be ready for the midterm and final exams.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;Exam&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;3/21&lt;/td&gt;
+&lt;td&gt;Midterm (take home)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+&lt;h2 id=&#34;textbooks&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#textbooks&#34;&gt;Textbooks&lt;/a&gt;
+&lt;/h2&gt;
+
+
+
+&lt;h3 id=&#34;main-reference&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#main-reference&#34;&gt;Main reference:&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;ISL: &lt;a href=&#34;http://www-bcf.usc.edu/~gareth/ISL/&#34;&gt;James, G., Witten, D., Hastie, T., &amp;amp; Tibshirani, R. (2013). An Introduction to Statistical Learning&lt;/a&gt;&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;more-in-depth-material&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#more-in-depth-material&#34;&gt;More in-depth material:&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;ESL: &lt;a href=&#34;http://statweb.stanford.edu/~tibs/ElemStatLearn&#34;&gt;Hastie, T., Tibshirani, R., &amp;amp; Friedman, J. (2009). The Elements of Statistical Learning. Springer Series in Statistics (2nd ed.)&lt;/a&gt;&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;related-topics&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#related-topics&#34;&gt;Related topics:&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;LAO: Hefferon, J. &lt;a href=&#34;http://joshua.smcvt.edu/linearalgebra/#current_version&#34;&gt;Linear Algebra&lt;/a&gt; (2017)&lt;/li&gt;
+&lt;li&gt;LA: Strang, G. &lt;a href=&#34;http://math.mit.edu/~gs/linearalgebra/&#34;&gt;Introduction to Linear Algebra&lt;/a&gt;. (2016) &lt;em&gt;Also see:&lt;/em&gt; &lt;a href=&#34;https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/&#34;&gt;online lectures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LAR: &lt;a href=&#34;http://bendixcarstensen.com/APC/linalg-notes-BxC.pdf&#34;&gt;Introductory Linear Agebra with R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CO: Boyd, S., &amp;amp; Vandenberghe, L. (2004). &lt;a href=&#34;http://web.stanford.edu/~boyd/cvxbook/&#34;&gt;Convex Optimization&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;RL: Sutton, R. S., &amp;amp; Barto, A. (2012). &lt;a href=&#34;http://people.inf.elte.hu/lorincz/Files/RL_2006/SuttonBook.pdf&#34;&gt;Reinforcement learning&lt;/a&gt;. 2nd edition (forthcoming?)&lt;/li&gt;
+&lt;li&gt;RLA: Szepesvari, C. (2013), &lt;a href=&#34;https://sites.ualberta.ca/~szepesva/RLBook.html&#34;&gt;Algorithms for Reinforcement Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;DL: Goodfellow, I., Bengio, Y., &amp;amp; Courville, A. (2016). &lt;a href=&#34;https://github.com/HFTrader/DeepLearningBook&#34;&gt;Deep Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;MLP: Murphy, K (2012). Machine Learning, A Probabilistic Perspective.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href=&#34;intro_ml_17_files&#34;&gt;class overview&lt;/a&gt; for more information on the textbook.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;class-content&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#class-content&#34;&gt;Class Content&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The goal of this class is to teach you how to use &lt;em&gt;machine learning&lt;/em&gt; to &lt;em&gt;understand data&lt;/em&gt; and &lt;em&gt;make predictions&lt;/em&gt; in practice. The class will cover the fundamental concepts and algorithms in machine learning and data science as well as a wide variety of practical algorithms. The main topics we will cover are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The maximum likelihood principle&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Regression&lt;/em&gt;: Linear regression&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Classification&lt;/em&gt;: Logistic regression and linear discriminant analysis&lt;/li&gt;
+&lt;li&gt;Cross-validation, bootstrap, and over-fitting&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Model selection&lt;/em&gt;: Regularization, Lasso&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Nonlinear models&lt;/em&gt;: Decision trees, Support vector machines&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Unsupervised&lt;/em&gt;: Principal component analysis, k-means&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Advanced topics&lt;/em&gt;: Bayes nets and deep learning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The graduate version of the class will cover the same topics in greater depth.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;programming-language&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#programming-language&#34;&gt;Programming Language&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;The class will involve hand-on data analysis using machine learning methods. The recommended language for programming assignments is &lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt; which is an excellent tool for statistical analysis and machine learning. &lt;em&gt;No prior knowledge of R is needed or expected&lt;/em&gt;; the book and lecture will cover a gentle introduction to the language. Experienced students may also choose other alternatives, such as Python or Matlab.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;pre-requisites&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/intro_ml_17/#pre-requisites&#34;&gt;Pre-requisites&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Basic programming skills (scripting languages like Python are OK) and some familiarity with statistics and calculus. If in doubt, please email me.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/teaching/ml_18/</link>
+      <guid>/teaching/ml_18/</guid>
+      <description>
+
+
+&lt;h1 id=&#34;cs780--cs880-machine-learning&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_18/#cs780--cs880-machine-learning&#34;&gt;CS780 / CS880: Machine Learning&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Please see the main &lt;a href=&#34;https://gitlab.com/marekpetrik/ML-Spring2018&#34;&gt;class website&lt;/a&gt; for detailed up to date information.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;when-and-where&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_18/#when-and-where&#34;&gt;When and Where&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Mon &amp;amp; Wed, 11:10 am - 12:40 pm in &lt;strong&gt;Kingsbury N113&lt;/strong&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;class-content&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_18/#class-content&#34;&gt;Class Content&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The goal of this class is to teach you how to use &lt;em&gt;machine learning&lt;/em&gt; to &lt;em&gt;understand data&lt;/em&gt; and &lt;em&gt;make predictions&lt;/em&gt; in practice. The class will cover the fundamental concepts and algorithms in machine learning and data science as well as a wide variety of practical algorithms. The main topics we will cover are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The maximum likelihood principle&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Regression&lt;/em&gt;: Linear regression&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Classification&lt;/em&gt;: Logistic regression and linear discriminant analysis&lt;/li&gt;
+&lt;li&gt;Cross-validation, bootstrap, and over-fitting&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Model selection&lt;/em&gt;: Regularization, Lasso&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Nonlinear models&lt;/em&gt;: Decision trees, Support vector machines&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Unsupervised&lt;/em&gt;: Principal component analysis, k-means&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Advanced topics&lt;/em&gt;: Bayes nets and deep learning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The graduate version of the class will cover the same topics in greater depth.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;programming-language&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_18/#programming-language&#34;&gt;Programming Language&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;The class will involve hand-on data analysis using machine learning methods. The recommended language for programming assignments is &lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt; which is an excellent tool for statistical analysis and machine learning. &lt;em&gt;No prior knowledge of R is needed or expected&lt;/em&gt;; the book and lecture will cover a gentle introduction to the language. Experienced students may also choose other alternatives, such as Python or Matlab.&lt;/p&gt;
+&lt;p&gt;We recommend using the free &lt;a href=&#34;https://www.rstudio.com&#34;&gt;R Studio&lt;/a&gt; for completing programming assignments. R Notebooks are very convenient for producing reproducible reports and we encourage you to use them. Jupyter is a similar alternative for Python.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;pre-requisites&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_18/#pre-requisites&#34;&gt;Pre-requisites&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Basic programming skills (scripting languages like Python are OK) and some familiarity with statistics and calculus. If in doubt, please email me.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;intro_ml_17_files/overview.pdf&#34;&gt;class overview&lt;/a&gt; for more information on textbooks, syllabus, assignments, office hours, and grading.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;textbooks&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_18/#textbooks&#34;&gt;Textbooks&lt;/a&gt;
+&lt;/h2&gt;
+
+
+
+&lt;h3 id=&#34;main-reference&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_18/#main-reference&#34;&gt;Main Reference:&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;ISL&lt;/strong&gt;: &lt;a href=&#34;http://www-bcf.usc.edu/~gareth/ISL/&#34;&gt;James, G., Witten, D., Hastie, T., &amp;amp; Tibshirani, R. (2013). An Introduction to Statistical Learning&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/teaching/ml_19/</link>
+      <guid>/teaching/ml_19/</guid>
+      <description>
+
+
+&lt;h1 id=&#34;cs750--cs850-machine-learning&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_19/#cs750--cs850-machine-learning&#34;&gt;CS750 / CS850: Machine Learning&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Please see the main &lt;a href=&#34;https://gitlab.com/marekpetrik/ML-Spring2019&#34;&gt;class website&lt;/a&gt; for detailed up-to-date information.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;when-and-where&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_19/#when-and-where&#34;&gt;When and Where&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Mon &amp;amp; Wed, 11:10 am - 12:40 pm in &lt;strong&gt;Spaulding Life Sciences Hall G26&lt;/strong&gt;
+Fri: 11:00 am (recitation)&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;class-content&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_19/#class-content&#34;&gt;Class Content&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The goal of this class is to teach you how to use &lt;em&gt;machine learning&lt;/em&gt; to &lt;em&gt;understand data&lt;/em&gt; and &lt;em&gt;make predictions&lt;/em&gt; in practice. The class will cover the fundamental concepts and algorithms in machine learning and data science as well as a wide variety of practical algorithms. The main topics we will cover are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The maximum likelihood principle&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Regression&lt;/em&gt;: Linear regression&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Classification&lt;/em&gt;: Logistic regression and linear discriminant analysis&lt;/li&gt;
+&lt;li&gt;Cross-validation, bootstrap, and over-fitting&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Model selection&lt;/em&gt;: Regularization, Lasso&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Nonlinear models&lt;/em&gt;: Decision trees, Support vector machines&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Unsupervised&lt;/em&gt;: Principal component analysis, k-means&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Advanced topics&lt;/em&gt;: Bayes nets and deep learning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The graduate version of the class will cover the same topics in greater depth.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;programming-language&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_19/#programming-language&#34;&gt;Programming Language&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;The class will involve hand-on data analysis using machine learning methods. The recommended language for programming assignments is &lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt; which is an excellent tool for statistical analysis and machine learning. &lt;em&gt;No prior knowledge of R is needed or expected&lt;/em&gt;; the book and lecture will cover a gentle introduction to the language. Experienced students may also choose other alternatives, such as Python or Matlab.&lt;/p&gt;
+&lt;p&gt;We recommend using the free &lt;a href=&#34;https://www.rstudio.com&#34;&gt;R Studio&lt;/a&gt; for completing programming assignments. R Notebooks are very convenient for producing reproducible reports and we encourage you to use them. Jupyter is a similar alternative for Python.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;pre-requisites&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_19/#pre-requisites&#34;&gt;Pre-requisites&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Basic programming skills (scripting languages like Python are OK) and some familiarity with statistics and calculus. If in doubt, please email me.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;intro_ml_17_files/overview.pdf&#34;&gt;class overview&lt;/a&gt; for more information on textbooks, syllabus, assignments, office hours, and grading.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;textbooks&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_19/#textbooks&#34;&gt;Textbooks&lt;/a&gt;
+&lt;/h2&gt;
+
+
+
+&lt;h3 id=&#34;main-reference&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/ml_19/#main-reference&#34;&gt;Main Reference:&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;ISL&lt;/strong&gt;: &lt;a href=&#34;http://www-bcf.usc.edu/~gareth/ISL/&#34;&gt;James, G., Witten, D., Hastie, T., &amp;amp; Tibshirani, R. (2013). An Introduction to Statistical Learning&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/teaching/opt_19/</link>
+      <guid>/teaching/opt_19/</guid>
+      <description>
+
+
+&lt;h1 id=&#34;cs757cs857-mathematical-optimization-for-applications&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/opt_19/#cs757cs857-mathematical-optimization-for-applications&#34;&gt;CS757/CS857: Mathematical Optimization for Applications&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Co-taught with Mark Lyon.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;when-and-where&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/opt_19/#when-and-where&#34;&gt;When and Where&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Mon &amp;amp; Wed, 9:40 am - 11:00 am
+Wed: Recitation&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;class-content&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/opt_19/#class-content&#34;&gt;Class Content&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The goal of the class is to teach the foundations that underlie mathematical optimization techniques. The methods play an important role in machine learning, operations research, applied mathematics, industrial engineering.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Unconstrained optimization methods&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Gradient descent and line search&lt;/li&gt;
+&lt;li&gt;Trust region methods&lt;/li&gt;
+&lt;li&gt;Newton and Quasi-Newton methods (BFGS)&lt;/li&gt;
+&lt;li&gt;Constrained optimization problems&lt;/li&gt;
+&lt;li&gt;Lagrange multiplies and KKT conditions&lt;/li&gt;
+&lt;li&gt;Linear and quadratic programming&lt;/li&gt;
+&lt;li&gt;Convex analysis&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;programming-language&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/opt_19/#programming-language&#34;&gt;Programming Language&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;MATLAB, Python, R, or Julia&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;pre-requisites&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/opt_19/#pre-requisites&#34;&gt;Pre-requisites&lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Calculus&lt;/li&gt;
+&lt;li&gt;Some linear algebra background&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h2 id=&#34;textbook&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/opt_19/#textbook&#34;&gt;Textbook&lt;/a&gt;
+&lt;/h2&gt;
+
+
+
+&lt;h2 id=&#34;nocedal-and-wright-numerical-optimization-2nd-edition-2006&#34;&gt;
+  &lt;a class=&#34;Heading-link u-clickable&#34; href=&#34;../teaching/opt_19/#nocedal-and-wright-numerical-optimization-2nd-edition-2006&#34;&gt;Nocedal and Wright, &lt;em&gt;Numerical Optimization&lt;/em&gt; (2nd edition), 2006&lt;/a&gt;
+&lt;/h2&gt;
+</description>
+    </item>
+  </channel>
+</rss>
