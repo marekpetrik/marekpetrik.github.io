@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
   </url><url>
-    <loc>/cv/</loc>
+    <loc>//localhost:1313/cv/</loc>
   </url><url>
-    <loc>/publications/</loc>
+    <loc>//localhost:1313/publications/</loc>
   </url><url>
-    <loc>/teaching/</loc>
+    <loc>//localhost:1313/teaching/</loc>
   </url><url>
-    <loc>/teaching/adv_topics_ml_16/</loc>
+    <loc>//localhost:1313/teaching/adv_topics_ml_16/</loc>
   </url><url>
-    <loc>/teaching/adv_topics_ml_17/</loc>
+    <loc>//localhost:1313/teaching/adv_topics_ml_17/</loc>
   </url><url>
-    <loc>/teaching/aml_18/</loc>
+    <loc>//localhost:1313/teaching/aml_18/</loc>
   </url><url>
-    <loc>/teaching/aml_19/</loc>
+    <loc>//localhost:1313/teaching/aml_19/</loc>
   </url><url>
-    <loc>/teaching/intro_ml_17/</loc>
+    <loc>//localhost:1313/teaching/intro_ml_17/</loc>
   </url><url>
-    <loc>/teaching/ml_18/</loc>
+    <loc>//localhost:1313/teaching/ml_18/</loc>
   </url><url>
-    <loc>/teaching/ml_19/</loc>
+    <loc>//localhost:1313/teaching/ml_19/</loc>
   </url><url>
-    <loc>/teaching/opt_19/</loc>
+    <loc>//localhost:1313/teaching/opt_19/</loc>
   </url><url>
-    <loc>/tutorials/</loc>
+    <loc>//localhost:1313/tutorials/</loc>
   </url><url>
-    <loc>/tutorials/risk/</loc>
+    <loc>//localhost:1313/tutorials/risk/</loc>
   </url><url>
-    <loc>/tutorials/risk2/</loc>
+    <loc>//localhost:1313/tutorials/risk2/</loc>
   </url><url>
-    <loc>/tutorials/robustrl/</loc>
+    <loc>//localhost:1313/tutorials/robustrl/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>
